@@ -235,7 +235,7 @@ Technology Partner specializing in modern web applications, digital transformati
 
 # 👨‍💻 Technical Team
 
-**AKASH S M N**
+**AKASH S M**
 
 Full Stack Web Developer
 
@@ -268,19 +268,17 @@ AKASH S M N
 
 GitHub
 
-https://github.com/your-github-username
+https://github.com/ak220193
 
 LinkedIn
 
-https://linkedin.com/in/your-profile
+https://www.linkedin.com/in/akashsm-dev/
 
-Portfolio
 
-https://your-portfolio.com
 
 Company
 
-https://foundersroi.com
+https://www.foundersroi.in/
 
 ---
 
