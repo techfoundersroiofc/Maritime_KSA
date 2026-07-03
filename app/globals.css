@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-eb-garamond), serif;
+  --font-heading: var(--font-outfit), sans-serif;
+  --font-jakarta: var(--font-plus-jakarta-sans), sans-serif;
+}
+
+/* Custom global styles */
+body {
+  font-family: var(--font-eb-garamond), serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-outfit), sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Custom scrollbar for modern premium SaaS look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617; /* slate-950 */
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* slate-800 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c; /* orange-600 */
+}
+
+/* Glassmorphism custom classes */
+.glass-card {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card:hover {
+  border-color: rgba(234, 88, 12, 0.2);
+}
