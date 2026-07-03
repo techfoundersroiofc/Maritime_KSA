@@ -1,0 +1,259 @@
+"use client";
+
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+import { Mail, Phone, MapPin, Send, CheckCircle2 } from "lucide-react";
+import { courses } from "@/app/data/courses";
+import { COLLEGE_CONFIG } from "@/app/constants/config";
+
+export default function InquiryCTA() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm({
+    defaultValues: {
+      fullName: "",
+      email: "",
+      phone: "",
+      pcmPercentage: "",
+      courseId: "",
+      message: ""
+    }
+  });
+
+  const onSubmit = async (data) => {
+    try {
+      // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      
+      console.log("Enquiry data:", data);
+      
+      toast.success("Enquiry Submitted Successfully!", {
+        description: "Our admissions officer will contact you within 24 hours.",
+        duration: 5000,
+      });
+      
+      reset();
+    } catch (error) {
+      toast.error("Failed to submit enquiry. Please try again.");
+    }
+  };
+
+  return (
+    <section id="enquiry" className="bg-slate-950 py-24 border-t border-slate-900 relative overflow-hidden">
+      {/* Decorative gradient blob */}
+      <div className="absolute bottom-0 right-0 w-[500px] h-[300px] bg-orange-650/5 rounded-full blur-[120px] pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
+          {/* Left Column: Contact info & Eligibility checklist */}
+          <div className="lg:col-span-5 flex flex-col justify-between space-y-10 gsap-slide-up">
+            <div className="space-y-5">
+              <div className="flex items-center space-x-2">
+                <span className="h-px w-8 bg-orange-500" />
+                <span className="text-orange-500 font-bold uppercase tracking-wider text-xs">
+                  Get In Touch
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+                Start Your Journey in the Merchant Navy
+              </h2>
+              <p className="text-slate-400 text-sm leading-relaxed font-normal">
+                Have questions about sponsorships, eligibility, IMU-CET, or cadet life? 
+                Submit an enquiry and our admissions counselor will guide you through the process.
+              </p>
+            </div>
+
+            {/* Quick Contact Cards */}
+            <div className="space-y-4">
+              <div className="bg-slate-900/40 border border-slate-900/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/10 transition-colors duration-300">
+                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-500 shrink-0">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-[9px] text-slate-500 uppercase tracking-widest font-bold">Admissions Hotline</h4>
+                  <a href={`tel:${COLLEGE_CONFIG.phone}`} className="text-sm font-bold text-white hover:text-orange-500 transition-colors">
+                    {COLLEGE_CONFIG.phone}
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-slate-900/40 border border-slate-900/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/10 transition-colors duration-300">
+                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-500 shrink-0">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-[9px] text-slate-500 uppercase tracking-widest font-bold">General Email</h4>
+                  <a href={`mailto:${COLLEGE_CONFIG.email}`} className="text-sm font-bold text-white hover:text-orange-500 transition-colors break-all">
+                    {COLLEGE_CONFIG.email}
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-slate-900/40 border border-slate-900/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/10 transition-colors duration-300">
+                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-500 shrink-0">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-[9px] text-slate-500 uppercase tracking-widest font-bold">College Location</h4>
+                  <span className="text-xs text-slate-400 leading-snug font-medium">Chidambaram, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Checklist */}
+            <div className="border-t border-slate-900 pt-6 space-y-3">
+              <h4 className="text-white font-bold text-xs uppercase tracking-wider mb-2">
+                Basic Admission Checklist
+              </h4>
+              <div className="flex items-center space-x-2 text-xs text-slate-400">
+                <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+                <span>10+2 with Physics, Chemistry & Math (PCM)</span>
+              </div>
+              <div className="flex items-center space-x-2 text-xs text-slate-400">
+                <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+                <span>Minimum 50% in English (10th or 12th)</span>
+              </div>
+              <div className="flex items-center space-x-2 text-xs text-slate-400">
+                <CheckCircle2 className="w-4.5 h-4.5 text-orange-500 shrink-0" />
+                <span>Eye Sight: 6/6 (no color blindness)</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: enquiry Form Card */}
+          <div className="lg:col-span-7 bg-slate-900/30 border border-slate-900 rounded-lg p-8 shadow-2xl flex flex-col justify-center backdrop-blur-sm hover:border-orange-500/10 transition-all duration-300 gsap-slide-up">
+            <h3 className="text-xl font-bold text-white mb-6 tracking-wide">
+              Admission Enquiry Form 2026
+            </h3>
+            
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {/* Full Name */}
+                <div className="space-y-2">
+                  <label htmlFor="fullName" className="text-xs font-semibold text-slate-400">Full Name *</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your name"
+                    className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+                    {...register("fullName", { required: "Full name is required" })}
+                  />
+                  {errors.fullName && (
+                    <span className="text-[10px] text-red-500">{errors.fullName.message}</span>
+                  )}
+                </div>
+
+                {/* Email */}
+                <div className="space-y-2">
+                  <label htmlFor="email" className="text-xs font-semibold text-slate-400">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="name@example.com"
+                    className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+                    {...register("email", {
+                      required: "Email is required",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Invalid email address"
+                      }
+                    })}
+                  />
+                  {errors.email && (
+                    <span className="text-[10px] text-red-500">{errors.email.message}</span>
+                  )}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {/* Phone */}
+                <div className="space-y-2">
+                  <label htmlFor="phone" className="text-xs font-semibold text-slate-400">Mobile Number *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="10-digit mobile number"
+                    className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+                    {...register("phone", {
+                      required: "Phone number is required",
+                      pattern: {
+                        value: /^[0-9]{10}$/,
+                        message: "Must be a 10-digit number"
+                      }
+                    })}
+                  />
+                  {errors.phone && (
+                    <span className="text-[10px] text-red-500">{errors.phone.message}</span>
+                  )}
+                </div>
+
+                {/* PCM Percentage */}
+                <div className="space-y-2">
+                  <label htmlFor="pcmPercentage" className="text-xs font-semibold text-slate-400">12th PCM Marks (%) *</label>
+                  <input
+                    type="number"
+                    id="pcmPercentage"
+                    placeholder="Physics, Chemistry, Math %"
+                    className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+                    {...register("pcmPercentage", {
+                      required: "PCM percentage is required",
+                      min: { value: 40, message: "Minimum 40% is required" },
+                      max: { value: 100, message: "Maximum 100%" }
+                    })}
+                  />
+                  {errors.pcmPercentage && (
+                    <span className="text-[10px] text-red-500">{errors.pcmPercentage.message}</span>
+                  )}
+                </div>
+              </div>
+
+              {/* Course Selector */}
+              <div className="space-y-2">
+                <label htmlFor="courseId" className="text-xs font-semibold text-slate-400">Course Interested In *</label>
+                <select
+                  id="courseId"
+                  className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-300 focus:outline-none transition-colors"
+                  {...register("courseId", { required: "Please select a course" })}
+                >
+                  <option value="">Select a Merchant Navy course</option>
+                  {courses.map((course) => (
+                    <option key={course.id} value={course.id}>
+                      {course.title} ({course.duration})
+                    </option>
+                  ))}
+                </select>
+                {errors.courseId && (
+                  <span className="text-[10px] text-red-500">{errors.courseId.message}</span>
+                )}
+              </div>
+
+              {/* Message */}
+              <div className="space-y-2">
+                <label htmlFor="message" className="text-xs font-semibold text-slate-400">Message / Questions</label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  placeholder="Tell us about yourself or ask a question..."
+                  className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors resize-none"
+                  {...register("message")}
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-orange-600 hover:bg-orange-500 disabled:bg-orange-800 text-white font-bold py-3.5 rounded-lg shadow-lg shadow-orange-600/20 hover:shadow-orange-600/30 transition-all flex items-center justify-center space-x-2 group mt-2"
+              >
+                <span>{isSubmitting ? "Submitting..." : "Submit Enquiry"}</span>
+                {!isSubmitting && <Send className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />}
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
