@@ -17,16 +17,16 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-80 scale-100 transform transition-transform duration-[12000ms] ease-out"
+          className="object-cover opacity-80 scale-100 transform transition-transform duration-12000 ease-out"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/85 to-slate-50/45" />
+        <div className="absolute inset-0 bg-linear-to-t from-white via-white/85 to-slate-50/45" />
 
         {/* Glowing SaaS blobs */}
         <div className="absolute top-1/4 left-1/4 -translate-x-1/2 w-[350px] h-[350px] bg-orange-550/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[150px] pointer-events-none" />
 
         {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 z-10 text-center relative pt-8">
@@ -41,7 +41,7 @@ export default function Hero() {
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-blue-950 mb-6 leading-[1.12]">
           Navigating Careers, <br />
-          <span className="bg-gradient-to-r from-orange-600 via-amber-500 to-orange-500 bg-clip-text text-transparent drop-shadow-sm">
+          <span className="bg-linear-to-r from-orange-600 via-amber-500 to-orange-500 bg-clip-text text-transparent drop-shadow-sm">
             Commanding Oceans
           </span>
         </h1>
