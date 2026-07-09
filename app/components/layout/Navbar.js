@@ -299,10 +299,10 @@ export default function Navbar() {
       {/* Main Brand & Navigation bar */}
       <nav
         className={cn(
-          "px-4 md:px-8 transition-all duration-300 border-b",
+          "px-4 md:px-8 transition-all duration-300 ",
           scrolled
-            ? "bg-white/95 backdrop-blur-md py-3 border-slate-200/60"
-            : "bg-white/80 backdrop-blur-sm py-4 border-slate-200/20",
+            ? "bg-white/95 backdrop-blur-md py-3 "
+            : "bg-white/80 backdrop-blur-sm py-4 ",
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
