@@ -10,7 +10,7 @@ import { Toaster } from "sonner";
 export default function Home() {
   return (
     <GSAPProvider>
-      <Toaster position="top-center" theme="dark" closeButton richColors />
+      <Toaster position="top-center" theme="light" closeButton richColors />
       <Hero />
       <Stats />
       <Welcome />

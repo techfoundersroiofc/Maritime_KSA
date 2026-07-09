@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-eb-garamond), serif;
+  --font-sans: var(--font-plus-jakarta-sans), sans-serif;
   --font-heading: var(--font-outfit), sans-serif;
+  --font-serif: var(--font-eb-garamond), serif;
   --font-jakarta: var(--font-plus-jakarta-sans), sans-serif;
 }
 
 /* Custom global styles */
 body {
-  font-family: var(--font-eb-garamond), serif;
+  font-family: var(--font-plus-jakarta-sans), sans-serif;
+  background-color: #f8fafc; /* slate-50 */
+  color: #0f172a; /* slate-900 */
 }
 
 h1,
@@ -21,29 +24,73 @@ h6 {
   letter-spacing: -0.02em;
 }
 
-/* Custom scrollbar for modern premium SaaS look */
+/* Academic/Serif typography helper */
+.font-academic {
+  font-family: var(--font-eb-garamond), serif;
+}
+
+/* Custom scrollbar for bright premium look */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #020617; /* slate-950 */
+  background: #f1f5f9; /* slate-100 */
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b; /* slate-800 */
+  background: #cbd5e1; /* slate-300 */
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ea580c; /* orange-600 */
+  background: #0284c7; /* sky-600 */
 }
 
-/* Glassmorphism custom classes */
+/* Light Glassmorphism custom classes */
 .glass-card {
-  background: rgba(15, 23, 42, 0.45);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
 }
 
 .glass-card:hover {
-  border-color: rgba(234, 88, 12, 0.2);
+  border-color: rgba(2, 132, 199, 0.25);
+  box-shadow: 0 15px 35px -8px rgba(15, 23, 42, 0.12);
+}
+
+/* Scrolling Ticker for Admissions */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 12s linear infinite;
+}
+
+/* Button Shine Effect */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 30%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotate(30deg);
+  transition: none;
+  animation: shine 4s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { left: -60%; }
+  15% { left: 120%; }
+  100% { left: 120%; }
 }

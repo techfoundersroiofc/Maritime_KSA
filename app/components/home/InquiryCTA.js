@@ -42,9 +42,9 @@ export default function InquiryCTA() {
   };
 
   return (
-    <section id="enquiry" className="bg-slate-950 py-24 border-t border-slate-900 relative overflow-hidden">
+    <section id="enquiry" className="bg-white py-24 border-t border-slate-200/60 relative overflow-hidden">
       {/* Decorative gradient blob */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[300px] bg-orange-650/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[300px] bg-orange-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
@@ -52,15 +52,15 @@ export default function InquiryCTA() {
           <div className="lg:col-span-5 flex flex-col justify-between space-y-10 gsap-slide-up">
             <div className="space-y-5">
               <div className="flex items-center space-x-2">
-                <span className="h-px w-8 bg-orange-500" />
-                <span className="text-orange-500 font-bold uppercase tracking-wider text-xs">
+                <span className="h-px w-8 bg-orange-600" />
+                <span className="text-orange-600 font-bold uppercase tracking-wider text-xs">
                   Get In Touch
                 </span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-950">
                 Start Your Journey in the Merchant Navy
               </h2>
-              <p className="text-slate-400 text-sm leading-relaxed font-normal">
+              <p className="text-slate-650 text-sm leading-relaxed font-normal">
                 Have questions about sponsorships, eligibility, IMU-CET, or cadet life? 
                 Submit an enquiry and our admissions counselor will guide you through the process.
               </p>
@@ -68,64 +68,64 @@ export default function InquiryCTA() {
 
             {/* Quick Contact Cards */}
             <div className="space-y-4">
-              <div className="bg-slate-900/40 border border-slate-900/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/10 transition-colors duration-300">
-                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-500 shrink-0">
+              <div className="bg-slate-50 border border-slate-200/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/30 shadow-xs transition-colors duration-300">
+                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-600 shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-[9px] text-slate-500 uppercase tracking-widest font-bold">Admissions Hotline</h4>
-                  <a href={`tel:${COLLEGE_CONFIG.phone}`} className="text-sm font-bold text-white hover:text-orange-500 transition-colors">
+                  <a href={`tel:${COLLEGE_CONFIG.phone}`} className="text-sm font-bold text-blue-950 hover:text-orange-600 transition-colors">
                     {COLLEGE_CONFIG.phone}
                   </a>
                 </div>
               </div>
 
-              <div className="bg-slate-900/40 border border-slate-900/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/10 transition-colors duration-300">
-                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-500 shrink-0">
+              <div className="bg-slate-50 border border-slate-200/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/30 shadow-xs transition-colors duration-300">
+                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-600 shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-[9px] text-slate-500 uppercase tracking-widest font-bold">General Email</h4>
-                  <a href={`mailto:${COLLEGE_CONFIG.email}`} className="text-sm font-bold text-white hover:text-orange-500 transition-colors break-all">
+                  <a href={`mailto:${COLLEGE_CONFIG.email}`} className="text-sm font-bold text-blue-950 hover:text-orange-600 transition-colors break-all">
                     {COLLEGE_CONFIG.email}
                   </a>
                 </div>
               </div>
 
-              <div className="bg-slate-900/40 border border-slate-900/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/10 transition-colors duration-300">
-                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-500 shrink-0">
+              <div className="bg-slate-50 border border-slate-200/80 p-4 rounded-lg flex items-center space-x-4 hover:border-orange-500/30 shadow-xs transition-colors duration-300">
+                <div className="w-10 h-10 rounded bg-orange-600/10 border border-orange-500/10 flex items-center justify-center text-orange-600 shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-[9px] text-slate-500 uppercase tracking-widest font-bold">College Location</h4>
-                  <span className="text-xs text-slate-400 leading-snug font-medium">Chidambaram, Tamil Nadu, India</span>
+                  <span className="text-xs text-slate-700 leading-snug font-semibold">Chidambaram, Tamil Nadu, India</span>
                 </div>
               </div>
             </div>
 
             {/* Checklist */}
-            <div className="border-t border-slate-900 pt-6 space-y-3">
-              <h4 className="text-white font-bold text-xs uppercase tracking-wider mb-2">
+            <div className="border-t border-slate-200/60 pt-6 space-y-3">
+              <h4 className="text-blue-950 font-bold text-xs uppercase tracking-wider mb-2">
                 Basic Admission Checklist
               </h4>
-              <div className="flex items-center space-x-2 text-xs text-slate-400">
-                <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+              <div className="flex items-center space-x-2 text-xs text-slate-600">
+                <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0" />
                 <span>10+2 with Physics, Chemistry & Math (PCM)</span>
               </div>
-              <div className="flex items-center space-x-2 text-xs text-slate-400">
-                <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+              <div className="flex items-center space-x-2 text-xs text-slate-600">
+                <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0" />
                 <span>Minimum 50% in English (10th or 12th)</span>
               </div>
-              <div className="flex items-center space-x-2 text-xs text-slate-400">
-                <CheckCircle2 className="w-4.5 h-4.5 text-orange-500 shrink-0" />
+              <div className="flex items-center space-x-2 text-xs text-slate-600">
+                <CheckCircle2 className="w-4.5 h-4.5 text-orange-600 shrink-0" />
                 <span>Eye Sight: 6/6 (no color blindness)</span>
               </div>
             </div>
           </div>
 
           {/* Right Column: enquiry Form Card */}
-          <div className="lg:col-span-7 bg-slate-900/30 border border-slate-900 rounded-lg p-8 shadow-2xl flex flex-col justify-center backdrop-blur-sm hover:border-orange-500/10 transition-all duration-300 gsap-slide-up">
-            <h3 className="text-xl font-bold text-white mb-6 tracking-wide">
+          <div className="lg:col-span-7 bg-slate-50/50 border border-slate-200 rounded-lg p-8 shadow-sm hover:shadow-md flex flex-col justify-center backdrop-blur-sm hover:border-orange-500/25 transition-all duration-300 gsap-slide-up">
+            <h3 className="text-xl font-bold text-blue-950 mb-6 tracking-wide">
               Admission Enquiry Form 2026
             </h3>
             
@@ -133,12 +133,12 @@ export default function InquiryCTA() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* Full Name */}
                 <div className="space-y-2">
-                  <label htmlFor="fullName" className="text-xs font-semibold text-slate-400">Full Name *</label>
+                  <label htmlFor="fullName" className="text-xs font-bold text-slate-700">Full Name *</label>
                   <input
                     type="text"
                     id="fullName"
                     placeholder="Enter your name"
-                    className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+                    className="w-full bg-white border border-slate-300 focus:border-orange-500/80 rounded-lg px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none transition-colors"
                     {...register("fullName", { required: "Full name is required" })}
                   />
                   {errors.fullName && (
@@ -148,12 +148,12 @@ export default function InquiryCTA() {
 
                 {/* Email */}
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-xs font-semibold text-slate-400">Email Address *</label>
+                  <label htmlFor="email" className="text-xs font-bold text-slate-700">Email Address *</label>
                   <input
                     type="email"
                     id="email"
                     placeholder="name@example.com"
-                    className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+                    className="w-full bg-white border border-slate-300 focus:border-orange-500/80 rounded-lg px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none transition-colors"
                     {...register("email", {
                       required: "Email is required",
                       pattern: {
@@ -171,12 +171,12 @@ export default function InquiryCTA() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* Phone */}
                 <div className="space-y-2">
-                  <label htmlFor="phone" className="text-xs font-semibold text-slate-400">Mobile Number *</label>
+                  <label htmlFor="phone" className="text-xs font-bold text-slate-700">Mobile Number *</label>
                   <input
                     type="tel"
                     id="phone"
                     placeholder="10-digit mobile number"
-                    className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+                    className="w-full bg-white border border-slate-300 focus:border-orange-500/80 rounded-lg px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none transition-colors"
                     {...register("phone", {
                       required: "Phone number is required",
                       pattern: {
@@ -192,12 +192,12 @@ export default function InquiryCTA() {
 
                 {/* PCM Percentage */}
                 <div className="space-y-2">
-                  <label htmlFor="pcmPercentage" className="text-xs font-semibold text-slate-400">12th PCM Marks (%) *</label>
+                  <label htmlFor="pcmPercentage" className="text-xs font-bold text-slate-700">12th PCM Marks (%) *</label>
                   <input
                     type="number"
                     id="pcmPercentage"
                     placeholder="Physics, Chemistry, Math %"
-                    className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+                    className="w-full bg-white border border-slate-300 focus:border-orange-500/80 rounded-lg px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none transition-colors"
                     {...register("pcmPercentage", {
                       required: "PCM percentage is required",
                       min: { value: 40, message: "Minimum 40% is required" },
@@ -212,10 +212,10 @@ export default function InquiryCTA() {
 
               {/* Course Selector */}
               <div className="space-y-2">
-                <label htmlFor="courseId" className="text-xs font-semibold text-slate-400">Course Interested In *</label>
+                <label htmlFor="courseId" className="text-xs font-bold text-slate-700">Course Interested In *</label>
                 <select
                   id="courseId"
-                  className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-300 focus:outline-none transition-colors"
+                  className="w-full bg-white border border-slate-300 focus:border-orange-500/80 rounded-lg px-4 py-3 text-sm text-slate-800 focus:outline-none transition-colors"
                   {...register("courseId", { required: "Please select a course" })}
                 >
                   <option value="">Select a Merchant Navy course</option>
@@ -232,12 +232,12 @@ export default function InquiryCTA() {
 
               {/* Message */}
               <div className="space-y-2">
-                <label htmlFor="message" className="text-xs font-semibold text-slate-400">Message / Questions</label>
+                <label htmlFor="message" className="text-xs font-bold text-slate-700">Message / Questions</label>
                 <textarea
                   id="message"
                   rows={4}
                   placeholder="Tell us about yourself or ask a question..."
-                  className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none transition-colors resize-none"
+                  className="w-full bg-white border border-slate-300 focus:border-orange-500/80 rounded-lg px-4 py-3 text-sm text-slate-800 placeholder-slate-450 focus:outline-none transition-colors resize-none"
                   {...register("message")}
                 />
               </div>
@@ -245,7 +245,7 @@ export default function InquiryCTA() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-orange-600 hover:bg-orange-500 disabled:bg-orange-800 text-white font-bold py-3.5 rounded-lg shadow-lg shadow-orange-600/20 hover:shadow-orange-600/30 transition-all flex items-center justify-center space-x-2 group mt-2"
+                className="w-full bg-orange-600 hover:bg-orange-550 disabled:bg-orange-850 text-white font-bold py-3.5 rounded-lg shadow-lg shadow-orange-600/25 hover:shadow-orange-600/35 transition-all flex items-center justify-center space-x-2 group mt-2"
               >
                 <span>{isSubmitting ? "Submitting..." : "Submit Enquiry"}</span>
                 {!isSubmitting && <Send className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />}

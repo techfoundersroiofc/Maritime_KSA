@@ -47,22 +47,22 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="bg-slate-950 py-24 border-t border-slate-900 overflow-hidden relative">
+    <section className="bg-white py-24 border-t border-slate-200/60 overflow-hidden relative">
       <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-sky-500/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 gsap-slide-up">
           <div className="flex items-center justify-center space-x-2">
-            <span className="h-px w-8 bg-orange-500" />
-            <span className="text-orange-500 font-bold uppercase tracking-wider text-xs">
+            <span className="h-px w-8 bg-orange-600" />
+            <span className="text-orange-600 font-bold uppercase tracking-wider text-xs">
               Why Choose PKIMSE
             </span>
-            <span className="h-px w-8 bg-orange-500" />
+            <span className="h-px w-8 bg-orange-600" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-950">
             Industry-Approved Infrastructure & Cadres
           </h2>
-          <p className="text-slate-400 text-sm leading-relaxed">
+          <p className="text-slate-650 text-sm leading-relaxed">
             From modern simulators to dedicated marine machinery workshops, we provide everything needed 
             to produce high-caliber merchant navy officers.
           </p>
@@ -81,14 +81,14 @@ export default function WhyChooseUs() {
                   onClick={() => setActiveTab(idx)}
                   className={`flex items-center space-x-4 p-5 rounded-lg text-left shrink-0 transition-all duration-300 border ${
                     isActive
-                      ? "bg-slate-900 border-orange-500/30 text-white shadow-xl shadow-orange-600/5"
-                      : "bg-slate-950/20 border-slate-900 text-slate-450 hover:text-slate-200 hover:bg-slate-900/30"
+                      ? "bg-white border-orange-500/30 text-blue-950 shadow-md"
+                      : "bg-slate-50 border-slate-200 text-slate-600 hover:text-blue-950 hover:bg-slate-100/80"
                   }`}
                 >
                   <div className={`w-10 h-10 rounded flex items-center justify-center border shrink-0 transition-colors duration-300 ${
                     isActive
-                      ? "bg-orange-600/10 border-orange-500/30 text-orange-500"
-                      : "bg-slate-900 border-slate-800 text-slate-550"
+                      ? "bg-orange-600/10 border-orange-500/30 text-orange-600"
+                      : "bg-white border-slate-200 text-slate-500"
                   }`}>
                     <Icon className="w-5 h-5" />
                   </div>
@@ -104,25 +104,25 @@ export default function WhyChooseUs() {
           </div>
 
           {/* Tab Content Panels */}
-          <div className="lg:col-span-8 bg-slate-900/30 border border-slate-900 rounded-lg p-8 min-h-[380px] flex flex-col justify-between backdrop-blur-sm hover:border-orange-500/10 transition-colors duration-300">
+          <div className="lg:col-span-8 bg-slate-50/50 border border-slate-200 rounded-lg p-8 min-h-[380px] flex flex-col justify-between backdrop-blur-sm hover:border-orange-500/25 transition-colors duration-300 shadow-sm">
             <div className="space-y-6">
               <div className="space-y-2">
-                <span className="text-[10px] font-bold text-orange-500 uppercase tracking-widest">
+                <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest">
                   PKIMSE ADVANTAGE
                 </span>
-                <h3 className="text-2xl font-bold text-white tracking-wide">
+                <h3 className="text-2xl font-bold text-blue-950 tracking-wide">
                   {tabs[activeTab].headline}
                 </h3>
               </div>
 
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-655 text-sm leading-relaxed">
                 {tabs[activeTab].description}
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-900/60">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-200/60">
                 {tabs[activeTab].features.map((feat) => (
-                  <div key={feat} className="flex items-start space-x-3 text-slate-350">
-                    <CheckCircle className="w-4.5 h-4.5 text-orange-500 shrink-0 mt-0.5" />
+                  <div key={feat} className="flex items-start space-x-3 text-slate-700">
+                    <CheckCircle className="w-4.5 h-4.5 text-orange-600 shrink-0 mt-0.5" />
                     <span className="text-xs leading-relaxed">{feat}</span>
                   </div>
                 ))}
@@ -132,12 +132,12 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Placements Partner Section */}
-        <div className="border-t border-slate-900/60 pt-16 gsap-slide-up">
+        <div className="border-t border-slate-200/60 pt-16 gsap-slide-up">
           <div className="text-center mb-10">
-            <span className="text-[10px] font-bold text-orange-500 uppercase tracking-widest block mb-2">
+            <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest block mb-2">
               PLACEMENT PARTNERS
             </span>
-            <h3 className="text-xl font-bold text-white">
+            <h3 className="text-xl font-bold text-blue-950">
               Cadets Placed with Top International Shipping Lines
             </h3>
           </div>
@@ -147,9 +147,9 @@ export default function WhyChooseUs() {
             {recruiters.slice(0, 6).map((rec) => (
               <div
                 key={rec.name}
-                className="bg-slate-900/30 border border-slate-900/60 hover:border-orange-500/20 hover:bg-slate-900/50 p-4.5 rounded-lg text-center w-full min-h-[70px] flex items-center justify-center transition-all duration-300 group hover:-translate-y-0.5 gsap-stagger-item"
+                className="bg-slate-50 border border-slate-200 hover:border-orange-500/30 hover:bg-white p-4.5 rounded-lg text-center w-full min-h-[70px] flex items-center justify-center transition-all duration-300 group hover:-translate-y-0.5 shadow-sm hover:shadow-md gsap-stagger-item"
               >
-                <span className="text-xs font-bold text-slate-405 group-hover:text-white transition-colors tracking-wider">
+                <span className="text-xs font-bold text-slate-700 group-hover:text-orange-600 transition-colors tracking-wider">
                   {rec.name}
                 </span>
               </div>

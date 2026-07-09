@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
       className={`${outfit.variable} ${ebGaramond.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 font-sans selection:bg-orange-500 selection:text-white">
+      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
         <Navbar />
         <main className="flex-grow pt-[84px] md:pt-[108px]">{children}</main>
         <Footer />
