@@ -74,12 +74,11 @@ function TopBar({ scrolled }) {
 function Logo() {
   return (
     <Link href="/" className="flex items-center space-x-1 group">
-      <div className="relative  overflow-hidden rounded p-1  transition-transform duration-300 group-hover:scale-105">
+      <div className="relative w-20 h-20 md:w-20 md:h-20 overflow-hidden rounded bg-white p-1 border border-slate-200 transition-transform duration-300 group-hover:scale-105">
         <Image
           src="/images/logo/PKIMSE.PNG"
           alt="PKIMSE Logo"
-          width={100}
-          height={100}
+          fill
           unoptimized
           sizes="(max-width: 768px) 44px, 48px"
           className="object-contain"
@@ -162,13 +161,13 @@ function MobileMenuOverlay({ isOpen, setIsOpen, pathname }) {
           onClick={() => setIsOpen(false)}
           className="flex items-center space-x-3 group"
         >
-          <div className="relative w-full h-full overflow-hidden rounded">
+          <div className="relative w-11 h-11 overflow-hidden rounded bg-white p-1 border border-slate-200">
             <Image
               src="/images/logo/PKIMSE.PNG"
               alt="PKIMSE Logo"
-              width={200}
-              height={200}
-              unoptimized
+              fill
+              priority
+              sizes="44px"
               className="object-contain"
             />
           </div>
@@ -193,7 +192,7 @@ function MobileMenuOverlay({ isOpen, setIsOpen, pathname }) {
       </div>
 
       {/* Navigation Ticker Links */}
-      <div className="flex-grow flex flex-col justify-center items-center my-8 overflow-y-auto max-h-[60vh] scrollbar-thin">
+      <div className="grow flex flex-col justify-center items-center my-8 overflow-y-auto max-h-[60vh] scrollbar-thin">
         <ul className="space-y-6 text-center w-full max-w-md">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
