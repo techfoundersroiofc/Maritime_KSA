@@ -77,11 +77,14 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${outfit.variable} ${ebGaramond.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
         <Navbar />
-        <main className="grow pt-[84px] md:pt-[108px] xl:pt-[140px]">{children}</main>
+        <main className="grow pt-[84px] md:pt-[108px] xl:pt-[140px]">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
