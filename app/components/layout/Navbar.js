@@ -14,14 +14,7 @@ import { cn } from "@/app/lib/utils";
 // ==========================================
 function TopBar({ scrolled }) {
   return (
-    <div
-      className={cn(
-        "hidden lg:block bg-blue-950 text-slate-200 text-[11px] py-2 px-8 border-b border-blue-900/30 transition-all duration-300",
-        scrolled
-          ? "h-0 py-0 opacity-0 overflow-hidden border-none"
-          : "h-auto opacity-100",
-      )}
-    >
+    <div className="hidden xl:block bg-blue-950 text-slate-200 text-[11px] py-2 px-8 border-b border-blue-900/30 transition-all duration-300">
       <div className="max-w-7xl mx-auto grid grid-cols-3 items-center">
         {/* Contact Information */}
         <div className="flex items-center space-x-6 justify-start">
@@ -71,16 +64,21 @@ function TopBar({ scrolled }) {
 // ==========================================
 // 2. Logo Component
 // ==========================================
-function Logo() {
+function Logo({ scrolled }) {
   return (
     <Link href="/" className="flex items-center space-x-1 group">
-      <div className="relative w-20 h-20 md:w-20 md:h-20 overflow-hidden rounded bg-white p-1 border border-slate-200 transition-transform duration-300 group-hover:scale-105">
+      <div
+        className={cn(
+          "relative overflow-hidden rounded bg-white p-1 border border-slate-200 transition-all duration-300 group-hover:scale-105",
+          scrolled ? "w-12 h-12 md:w-14 md:h-14" : "w-16 h-16 md:w-20 md:h-20",
+        )}
+      >
         <Image
           src="/images/logo/PKIMSE.PNG"
           alt="PKIMSE Logo"
           fill
           unoptimized
-          sizes="(max-width: 768px) 44px, 48px"
+          sizes="(max-width: 768px) 48px, 80px"
           className="object-contain"
         />
       </div>
@@ -93,7 +91,7 @@ function Logo() {
 // ==========================================
 function DesktopLinks({ pathname }) {
   return (
-    <ul className="flex items-center space-x-1 xl:space-x-4">
+    <ul className="flex items-center space-x-1 xl:space-x-3">
       {navLinks.map((link) => {
         const isActive = pathname === link.href;
         return (
@@ -101,13 +99,14 @@ function DesktopLinks({ pathname }) {
             <Link
               href={link.href}
               className={cn(
-                "whitespace-nowrap text-[12px] xl:text-[13.5px] font-semibold tracking-wide transition-colors relative py-2 px-2.5 text-slate-600 hover:text-blue-950",
-                isActive && "text-orange-600 font-bold hover:text-orange-700",
+                "whitespace-nowrap text-[13px] xl:text-[14.5px] font-bold tracking-wide transition-all duration-300 relative py-2 px-2 xl:px-2.5 text-slate-200 hover:text-orange-400",
+                isActive &&
+                  "text-orange-400 font-extrabold hover:text-orange-300",
               )}
             >
               {link.name}
               {isActive && (
-                <span className="absolute bottom-0 left-2.5 right-2.5 h-[2px] bg-orange-600 rounded-full" />
+                <span className="absolute bottom-0 left-2 right-2 h-[2.5px] bg-orange-500 rounded-full shadow-[0_0_8px_rgba(249,115,22,0.6)]" />
               )}
             </Link>
           </li>
@@ -148,7 +147,7 @@ function MobileMenuOverlay({ isOpen, setIsOpen, pathname }) {
   return (
     <div
       className={cn(
-        "fixed inset-0 z-50 bg-white/98 backdrop-blur-2xl transition-all duration-500 ease-out flex flex-col justify-between p-6 md:p-10 lg:hidden",
+        "fixed inset-0 z-50 bg-blue-950/98 backdrop-blur-2xl transition-all duration-500 ease-out flex flex-col justify-between p-6 md:p-10 xl:hidden",
         isOpen
           ? "opacity-100 pointer-events-auto translate-y-0"
           : "opacity-0 pointer-events-none -translate-y-10",
@@ -172,10 +171,10 @@ function MobileMenuOverlay({ isOpen, setIsOpen, pathname }) {
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-blue-950 font-black text-lg tracking-wider leading-none">
+            <span className="text-white font-black text-lg tracking-wider leading-none">
               PKIMSE
             </span>
-            <span className="text-[7.5px] text-slate-600 tracking-widest uppercase font-extrabold mt-1">
+            <span className="text-[7.5px] text-slate-300 tracking-widest uppercase font-extrabold mt-1">
               KSA Maritime College
             </span>
           </div>
@@ -184,7 +183,7 @@ function MobileMenuOverlay({ isOpen, setIsOpen, pathname }) {
         {/* Close Toggle */}
         <button
           onClick={() => setIsOpen(false)}
-          className="text-slate-650 hover:text-slate-900 p-2.5 rounded-lg bg-slate-100 border border-slate-200 hover:bg-slate-200 transition-all focus:outline-none"
+          className="text-slate-200 hover:text-white p-2.5 rounded-lg bg-blue-900/50 border border-blue-800/40 hover:bg-blue-900 transition-all focus:outline-none"
           aria-label="Close Menu"
         >
           <X className="w-5 h-5" />
@@ -202,8 +201,8 @@ function MobileMenuOverlay({ isOpen, setIsOpen, pathname }) {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={cn(
-                    "inline-flex items-center text-xl sm:text-2xl font-bold tracking-wide text-slate-700 hover:text-orange-600 transition-all duration-300 transform group-hover:scale-105",
-                    isActive && "text-orange-600 scale-105 font-extrabold",
+                    "inline-flex items-center text-xl sm:text-2xl font-bold tracking-wide text-slate-200 hover:text-orange-400 transition-all duration-300 transform group-hover:scale-105",
+                    isActive && "text-orange-400 scale-105 font-extrabold",
                   )}
                 >
                   <span>{link.name}</span>
@@ -218,32 +217,32 @@ function MobileMenuOverlay({ isOpen, setIsOpen, pathname }) {
       </div>
 
       {/* Footer Info & Admissions Button */}
-      <div className="w-full max-w-lg mx-auto space-y-6 pt-6 border-t border-slate-200">
+      <div className="w-full max-w-lg mx-auto space-y-6 pt-6 border-t border-blue-900/45">
         <ApplyButton
           className="w-full py-3.5 text-center justify-center text-xs"
           onClick={() => setIsOpen(false)}
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-600 text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-300 text-sm">
           <a
             href={`tel:${COLLEGE_CONFIG.phone}`}
-            className="flex items-center hover:text-orange-600 transition-colors p-3 rounded-lg bg-slate-50 border border-slate-200 hover:border-slate-350"
+            className="flex items-center hover:text-orange-400 transition-colors p-3 rounded-lg bg-blue-900/20 border border-blue-900/30 hover:border-blue-800/60"
           >
             <div className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center mr-3 text-orange-600 shrink-0">
               <Phone className="w-4 h-4" />
             </div>
-            <span className="font-semibold text-slate-800">
+            <span className="font-semibold text-slate-200">
               {COLLEGE_CONFIG.phone}
             </span>
           </a>
           <a
             href={`mailto:${COLLEGE_CONFIG.email}`}
-            className="flex items-center hover:text-orange-600 transition-colors p-3 rounded-lg bg-slate-50 border border-slate-200 hover:border-slate-350"
+            className="flex items-center hover:text-orange-400 transition-colors p-3 rounded-lg bg-blue-900/20 border border-blue-900/30 hover:border-blue-800/60"
           >
             <div className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center mr-3 text-orange-600 shrink-0">
               <Mail className="w-4 h-4" />
             </div>
-            <span className="font-semibold text-slate-800 truncate">
+            <span className="font-semibold text-slate-200 truncate">
               {COLLEGE_CONFIG.email}
             </span>
           </a>
@@ -299,17 +298,17 @@ export default function Navbar() {
       {/* Main Brand & Navigation bar */}
       <nav
         className={cn(
-          "px-4 md:px-8 transition-all duration-300 ",
+          "px-4 md:px-8 transition-all duration-300",
           scrolled
-            ? "bg-white/95 backdrop-blur-md py-3 "
-            : "bg-white/80 backdrop-blur-sm py-4 ",
+            ? "bg-blue-950/95 backdrop-blur-md py-3 shadow-lg border-b border-blue-900/40"
+            : "bg-blue-950 py-4 border-b border-transparent",
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Logo />
+          <Logo scrolled={scrolled} />
 
           {/* Desktop Section */}
-          <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
+          <div className="hidden xl:flex items-center space-x-4 xl:space-x-8">
             <DesktopLinks pathname={pathname} />
             <ApplyButton />
           </div>
@@ -317,7 +316,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(true)}
-            className="lg:hidden text-slate-700 hover:text-slate-900 p-2.5 rounded-lg border border-slate-200 hover:bg-slate-100 focus:outline-none transition-all"
+            className="xl:hidden text-slate-200 hover:text-white p-2.5 rounded-lg border border-blue-900/50 hover:bg-blue-900/40 focus:outline-none transition-all"
             aria-label="Open Menu"
           >
             <Menu className="w-5 h-5" />

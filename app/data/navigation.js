@@ -2,8 +2,7 @@ export const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Courses", href: "/courses" },
-  { name: "Admissions", href: "/admissions" },
-  { name: "Placements", href: "/placements" },
+  { name: "Admissions & Placements", href: "/admissions" },
   { name: "Campus Life", href: "/campus" },
   { name: "Gallery", href: "/gallery" },
   { name: "News & Events", href: "/news" },
@@ -20,7 +19,7 @@ export const footerLinks = {
   quickLinks: [
     { name: "Admissions 2026", href: "/admissions" },
     { name: "Merchant Navy Careers", href: "/courses" },
-    { name: "Placement Record", href: "/placements" },
+    { name: "Placement Record", href: "/admissions#placements" },
     { name: "Campus Gallery", href: "/gallery" },
     { name: "Latest Announcements", href: "/news" }
   ],

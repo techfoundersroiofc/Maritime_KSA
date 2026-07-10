@@ -34,7 +34,7 @@ export default function Hero() {
           sizes="100vw"
           className="object-cover -scale-x-100 opacity-75 transform transition-transform duration-12000 ease-out"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-white via-white/90 via-white/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-white via-white/90 to-transparent" />
 
         {/* Glowing SaaS blobs */}
         <div className="absolute top-1/4 left-1/4 -translate-x-1/2 w-[350px] h-[350px] bg-orange-550/10 rounded-full blur-[120px] pointer-events-none" />

@@ -1,12 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Anchor,
-  Phone,
-  Mail,
-  MapPin,
-  ExternalLink,
-} from "lucide-react";
+import { Anchor, Phone, Mail, MapPin, ExternalLink } from "lucide-react";
 import { footerLinks } from "@/app/data/navigation";
 import { COLLEGE_CONFIG } from "@/app/constants/config";
 
@@ -14,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#070d19] text-slate-400 border-t border-slate-900/60 pt-20 pb-12 relative overflow-hidden font-jakarta">
       {/* Subtle, elegant dark radial background fade */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900/20 via-[#070d19] to-[#070d19] -z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-slate-900/20 via-[#070d19] to-[#070d19] -z-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -40,7 +34,10 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm leading-relaxed text-slate-400 font-sans">
-              PKIMSE (KSA Maritime College) is a premier institute for Merchant Navy training. Approved by DG Shipping, Government of India, we equip future seafarers with discipline, excellence, and leadership.
+              PKIMSE (KSA Maritime College) is a premier institute for Merchant
+              Navy training. Approved by DG Shipping, Government of India, we
+              equip future seafarers with discipline, excellence, and
+              leadership.
             </p>
             <div className="flex items-center space-x-3 pt-1">
               <a
@@ -51,7 +48,7 @@ export default function Footer() {
                 aria-label="Facebook Page"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z" />
                 </svg>
               </a>
               <a
@@ -61,9 +58,12 @@ export default function Footer() {
                 className="w-9 h-9 rounded-lg border border-slate-900 bg-slate-950 hover:border-orange-550/40 flex items-center justify-center transition-all duration-300 text-slate-400 hover:text-orange-550 shadow-sm"
                 aria-label="Instagram Profile"
               >
-                <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/>
+                <svg
+                  className="w-4 h-4 fill-none stroke-current stroke-2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
                 </svg>
               </a>
               <a
@@ -74,7 +74,7 @@ export default function Footer() {
                 aria-label="LinkedIn Profile"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
               </a>
               <a
@@ -85,7 +85,7 @@ export default function Footer() {
                 aria-label="YouTube Channel"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.107C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.388.556a3.003 3.003 0 0 0-2.11 2.107C0 8.053 0 12 0 12s0 3.947.502 5.837a3.003 3.003 0 0 0 2.11 2.107C4.5 20.5 12 20.5 12 20.5s7.5 0 9.388-.556a3.003 3.003 0 0 0 2.11 2.107C24 15.947 24 12 24 12s0-3.947-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.107C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.388.556a3.003 3.003 0 0 0-2.11 2.107C0 8.053 0 12 0 12s0 3.947.502 5.837a3.003 3.003 0 0 0 2.11 2.107C4.5 20.5 12 20.5 12 20.5s7.5 0 9.388-.556a3.003 3.003 0 0 0 2.11 2.107C24 15.947 24 12 24 12s0-3.947-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
               </a>
             </div>
@@ -93,7 +93,7 @@ export default function Footer() {
 
           {/* Quick Links Column */}
           <div className="lg:pl-6">
-            <h3 className="text-white font-serif italic text-lg tracking-wide border-b border-slate-900 pb-2.5 mb-6">
+            <h3 className="text-white font-serif  text-lg tracking-wide border-b border-slate-900 pb-2.5 mb-6">
               Quick Links
             </h3>
             <ul className="space-y-3.5">
@@ -101,7 +101,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-orange-500 transition-colors duration-300 block w-fit text-slate-400 font-sans relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-orange-550 after:transition-all after:duration-300"
+                    className="text-sm hover:text-orange-500 transition-colors duration-300 block w-fit text-slate-400 font-sans relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-px after:bg-orange-550 after:transition-all after:duration-300"
                   >
                     {link.name}
                   </Link>
@@ -112,7 +112,7 @@ export default function Footer() {
 
           {/* About & Accreditation Column */}
           <div className="lg:pl-4">
-            <h3 className="text-white font-serif italic text-lg tracking-wide border-b border-slate-900 pb-2.5 mb-6">
+            <h3 className="text-white font-serif  text-lg tracking-wide border-b border-slate-900 pb-2.5 mb-6">
               Institution
             </h3>
             <ul className="space-y-3.5">
@@ -120,7 +120,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-orange-500 transition-colors duration-300 block w-fit text-slate-400 font-sans relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1px] after:bg-orange-550 after:transition-all after:duration-300"
+                    className="text-sm hover:text-orange-500 transition-colors duration-300 block w-fit text-slate-400 font-sans relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-px after:bg-orange-550 after:transition-all after:duration-300"
                   >
                     {link.name}
                   </Link>
@@ -131,7 +131,7 @@ export default function Footer() {
 
           {/* Contact Details Column */}
           <div className="flex flex-col space-y-6">
-            <h3 className="text-white font-serif italic text-lg tracking-wide border-b border-slate-900 pb-2.5 mb-6">
+            <h3 className="text-white font-serif  text-lg tracking-wide border-b border-slate-900 pb-2.5 mb-6">
               Admissions Office
             </h3>
             <ul className="space-y-4 text-sm font-sans">
@@ -171,7 +171,8 @@ export default function Footer() {
         <div className="border-t border-slate-900/60 pt-8 flex flex-col md:flex-row items-center justify-between text-xs space-y-4 md:space-y-0">
           <div>
             <p className="text-slate-500 font-medium">
-              © {new Date().getFullYear()} {COLLEGE_CONFIG.name}. All Rights Reserved.
+              © {new Date().getFullYear()} {COLLEGE_CONFIG.name}. All Rights
+              Reserved.
             </p>
             <p className="text-slate-650 mt-1.5 font-medium">
               Developed by{" "}
