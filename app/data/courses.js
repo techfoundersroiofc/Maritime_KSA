@@ -424,7 +424,7 @@ export const courses = [
       "Engine Room Systems & Overhauling Auxiliaries",
       "Standard Onboard Safety & STCW Modules"
     ],
-    image: "/images/courses/nautical-science.png",
+    image: "/images/courses/gp-rating.png",
     seoKeywords: ["gp rating course", "general purpose rating admission", "merchant navy courses after 10th", "gp rating eligibility and fees"],
     supporters: ["Maersk Line", "MSC Ship Management", "V-Ships", "Anglo-Eastern", "Fleet Management", "Synergy Group", "MOL Maritime", "Chevron Shipping"],
     facilities: [
@@ -606,7 +606,7 @@ export const courses = [
       "Survival at Sea & Inflatable Liferafts",
       "Emergency Procedures & Onboard Safety Duties"
     ],
-    image: "/images/courses/marine-engineering.png",
+    image: "/images/courses/basic-stcw.png",
     seoKeywords: ["basic stcw safety training", "bst course details", "stcw courses for indian cdc", "mandatory maritime courses"],
     supporters: ["Maersk Line", "MSC Ship Management", "V-Ships", "Anglo-Eastern", "Fleet Management", "Synergy Group", "MOL Maritime", "Chevron Shipping"],
     facilities: [
