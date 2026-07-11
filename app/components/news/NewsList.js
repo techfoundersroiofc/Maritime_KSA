@@ -1,5 +1,6 @@
 "use client";
 
+// News feed layout with featured announcement and grid items.
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Calendar, ArrowRight, Bell, BookOpen, Award, Compass } from "lucide-react";
