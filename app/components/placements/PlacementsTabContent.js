@@ -111,7 +111,7 @@ export default function PlacementsTabContent() {
               whileHover={{ y: -4, scale: 1.02 }}
             >
               {/* Subtly flash a left-to-right highlight bar on hover */}
-              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/[0.03] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-out" />
+              <span className="absolute inset-0 bg-linear-to-r from-transparent via-orange-500/3 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out" />
               <span className="text-xs sm:text-sm font-black text-blue-950 group-hover:text-orange-650 transition-colors tracking-wide leading-snug">
                 {rec.name}
               </span>

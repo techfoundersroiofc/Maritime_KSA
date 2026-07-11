@@ -47,11 +47,11 @@ export default function AdmissionsPlacementsTabs() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="h-[1px] w-8 bg-orange-500" />
+            <span className="h-px w-8 bg-orange-500" />
             <span className="text-orange-500 font-extrabold uppercase tracking-widest text-[10px] sm:text-xs">
               PKIMSE Career Gateway
             </span>
-            <span className="h-[1px] w-8 bg-orange-500" />
+            <span className="h-px w-8 bg-orange-500" />
           </motion.div>
 
           <motion.h1
