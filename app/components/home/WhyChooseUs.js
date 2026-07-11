@@ -180,12 +180,14 @@ export default function WhyChooseUs() {
             Industry-Approved Infrastructure & Cadres
           </h2>
           <p className="text-slate-650 text-sm sm:text-base leading-relaxed max-w-2xl">
-            From modern simulators to dedicated marine machinery workshops, we provide the D.G. Shipping compliant facilities needed to produce high-caliber merchant navy officers and safety personnel.
+            From modern simulators to dedicated marine machinery workshops, we
+            provide the D.G. Shipping compliant facilities needed to produce
+            high-caliber merchant navy officers and safety personnel.
           </p>
         </motion.div>
 
         {/* Interactive Tabs Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-start mb-20 lg:mb-28">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-start mb-20 lg:mb-28">
           {/* Tab Navigation (Left Column) */}
           <div className="md:col-span-4 flex flex-row md:flex-col gap-3 overflow-x-auto pb-4 md:pb-0 scrollbar-none snap-x snap-mandatory w-full">
             {tabs.map((tab, idx) => {
@@ -211,11 +213,11 @@ export default function WhyChooseUs() {
                     <Icon className="w-5.5 h-5.5" />
                   </div>
                   <div>
-                    <h3 className="font-extrabold text-xs sm:text-sm tracking-wide">
+                    <h3 className="font-semibold text-[18px] tracking-wider">
                       {tab.title}
                     </h3>
                     <span
-                      className={`text-[10px] uppercase tracking-widest mt-1 font-black block ${
+                      className={`text-[10px] uppercase tracking-widest mt-1 font-bold block ${
                         isActive ? "text-orange-400" : "text-slate-400"
                       }`}
                     >
@@ -326,7 +328,8 @@ export default function WhyChooseUs() {
               Cadets Placed with Top International Shipping Lines
             </h3>
             <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-              Our graduates are employed worldwide by leading ship managers, tankers, and cargo fleet companies.
+              Our graduates are employed worldwide by leading ship managers,
+              tankers, and cargo fleet companies.
             </p>
           </div>
 
