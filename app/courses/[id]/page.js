@@ -30,5 +30,5 @@ export default async function CourseDetailPage({ params }) {
     notFound();
   }
 
-  return <CourseDetailClient course={course} />;
+  return <CourseDetailClient course={course} className="py-20" />;
 }

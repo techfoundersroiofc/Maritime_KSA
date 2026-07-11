@@ -90,14 +90,14 @@ export default function CourseList() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4 bg-orange-600 text-white text-[9px] font-bold uppercase tracking-widest px-2.5 py-1 rounded">
                   {course.type}
                 </div>
               </div>
 
               {/* Card Contents */}
-              <div className="p-6 flex-grow flex flex-col justify-between">
+              <div className="p-6 grow flex flex-col justify-between">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-2 text-slate-500 text-xs">
                     <Clock className="w-3.5 h-3.5 text-orange-500" />
