@@ -211,7 +211,7 @@ export default function AdmissionsTabContent() {
             {MEDICAL_NORMS.map((norm, index) => (
               <motion.div
                 key={index}
-                className="flex items-start space-x-3.5 bg-slate-50 border border-slate-150 p-5 rounded-2xl transition-all duration-300 hover:bg-orange-500/[0.02] hover:border-orange-550/20"
+                className="flex items-start space-x-3.5 bg-slate-50 border border-slate-150 p-5 rounded-2xl transition-all duration-300 hover:bg-orange-500/2 hover:border-orange-550/20"
                 whileHover={{ scale: 1.015 }}
               >
                 <CheckCircle2 className="w-5 h-5 text-orange-655 shrink-0 mt-0.5" />
@@ -269,7 +269,7 @@ export default function AdmissionsTabContent() {
           whileHover={{ y: -3 }}
         >
           {/* Decorative background visual sweep */}
-          <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-out" />
+          <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
           <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full blur-xl pointer-events-none" />
 
           <h4 className="text-white font-black text-lg tracking-tight flex items-center justify-center space-x-2">
