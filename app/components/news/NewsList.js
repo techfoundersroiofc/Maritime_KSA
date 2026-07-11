@@ -80,7 +80,7 @@ export default function NewsList() {
       {featuredNews && (
         <motion.div
           variants={fadeInUp}
-          className="bg-white border border-slate-200/80 p-8 sm:p-10 rounded-3xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center shadow-xs hover:shadow-2xl hover:shadow-orange-500/[0.03] hover:border-orange-500/25 transition-all duration-500 group relative overflow-hidden text-left"
+          className="bg-white border border-slate-200/80 p-8 sm:p-10 rounded-3xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center shadow-xs hover:shadow-2xl hover:shadow-orange-500/3 hover:border-orange-500/25 transition-all duration-500 group relative overflow-hidden text-left"
         >
           {/* Diagonal sheen sweep on hover */}
           <span className="absolute inset-0 w-[200%] h-full bg-linear-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out z-20 pointer-events-none" />
@@ -136,7 +136,7 @@ export default function NewsList() {
             <motion.div
               key={news.id}
               variants={fadeInUp}
-              className="bg-white border border-slate-200/80 p-7 rounded-3xl flex flex-col justify-between hover:shadow-2xl hover:shadow-orange-500/[0.02] hover:border-orange-500/25 transition-all duration-500 group relative overflow-hidden text-left"
+              className="bg-white border border-slate-200/80 p-7 rounded-3xl flex flex-col justify-between hover:shadow-2xl hover:shadow-orange-500/2 hover:border-orange-500/25 transition-all duration-500 group relative overflow-hidden text-left"
               whileHover={{ y: -5 }}
             >
               {/* Background watermark */}
@@ -144,7 +144,7 @@ export default function NewsList() {
                 <SecIcon className="w-24 h-24 stroke-[1.2]" />
               </div>
 
-              <div className="space-y-4 relative z-10 flex-grow">
+              <div className="space-y-4 relative z-10 grow">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <span className={`text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-md border ${news.badgeColor}`}>
                     {news.tag}

@@ -118,7 +118,7 @@ export default function CampusRules() {
                 <div
                   className={`w-10 h-10 rounded-xl border flex items-center justify-center ${rule.color} group-hover:scale-110 transition-transform duration-300`}
                 >
-                  <Icon className="w-5 h-5 stroke-[2]" />
+                  <Icon className="w-5 h-5 stroke-2" />
                 </div>
                 <div className="space-y-1.5">
                   <h4 className="text-blue-950 font-black text-sm sm:text-base tracking-tight group-hover:text-orange-655 transition-colors">

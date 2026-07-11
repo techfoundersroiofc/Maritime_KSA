@@ -48,7 +48,7 @@ export default function GalleryGrid() {
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.4 }}
               key={item.id}
-              className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden flex flex-col group hover:border-orange-550/30 hover:shadow-2xl hover:shadow-orange-500/[0.04] transition-all duration-300 relative shadow-2xs"
+              className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden flex flex-col group hover:border-orange-550/30 hover:shadow-2xl hover:shadow-orange-500/4 transition-all duration-300 relative shadow-2xs"
             >
               {/* Corner Gradient Glow Spot */}
               <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-orange-500/5 rounded-full blur-xl group-hover:bg-orange-500/10 group-hover:scale-150 transition-all duration-500 pointer-events-none" />
@@ -65,7 +65,7 @@ export default function GalleryGrid() {
 
                 {/* Skewed Shine Sweep Flash */}
                 <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden">
-                  <div className="absolute inset-y-0 w-2/3 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-[25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-800 ease-out" />
+                  <div className="absolute inset-y-0 w-2/3 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-[-25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-800 ease-out" />
                 </div>
 
                 {/* Category Badge overlay */}
@@ -75,7 +75,7 @@ export default function GalleryGrid() {
               </div>
 
               {/* Info Details Section */}
-              <div className="p-6 flex-grow flex flex-col justify-between space-y-4 relative z-10">
+              <div className="p-6 grow flex flex-col justify-between space-y-4 relative z-10">
                 <div className="space-y-1.5">
                   <h4 className="text-blue-950 font-black text-base tracking-tight leading-snug group-hover:text-orange-655 transition-colors">
                     {item.title}

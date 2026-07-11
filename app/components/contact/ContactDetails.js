@@ -91,7 +91,7 @@ export default function ContactDetails() {
               className="bg-white border border-slate-200/80 p-5 rounded-2xl flex items-start space-x-4 hover:border-orange-500/25 hover:shadow-lg transition-all duration-300 group cursor-default"
             >
               <div className={`w-10 h-10 rounded-xl border flex items-center justify-center shrink-0 ${det.color} group-hover:scale-105 transition-transform duration-300`}>
-                <Icon className="w-5 h-5 stroke-[2]" />
+                <Icon className="w-5 h-5 stroke-2" />
               </div>
               <div className="space-y-1 flex-1">
                 <h4 className="text-sm font-black text-blue-950 uppercase tracking-wider">{det.title}</h4>

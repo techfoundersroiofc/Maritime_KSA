@@ -56,7 +56,7 @@ export default function CampusFacilities() {
           <motion.div
             key={fac.title}
             variants={fadeInUp}
-            className="bg-white border border-slate-200/80 p-8 rounded-3xl flex items-start space-x-6 hover:border-orange-500/35 hover:shadow-2xl hover:shadow-orange-500/[0.04] transition-all duration-500 group cursor-default relative overflow-hidden"
+            className="bg-white border border-slate-200/80 p-8 rounded-3xl flex items-start space-x-6 hover:border-orange-500/35 hover:shadow-2xl hover:shadow-orange-500/4 transition-all duration-500 group cursor-default relative overflow-hidden"
             whileHover={{ y: -6 }}
           >
             {/* 1. Reflective Diagonal Flash Shine Sweep */}
@@ -72,7 +72,7 @@ export default function CampusFacilities() {
               {/* Outer pulse ring */}
               <span className="absolute inset-0 rounded-2xl bg-orange-100/50 scale-100 group-hover:scale-125 group-hover:opacity-0 transition-all duration-500" />
               <div className="relative w-14 h-14 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-655 group-hover:bg-orange-600 group-hover:text-white transition-all duration-500 shadow-xs group-hover:shadow-md group-hover:rotate-6">
-                <Icon className="w-6 h-6 stroke-[2]" />
+                <Icon className="w-6 h-6 stroke-2" />
               </div>
             </div>
 

@@ -57,7 +57,7 @@ export default function ContactMap() {
               return (
                 <div key={idx} className="flex items-start space-x-4 p-4 bg-slate-50 border border-slate-150 rounded-2xl hover:border-orange-500/10 transition-all duration-300">
                   <div className={`w-9 h-9 rounded-xl border flex items-center justify-center shrink-0 ${item.color}`}>
-                    <Icon className="w-4.5 h-4.5 stroke-[2]" />
+                    <Icon className="w-4.5 h-4.5 stroke-2" />
                   </div>
                   <div className="space-y-1">
                     <h4 className="text-xs sm:text-sm font-black text-blue-950 uppercase tracking-wide">
