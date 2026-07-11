@@ -13,6 +13,29 @@ import {
 } from "lucide-react";
 import { recruiters } from "@/app/data/recruiters";
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+const gridContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.05,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 120, damping: 15 },
+  },
+};
+
 export default function WhyChooseUs() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -133,34 +156,40 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="bg-white py-16 sm:py-24 border-t border-slate-200/60 overflow-hidden relative">
+    <section className="bg-white py-20 sm:py-28 border-t border-slate-200/70 overflow-hidden relative">
       {/* Background radial glow */}
       <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-1/4 left-0 w-[300px] h-[300px] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
         {/* Section Header */}
-        <div className="text-left max-w-3xl mb-12 sm:mb-16 space-y-4">
+        <motion.div
+          className="text-left max-w-3xl mb-14 sm:mb-20 space-y-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeInUp}
+        >
           <div className="flex items-center space-x-2">
-            <span className="h-px w-8 bg-orange-600" />
-            <span className="text-orange-600 font-bold uppercase tracking-wider text-[10px] sm:text-xs">
+            <span className="h-0.5 w-8 bg-orange-600 rounded-full" />
+            <span className="text-orange-600 font-extrabold uppercase tracking-wider text-xs sm:text-sm">
               Institutional Excellence
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-blue-950 tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-blue-950 tracking-tight leading-tight">
             Industry-Approved Infrastructure & Cadres
           </h2>
-          <p className="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-2xl">
+          <p className="text-slate-650 text-sm sm:text-base leading-relaxed max-w-2xl">
             From modern simulators to dedicated marine machinery workshops, we
             provide the D.G. Shipping compliant facilities needed to produce
             high-caliber merchant navy officers and safety personnel.
           </p>
-        </div>
+        </motion.div>
 
         {/* Interactive Tabs Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-start mb-20 lg:mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-start mb-20 lg:mb-28">
           {/* Tab Navigation (Left Column) */}
-          <div className="md:col-span-4 flex flex-row md:flex-col gap-3 overflow-x-auto pb-4 md:pb-0 scrollbar-none snap-x snap-mandatory">
+          <div className="md:col-span-4 flex flex-row md:flex-col gap-3 overflow-x-auto pb-4 md:pb-0 scrollbar-none snap-x snap-mandatory w-full">
             {tabs.map((tab, idx) => {
               const Icon = tab.icon;
               const isActive = activeTab === idx;
@@ -168,27 +197,27 @@ export default function WhyChooseUs() {
                 <button
                   key={tab.title}
                   onClick={() => setActiveTab(idx)}
-                  className={`flex items-center space-x-4 p-4 sm:p-5 rounded-xl text-left shrink-0 transition-all duration-300 border snap-center ${
+                  className={`flex items-center space-x-4.5 p-5 rounded-2xl text-left shrink-0 transition-all duration-300 border snap-center group select-none ${
                     isActive
-                      ? "bg-blue-950 border-blue-950 text-white shadow-lg"
-                      : "bg-slate-50 border-slate-200/80 text-slate-600 hover:text-blue-950 hover:bg-slate-100/80"
+                      ? "bg-blue-950 border-blue-950 text-white shadow-lg shadow-blue-950/15"
+                      : "bg-slate-50/70 border-slate-200/80 text-slate-650 hover:text-blue-950 hover:bg-slate-100/50 hover:border-slate-350/70"
                   }`}
                 >
                   <div
-                    className={`w-10 h-10 rounded-lg flex items-center justify-center border shrink-0 transition-colors duration-300 ${
+                    className={`w-11 h-11 rounded-xl flex items-center justify-center border shrink-0 transition-colors duration-300 ${
                       isActive
-                        ? "bg-orange-600 border-orange-500/20 text-white"
-                        : "bg-white border-slate-200 text-slate-500"
+                        ? "bg-orange-600 border-orange-550/20 text-white"
+                        : "bg-white border-slate-200 text-slate-500 group-hover:text-orange-650 group-hover:bg-orange-50 group-hover:border-orange-200/50"
                     }`}
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-5.5 h-5.5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-xs sm:text-sm tracking-wide">
+                    <h3 className="font-semibold text-[18px] tracking-wider">
                       {tab.title}
                     </h3>
                     <span
-                      className={`text-[9px] uppercase tracking-widest mt-0.5 font-bold block ${
+                      className={`text-[10px] uppercase tracking-widest mt-1 font-bold block ${
                         isActive ? "text-orange-400" : "text-slate-400"
                       }`}
                     >
@@ -201,48 +230,57 @@ export default function WhyChooseUs() {
           </div>
 
           {/* Tab Content Panels (Right Column) */}
-          <div className="md:col-span-8 w-full min-h-[460px] flex flex-col justify-between">
+          <div className="md:col-span-8 w-full min-h-[480px] flex flex-col justify-between relative">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -15 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="bg-slate-50/50 border border-slate-200/80 rounded-2xl p-6 sm:p-8 backdrop-blur-xs flex flex-col justify-between shadow-sm hover:border-orange-500/35 transition-all duration-300 grow"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+                className="relative overflow-hidden bg-slate-50/50 border border-slate-200 rounded-3xl p-6 sm:p-9 backdrop-blur-xs flex flex-col justify-between shadow-sm hover:border-orange-500/35 transition-all duration-300 grow"
               >
-                <div className="space-y-6">
+                {/* Active Tab shine sweep overlay */}
+                <motion.div
+                  key={`flash-${activeTab}`}
+                  initial={{ x: "-100%" }}
+                  animate={{ x: "200%" }}
+                  transition={{ duration: 0.9, ease: "easeInOut" }}
+                  className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-[25deg] pointer-events-none z-20"
+                />
+
+                <div className="space-y-6 relative z-10 w-full">
                   {/* Panel Top Title */}
-                  <div className="space-y-2">
-                    <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest block">
+                  <div className="space-y-2.5">
+                    <span className="text-[10px] sm:text-xs font-black text-orange-600 uppercase tracking-widest block">
                       {tabs[activeTab].tagline}
                     </span>
-                    <h3 className="text-xl sm:text-2xl font-black text-blue-950 leading-tight">
+                    <h3 className="text-xl sm:text-3xl font-black text-blue-950 leading-tight">
                       {tabs[activeTab].headline}
                     </h3>
                   </div>
 
                   {/* Panel Description */}
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                  <p className="text-sm sm:text-base text-slate-650 leading-relaxed font-medium">
                     {tabs[activeTab].description}
                   </p>
 
                   {/* Panel Main Content Layout (Splits into Description Features + Factsheet) */}
-                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-6 border-t border-slate-200/60">
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-7 border-t border-slate-200/60 w-full">
                     {/* Left: Key Features (Bullet Points) */}
-                    <div className="lg:col-span-7 space-y-3">
-                      <h4 className="text-[10px] font-bold text-slate-800 uppercase tracking-wider mb-2.5">
+                    <div className="lg:col-span-7 space-y-3.5">
+                      <h4 className="text-[10px] sm:text-xs font-extrabold text-slate-800 uppercase tracking-wider mb-3">
                         Key Capabilities
                       </h4>
                       {tabs[activeTab].features.map((feat) => (
                         <div
                           key={feat}
-                          className="flex items-start space-x-2.5 text-slate-700"
+                          className="flex items-start space-x-3 text-slate-700"
                         >
-                          <span className="w-4 h-4 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5">
-                            <Check className="w-2.5 h-2.5 text-orange-600 stroke-[3]" />
+                          <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+                            <Check className="w-3 h-3 text-orange-600 stroke-[3]" />
                           </span>
-                          <span className="text-[11px] sm:text-xs leading-relaxed font-medium">
+                          <span className="text-xs sm:text-sm leading-relaxed font-medium">
                             {feat}
                           </span>
                         </div>
@@ -250,22 +288,22 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Right: Technical Factsheet Card */}
-                    <div className="lg:col-span-5 w-full bg-white border border-slate-200/60 p-4 rounded-xl shadow-xs self-start">
-                      <h4 className="text-[10px] font-bold text-blue-950 uppercase tracking-wider mb-3 pb-2 border-b border-slate-100 flex items-center">
-                        <CheckCircle2 className="w-4 h-4 text-orange-600 mr-1.5 shrink-0" />
+                    <div className="lg:col-span-5 w-full bg-white border border-slate-200 p-5 rounded-2xl shadow-xs self-start">
+                      <h4 className="text-xs font-black text-blue-950 uppercase tracking-wider mb-4 pb-2 border-b border-slate-100 flex items-center">
+                        <CheckCircle2 className="w-4.5 h-4.5 text-orange-600 mr-2 shrink-0" />
                         {tabs[activeTab].factsheet.title}
                       </h4>
-                      <div className="space-y-2.5">
+                      <div className="space-y-3.5">
                         {tabs[activeTab].factsheet.items.map(
                           (item, itemIdx) => (
                             <div
                               key={itemIdx}
-                              className="flex flex-col space-y-0.5"
+                              className="flex flex-col space-y-1"
                             >
-                              <span className="text-[8px] uppercase tracking-wider text-slate-400 font-bold">
+                              <span className="text-[10px] uppercase tracking-wider text-slate-400 font-extrabold">
                                 {item.label}
                               </span>
-                              <span className="text-[10px] sm:text-[11px] font-black text-blue-950 leading-tight">
+                              <span className="text-xs sm:text-sm font-black text-blue-950 leading-tight">
                                 {item.value}
                               </span>
                             </div>
@@ -281,33 +319,41 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Placements Partner Section */}
-        <div className="border-t border-slate-200/60 pt-16">
-          <div className="text-center mb-10 space-y-2">
-            <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest block">
+        <div className="border-t border-slate-200/60 pt-20">
+          <div className="text-center mb-12 sm:mb-16 space-y-3">
+            <span className="text-xs font-black text-orange-600 uppercase tracking-widest block">
               GLOBAL SHIPPING LINES
             </span>
-            <h3 className="text-xl sm:text-2xl font-black text-blue-950 tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-blue-950 tracking-tight">
               Cadets Placed with Top International Shipping Lines
             </h3>
-            <p className="text-slate-500 text-xs sm:text-sm max-w-lg mx-auto">
+            <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
               Our graduates are employed worldwide by leading ship managers,
               tankers, and cargo fleet companies.
             </p>
           </div>
 
-          {/* Complete 12 Recruiter Logo Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-items-center items-center opacity-95">
+          {/* Complete 12 Recruiter Logo Grid with Staggered Entrance */}
+          <motion.div
+            variants={gridContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4.5 justify-items-center items-center opacity-95 w-full"
+          >
             {recruiters.map((rec) => (
-              <div
+              <motion.div
                 key={rec.name}
-                className="bg-slate-50 border border-slate-200 hover:border-orange-500/35 hover:bg-white p-4.5 rounded-xl text-center w-full min-h-[75px] flex items-center justify-center transition-all duration-300 group hover:-translate-y-0.5 shadow-xs hover:shadow-md cursor-default"
+                variants={itemVariants}
+                whileHover={{ scale: 1.03, y: -2 }}
+                className="bg-slate-50 border border-slate-200 hover:border-orange-500/35 hover:bg-white p-5 rounded-2xl text-center w-full min-h-[80px] flex items-center justify-center transition-all duration-300 group shadow-2xs hover:shadow-md cursor-default select-none"
               >
-                <span className="text-[11px] font-extrabold text-slate-600 group-hover:text-orange-600 transition-colors tracking-wide leading-tight px-1 text-center">
+                <span className="text-xs sm:text-sm font-extrabold text-slate-650 group-hover:text-orange-600 transition-colors tracking-wide leading-tight px-1 text-center">
                   {rec.name}
                 </span>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
