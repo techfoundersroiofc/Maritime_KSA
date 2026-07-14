@@ -3,7 +3,7 @@ export const COLLEGE_CONFIG = {
   brandName: "PKIMSE",
   tagline: "Excellence at Sea, Leadership for Tomorrow",
   groupName: "KSA Group of Institutions",
-  address: "KSA Educational Campus, Bypass Road, Chidambaram, Tamil Nadu - 608001, India",
+  address: "1089 , keerapalayam, Tamil Nadu 608602",
   phone: "+91 93453 36311",
   altPhone: "+91 93453 36312",
   email: "admissions@pkimse.edu.in",
@@ -12,7 +12,7 @@ export const COLLEGE_CONFIG = {
     facebook: "https://facebook.com/pkimse",
     instagram: "https://instagram.com/pkimse",
     linkedin: "https://linkedin.com/company/pkimse",
-    youtube: "https://youtube.com/pkimse"
+    youtube: "https://youtube.com/pkimse",
   },
-  workingHours: "Mon - Sat: 9:00 AM - 5:00 PM"
+  workingHours: "Mon - Sat: 9:00 AM - 5:00 PM",
 };

@@ -10,12 +10,12 @@ const iconMap = {
   0: ShieldCheck,
   1: Award,
   2: Anchor,
-  3: Cpu
+  3: Cpu,
 };
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 const staggerContainer = {
@@ -23,9 +23,9 @@ const staggerContainer = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 export default function Welcome() {
@@ -38,43 +38,56 @@ export default function Welcome() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left: About Intro */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-6 flex flex-col space-y-6 text-left"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            <motion.div variants={fadeInUp} className="flex items-center space-x-2">
+            <motion.div
+              variants={fadeInUp}
+              className="flex items-center space-x-2"
+            >
               <span className="h-px w-8 bg-orange-600" />
               <span className="text-orange-600 font-bold uppercase tracking-wider text-xs">
                 Welcome to PKIMSE
               </span>
             </motion.div>
-            
-            <motion.h2 
+
+            <motion.h2
               variants={fadeInUp}
               className="text-3xl sm:text-4xl font-extrabold text-blue-950 leading-tight"
             >
-              Shaping Disciplined Leaders for Global Maritime Career Opportunities
+              Shaping Disciplined Leaders for Global Maritime Career
+              Opportunities
             </motion.h2>
 
-            <motion.p variants={fadeInUp} className="text-slate-600 text-sm leading-relaxed">
-              PKIMSE (KSA Maritime College) is recognized as one of the{" "}
-              <strong className="text-blue-950 font-bold">
+            <motion.p
+              variants={fadeInUp}
+              className="text-blue-950 text-md leading-relaxed"
+            >
+              PKIMSE (KSA Maritime College) is recognized as one of the
+              <strong className="text-blue-950 font-bold ml-1 ">
                 best marine academies in India
               </strong>{" "}
               and the premier{" "}
               <strong className="text-blue-950 font-bold">
                 merchant navy college in Tamil Nadu
               </strong>
-              . As a cornerstone of the esteemed KSA Group of Institutions, we offer elite
-              maritime training that equips cadets with the skills and discipline needed to excel in the global shipping industry.
+              . As a cornerstone of the esteemed KSA Group of Institutions, we
+              offer elite maritime training that equips cadets with the skills
+              and discipline needed to excel in the global shipping industry.
             </motion.p>
 
-            <motion.p variants={fadeInUp} className="text-slate-600 text-sm leading-relaxed">
-              Our residential campus in Chidambaram is engineered to mimic actual shipboard environments,
-              instilling standard maritime discipline, physical fitness, and hands-on professional expertise. We offer specialized guidance for{" "}
+            <motion.p
+              variants={fadeInUp}
+              className="text-blue-950 text-md leading-relaxed"
+            >
+              Our residential campus in Chidambaram is engineered to mimic
+              actual shipboard environments, instilling standard maritime
+              discipline, physical fitness, and hands-on professional expertise.
+              We offer specialized guidance for{" "}
               <strong className="text-blue-950 font-bold">
                 nautical science admission
               </strong>{" "}
@@ -82,15 +95,21 @@ export default function Welcome() {
               <strong className="text-blue-950 font-bold">
                 marine engineering admission
               </strong>
-              , making PKIMSE the preferred choice for students seeking high-quality{" "}
+              , making PKIMSE the preferred choice for students seeking
+              high-quality{" "}
               <strong className="text-blue-950 font-bold">
-                maritime courses after 12th
+                maritime courses after 10th and 12th
               </strong>
               .
             </motion.p>
 
-            <motion.p variants={fadeInUp} className="text-slate-600 text-sm leading-relaxed">
-              Mentored by veteran Master Mariners and Chief Engineers, our practical training curriculum prepares cadets to secure high-paying{" "}
+            <motion.p
+              variants={fadeInUp}
+              className="text-blue-950 text-md leading-relaxed"
+            >
+              Mentored by veteran Master Mariners and Chief Engineers, our
+              practical training curriculum prepares cadets to secure
+              high-paying{" "}
               <strong className="text-blue-950 font-bold">
                 merchant navy jobs
               </strong>{" "}
@@ -98,23 +117,10 @@ export default function Welcome() {
             </motion.p>
 
             {/* Trust Badges */}
-            <motion.div 
-              variants={fadeInUp} 
+            <motion.div
+              variants={fadeInUp}
               className="pt-4 border-t border-slate-100 flex flex-wrap gap-x-6 gap-y-3"
-            >
-              <div className="flex items-center space-x-2 text-xs font-semibold text-slate-500">
-                <span className="w-1.5 h-1.5 rounded-full bg-orange-650" />
-                <span>DG Shipping Approved</span>
-              </div>
-              <div className="flex items-center space-x-2 text-xs font-semibold text-slate-500">
-                <span className="w-1.5 h-1.5 rounded-full bg-orange-655" />
-                <span>A1 Audited Quality</span>
-              </div>
-              <div className="flex items-center space-x-2 text-xs font-semibold text-slate-500">
-                <span className="w-1.5 h-1.5 rounded-full bg-orange-655" />
-                <span>ISO 9001:2015 Certified</span>
-              </div>
-            </motion.div>
+            ></motion.div>
 
             <motion.div variants={fadeInUp} className="pt-2">
               <NextLink
@@ -128,7 +134,7 @@ export default function Welcome() {
           </motion.div>
 
           {/* Right: Key Highlights Grid */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6"
             initial="hidden"
             whileInView="visible"
@@ -146,14 +152,14 @@ export default function Welcome() {
                   className="bg-slate-50/70 border border-slate-200/80 p-6 rounded-2xl relative hover:border-orange-500/30 hover:bg-white hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col justify-between"
                 >
                   <div>
-                    <div className="w-11 h-11 rounded-xl bg-orange-600/10 border border-orange-500/10 group-hover:border-orange-500/20 group-hover:bg-orange-500/20 flex items-center justify-center text-orange-650 mb-4 transition-all duration-300">
+                    <div className="w-11 h-11 rounded-xl bg-orange-600 border border-orange-500/10 group-hover:border-orange-500 group-hover:bg-orange-500 group-hover:text-white flex items-center justify-center text-white mb-4 transition-all duration-300">
                       <Icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <h3 className="text-blue-950 font-bold text-sm tracking-wide mb-2 group-hover:text-orange-650 transition-colors">
                       {hl.title}
                     </h3>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed mt-1">
+                  <p className="text-xs text-blue-950 leading-relaxed mt-1">
                     {hl.description}
                   </p>
                 </motion.div>

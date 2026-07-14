@@ -117,7 +117,7 @@ export default function FeaturedCourses() {
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-blue-950 tracking-tight leading-tight">
               DG Shipping Approved Training & Safety Courses
             </h2>
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+            <p className="text-blue-950 text-sm sm:text-base leading-relaxed">
               Kickstart your career at sea with our fully accredited pre-sea
               rating and mandatory modular safety programs.
             </p>
@@ -209,7 +209,7 @@ export default function FeaturedCourses() {
                       {course.title}
                     </h3>
 
-                    <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-6 font-medium">
+                    <p className="text-sm sm:text-[15px] text-blue-950 leading-relaxed mb-6 font-medium">
                       {course.overview}
                     </p>
 
@@ -217,7 +217,7 @@ export default function FeaturedCourses() {
                     <div className="grid grid-cols-2 gap-4 mb-6 bg-slate-50/80 p-5 rounded-2xl border border-slate-200/60">
                       {meta.specs.map((spec, specIdx) => (
                         <div key={specIdx} className="flex flex-col space-y-1">
-                          <span className="text-[10px] uppercase tracking-wider text-slate-400 font-extrabold">
+                          <span className="text-[10px] uppercase tracking-wider text-black font-extrabold">
                             {spec.label}
                           </span>
                           <span className="text-xs sm:text-sm font-black text-blue-950 truncate">
@@ -229,7 +229,7 @@ export default function FeaturedCourses() {
 
                     {/* Bulleted and Highlighted Eligibility Section */}
                     <div className="border-t border-slate-100 pt-6">
-                      <h4 className="text-xs font-black text-slate-800 uppercase tracking-widest mb-4 flex items-center">
+                      <h4 className="text-xs font-black text-slate-900 uppercase tracking-widest mb-4 flex items-center">
                         <GraduationCap className="w-5 h-5 text-orange-600 mr-2 shrink-0" />
                         Academic Eligibility Criteria
                       </h4>
@@ -238,7 +238,7 @@ export default function FeaturedCourses() {
                         {meta.eligibilityPoints.map((point, idx) => (
                           <li
                             key={idx}
-                            className="flex items-start space-x-3 text-xs sm:text-sm leading-relaxed text-slate-600 font-medium"
+                            className="flex items-start space-x-3 text-xs sm:text-sm leading-relaxed text-black font-medium"
                           >
                             <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                               <Check className="w-3 h-3 text-orange-600 stroke-3" />
@@ -248,7 +248,9 @@ export default function FeaturedCourses() {
                                 {point.text}
                               </span>
                             ) : (
-                              <span>{point.text}</span>
+                              <span className="text-black/90">
+                                {point.text}
+                              </span>
                             )}
                           </li>
                         ))}

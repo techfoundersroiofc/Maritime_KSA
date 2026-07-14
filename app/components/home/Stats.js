@@ -150,7 +150,7 @@ export default function Stats() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-wide">
             Our Legacy in Numbers
           </h2>
-          <p className="text-white/60 text-sm sm:text-md mt-2 tracking-wide">
+          <p className="text-white/80 text-sm sm:text-md mt-2 tracking-wide">
             Over a decade of training elite maritime leaders who navigate global
             waterways.
           </p>
