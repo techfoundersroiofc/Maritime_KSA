@@ -179,7 +179,7 @@ export default function WhyChooseUs() {
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-blue-950 tracking-tight leading-tight">
             Industry-Approved Infrastructure & Cadres
           </h2>
-          <p className="text-slate-650 text-sm sm:text-base leading-relaxed max-w-2xl">
+          <p className="text-blue-950 text-sm sm:text-base leading-relaxed max-w-2xl">
             From modern simulators to dedicated marine machinery workshops, we
             provide the D.G. Shipping compliant facilities needed to produce
             high-caliber merchant navy officers and safety personnel.
@@ -207,7 +207,7 @@ export default function WhyChooseUs() {
                     className={`w-11 h-11 rounded-xl flex items-center justify-center border shrink-0 transition-colors duration-300 ${
                       isActive
                         ? "bg-orange-600 border-orange-550/20 text-white"
-                        : "bg-white border-slate-200 text-slate-500 group-hover:text-orange-650 group-hover:bg-orange-50 group-hover:border-orange-200/50"
+                        : "bg-orange-600 border-white  text-white group-hover:text-orange-650 group-hover:bg-orange-500 group-hover:border-orange-200/50"
                     }`}
                   >
                     <Icon className="w-5.5 h-5.5" />
@@ -218,7 +218,7 @@ export default function WhyChooseUs() {
                     </h3>
                     <span
                       className={`text-[10px] uppercase tracking-widest mt-1 font-bold block ${
-                        isActive ? "text-orange-400" : "text-slate-400"
+                        isActive ? "text-orange-400" : "text-blue-950"
                       }`}
                     >
                       {tab.tagline}
@@ -261,7 +261,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   {/* Panel Description */}
-                  <p className="text-sm sm:text-base text-slate-650 leading-relaxed font-medium">
+                  <p className="text-sm sm:text-base text-blue-950 leading-relaxed font-medium">
                     {tabs[activeTab].description}
                   </p>
 
@@ -275,7 +275,7 @@ export default function WhyChooseUs() {
                       {tabs[activeTab].features.map((feat) => (
                         <div
                           key={feat}
-                          className="flex items-start space-x-3 text-slate-700"
+                          className="flex items-start space-x-3 text-blue-950"
                         >
                           <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                             <Check className="w-3 h-3 text-orange-600 stroke-[3]" />
@@ -300,7 +300,7 @@ export default function WhyChooseUs() {
                               key={itemIdx}
                               className="flex flex-col space-y-1"
                             >
-                              <span className="text-[10px] uppercase tracking-wider text-slate-400 font-extrabold">
+                              <span className="text-[10px] uppercase tracking-wider text-black font-extrabold">
                                 {item.label}
                               </span>
                               <span className="text-xs sm:text-sm font-black text-blue-950 leading-tight">
@@ -316,44 +316,6 @@ export default function WhyChooseUs() {
               </motion.div>
             </AnimatePresence>
           </div>
-        </div>
-
-        {/* Placements Partner Section */}
-        <div className="border-t border-slate-200/60 pt-20">
-          <div className="text-center mb-12 sm:mb-16 space-y-3">
-            <span className="text-xs font-black text-orange-600 uppercase tracking-widest block">
-              GLOBAL SHIPPING LINES
-            </span>
-            <h3 className="text-2xl sm:text-3xl font-black text-blue-950 tracking-tight">
-              Cadets Placed with Top International Shipping Lines
-            </h3>
-            <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-              Our graduates are employed worldwide by leading ship managers,
-              tankers, and cargo fleet companies.
-            </p>
-          </div>
-
-          {/* Complete 12 Recruiter Logo Grid with Staggered Entrance */}
-          <motion.div
-            variants={gridContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4.5 justify-items-center items-center opacity-95 w-full"
-          >
-            {recruiters.map((rec) => (
-              <motion.div
-                key={rec.name}
-                variants={itemVariants}
-                whileHover={{ scale: 1.03, y: -2 }}
-                className="bg-slate-50 border border-slate-200 hover:border-orange-500/35 hover:bg-white p-5 rounded-2xl text-center w-full min-h-[80px] flex items-center justify-center transition-all duration-300 group shadow-2xs hover:shadow-md cursor-default select-none"
-              >
-                <span className="text-xs sm:text-sm font-extrabold text-slate-650 group-hover:text-orange-600 transition-colors tracking-wide leading-tight px-1 text-center">
-                  {rec.name}
-                </span>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </div>
     </section>

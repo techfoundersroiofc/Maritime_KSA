@@ -32,9 +32,6 @@ export default function Footer() {
                 <span className="text-white font-serif tracking-wider text-2xl sm:text-3xl leading-none font-bold">
                   PKIMSE
                 </span>
-                <span className="text-[9px] sm:text-[10px] text-orange-500 tracking-widest uppercase font-black mt-1.5">
-                  KSA Maritime College
-                </span>
               </div>
             </Link>
 
@@ -202,8 +199,9 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <p className="text-sm sm:text-[15px] text-slate-450 font-medium tracking-wide">
-              © {new Date().getFullYear()} PKIMSE KSA Maritime College. All
+            <p className="text-sm sm:text-[15px] text-slate-450 font-medium tracking-wide mr-1">
+              © {new Date().getFullYear()} PKIMSE Maritime College |
+              <span className="ml-1">KSA Group of Institutions.</span> All
               Rights Reserved.
             </p>
             <div className="text-sm sm:text-[15px] text-slate-350 font-semibold flex items-center justify-center space-x-2 mt-2 bg-[#09101d]/60 px-6 py-3 rounded-full border border-slate-900/80 shadow-lg max-w-fit mx-auto">

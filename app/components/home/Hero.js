@@ -158,7 +158,7 @@ export default function Hero() {
   }, [isPlaying, handleNext]);
 
   return (
-    <section className="relative min-h-[92vh] lg:min-h-[98vh] flex items-center justify-center overflow-hidden bg-slate-900 py-16 md:py-24">
+    <section className="relative py-5 flex items-center justify-center overflow-hidden bg-slate-900 ">
       {/* Background Image Carousel with Ken Burns Zoom Effect */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <AnimatePresence mode="popLayout">
