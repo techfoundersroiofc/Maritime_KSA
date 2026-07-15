@@ -55,7 +55,7 @@ export default function Amenities() {
           <h2 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight leading-tight">
             Explore Our Campus Amenities & Facilities
           </h2>
-          <p className="text-slate-655 text-sm max-w-xl mx-auto leading-relaxed">
+          <p className="text-blue-950 text-md font-semibold max-w-xl mx-auto leading-relaxed">
             Our state-of-the-art infrastructure is custom-built to simulate
             modern shipboard environments and seafarer lifestyles.
           </p>

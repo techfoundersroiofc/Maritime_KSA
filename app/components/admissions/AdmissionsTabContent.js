@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { CheckCircle2, Heart, Activity, ArrowRight, Zap } from "lucide-react";
 import { cn } from "@/app/lib/utils";
 
-// Structured Admissions timeline content
 const ADMISSION_STEPS = [
   {
     id: 1,
@@ -17,14 +16,6 @@ const ADMISSION_STEPS = [
   },
   {
     id: 2,
-    title: "Qualify the IMU-CET Written Exam",
-    badge: "Entrance Test",
-    badgeColor: "text-blue-800 bg-blue-50",
-    description:
-      "For degree programs (B.Sc, B.Tech) and DNS, qualifying the Indian Maritime University Common Entrance Test (IMU-CET) is mandatory. Registration typically commences in April/May annually.",
-  },
-  {
-    id: 3,
     title: "Submit Online College Application",
     badge: "Registration",
     badgeColor: "text-emerald-800 bg-emerald-50",
@@ -32,7 +23,7 @@ const ADMISSION_STEPS = [
       "Fill out the enrollment query or physical application form. Submit official transcripts, pass certificates, birth proof, and identification documents for verification.",
   },
   {
-    id: 4,
+    id: 3,
     title: "Aptitude Screening & Panel Interview",
     badge: "Selection",
     badgeColor: "text-purple-800 bg-purple-50",
@@ -40,7 +31,7 @@ const ADMISSION_STEPS = [
       "Shortlisted candidates must clear the PKIMSE proctored aptitude test covering PCM and English fundamentals, followed by a one-on-one personal interview with maritime captains and faculty.",
   },
   {
-    id: 5,
+    id: 4,
     title: "DGS Approved Medical Fitness Test",
     badge: "Medical check",
     badgeColor: "text-amber-800 bg-amber-50",
@@ -278,7 +269,7 @@ export default function AdmissionsTabContent() {
           </h4>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
             Connect with our certified admissions counselors to resolve doubts
-            about sponsorships, hostel bookings, or bank study loans.
+            about eligibility requirements, hostel bookings, or bank study loans.
           </p>
           <Link
             href="/contact"

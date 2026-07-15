@@ -28,21 +28,21 @@ const staggerContainer = {
 export default function WhyChoose() {
   const reasons = [
     {
-      title: "DG Shipping Approved & A1 Graded",
+      title: "DG Shipping Approved",
       description:
         "Fully approved by the Ministry of Ports, Shipping and Waterways, Government of India, conforming to ISO 9001:2015 standards audited by DNV GL.",
       icon: ShieldCheck,
       color: "blue",
     },
     {
-      title: "Veteran Faculty Mentorship",
+      title: "Faculty Mentorship",
       description:
         "Mentorship by seasoned Master Mariners and Chief Engineers with decades of global sailing and academic teaching experience.",
       icon: Users,
       color: "orange",
     },
     {
-      title: "Simulated Shipboard Routine",
+      title: "Simulated Shipboard Environment",
       description:
         "A structured, semi-military residential campus with daily parades, drills, and physical training designed to prepare cadets for sea life.",
       icon: Ship,
@@ -56,14 +56,14 @@ export default function WhyChoose() {
       color: "orange",
     },
     {
-      title: "Heavy Duty Workshop",
+      title: "Technical Labs and Workshops",
       description:
         "Cadets get to dismantle and rebuild actual ship auxiliary diesel engines, pumps, air compressors, and purifiers in our marine labs.",
       icon: Anchor,
       color: "blue",
     },
     {
-      title: "Strong Placement Track Record",
+      title: "Placement Support",
       description:
         "Consistent placement records with top global ship owners, managers, and shipping agents on large international merchant vessels.",
       icon: Award,
@@ -90,7 +90,7 @@ export default function WhyChoose() {
           <h2 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight leading-tight">
             Why Should Students Choose PKIMSE?
           </h2>
-          <p className="text-slate-655 text-sm max-w-xl mx-auto leading-relaxed">
+          <p className="text-blue-950 text-md font-semibold max-w-xl mx-auto leading-relaxed">
             We provide a complete, industry-compliant ecosystem designed to
             transform young cadets into confident, highly-skilled maritime
             professionals.
@@ -161,7 +161,7 @@ export default function WhyChoose() {
                   </h3>
 
                   {/* Card Description */}
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
+                  <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-medium">
                     {reason.description}
                   </p>
                 </div>

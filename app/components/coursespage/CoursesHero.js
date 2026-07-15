@@ -42,7 +42,7 @@ export default function CoursesHero() {
             >
               <Compass className="w-3.5 h-3.5 animate-spin-slow" />
               <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest">
-                KSA Maritime College
+                PKIMSE Maritime College
               </span>
             </motion.div>
 
@@ -56,7 +56,7 @@ export default function CoursesHero() {
 
             <motion.p
               variants={fadeInUp}
-              className="text-slate-650 text-sm sm:text-base leading-relaxed max-w-xl font-medium"
+              className="text-blue-950 text-sm sm:text-base leading-relaxed max-w-xl font-medium"
             >
               Kickstart your career in the Merchant Navy. Perunthalaivar
               Kamarajar Institute of Maritime Science and Engineering (PKIMSE)
@@ -78,7 +78,7 @@ export default function CoursesHero() {
                   <h4 className="font-extrabold text-sm text-blue-950 uppercase tracking-wide">
                     100% Approved Curriculum
                   </h4>
-                  <p className="text-xs text-slate-500 mt-0.5 font-medium">
+                  <p className="text-xs text-blue-950 mt-0.5 font-medium">
                     Conforming to the latest D.G. Shipping guidelines and
                     international STCW standards.
                   </p>
@@ -91,9 +91,9 @@ export default function CoursesHero() {
                 </div>
                 <div>
                   <h4 className="font-extrabold text-sm text-blue-950 uppercase tracking-wide">
-                    Residential Cadet Regime
+                    Residential student Regime
                   </h4>
-                  <p className="text-xs text-slate-500 mt-0.5 font-medium">
+                  <p className="text-xs text-blue-950 mt-0.5 font-medium">
                     Rigorous practical workshop training and simulated shipboard
                     environment.
                   </p>

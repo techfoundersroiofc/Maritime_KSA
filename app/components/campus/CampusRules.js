@@ -83,11 +83,11 @@ export default function CampusRules() {
 
           <div className="space-y-3">
             <h3 className="text-2xl font-black tracking-tight leading-tight">
-              Cadet Code of Conduct
+              Student Code of Conduct
             </h3>
             <p className="text-xs sm:text-sm text-slate-350 leading-relaxed font-medium">
-              All pre-sea programs are strictly residential. Cadets are required
-              to live in college hostels, wear uniforms, and adhere to
+              All pre-sea programs are strictly residential. Students are
+              required to live in college hostels, wear uniforms, and adhere to
               military-grade discipline. Leave is only granted under exceptional
               circumstances.
             </p>

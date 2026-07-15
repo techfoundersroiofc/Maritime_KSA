@@ -102,8 +102,8 @@ export default function InquiryCTA() {
               </h2>
               <p className="text-blue-950 text-md leading-relaxed font-normal">
                 Have questions about sponsorships, eligibility, IMU-CET, or
-                cadet life? Submit an enquiry and our admissions counselor will
-                guide you through the process.
+                student life? Submit an enquiry and our admissions counselor
+                will guide you through the process.
               </p>
             </div>
 

@@ -80,7 +80,7 @@ export const courses = [
     ],
     image: "/images/courses/nautical-science.png",
     seoKeywords: ["bsc nautical science admission", "nautical science college in india", "merchant navy courses after 12th science"],
-    supporters: ["Maersk Line", "NYK Line", "MSC Shipping", "V-Ships", "Chevron", "Bernhard Schulte", "Synergy Group", "Fleet Management"],
+    supporters: ["Container Fleet", "Bulk Carriers", "Oil Tankers", "Chemical Tankers", "LPG/LNG Carriers", "Offshore Support", "General Cargo", "Ro-Ro Vessels"],
     facilities: [
       { title: "Advanced Bridge Simulator", desc: "Fully immersive 360-degree navigation simulator replicating various ports and weather conditions." },
       { title: "Seamanship & Rigging Lab", desc: "Hands-on training in knots, rope splicing, anchor handling, and rigging." },
@@ -168,7 +168,7 @@ export const courses = [
     ],
     image: "/images/courses/marine-engineering.png",
     seoKeywords: ["marine engineering course details", "marine engineering admission", "marine engineering college in india"],
-    supporters: ["Maersk Line", "Anglo-Eastern", "Fleet Management", "Synergy Group", "MOL Maritime", "Chevron", "V-Ships", "Executive Ship Management"],
+    supporters: ["Container Fleet", "Bulk Carriers", "Oil Tankers", "Chemical Tankers", "LPG/LNG Carriers", "Offshore Support", "General Cargo", "Ro-Ro Vessels"],
     facilities: [
       { title: "Full Scale Marine Engine Room", desc: "Realistic operational ship engine room with main diesel propulsion and auxiliary generators." },
       { title: "Machine & Lathe Shop", desc: "Extensive machining workshop for cutting, turning, welding, and overhauling machine parts." },
@@ -180,13 +180,13 @@ export const courses = [
     slug: "diploma-nautical-science",
     title: "Diploma in Nautical Science (DNS)",
     duration: "1 Year (2 Semesters) + 18 Months onboard training",
-    type: "Sponsorship-Based Program",
-    overview: "The 1-year Diploma in Nautical Science (DNS) leads to a B.Sc. Nautical Science degree after completing 18 months of sea-service and passing the structured shipboard training program. DNS is highly sought after because it requires pre-selection sponsorship by a reputed shipping company before the course begins, ensuring 100% placement.",
+    type: "Pre-Sea Training Program",
+    overview: "The 1-year Diploma in Nautical Science (DNS) leads to a B.Sc. Nautical Science degree after completing 18 months of sea-service and passing the structured shipboard training program. DNS is highly sought after for its rigorous practical syllabus and standard career path leading to a Deck Officer license.",
     accreditation: "Approved by the Directorate General of Shipping (DGS), Ministry of Shipping, Government of India. Approval No: TR/A/15/2001",
     department: "Deck Department",
-    entranceTest: "IMU-CET + Shipping Company Selection Process",
+    entranceTest: "IMU-CET Admission Process",
     commencement: [
-      { batch: "August 2026 Batch", status: "Sponsorship interviews running", active: true },
+      { batch: "August 2026 Batch", status: "Admissions running", active: true },
       { batch: "February 2027 Batch", status: "Applications open 15th Nov 2026", active: false }
     ],
     eligibility: {
@@ -200,7 +200,7 @@ export const courses = [
         { text: "OR Passed B.Sc. with Physics/Maths/Chemistry with minimum 55% aggregate.", highlight: false },
         { text: "OR Passed B.E./B.Tech degree from a recognized university with minimum 50% aggregate.", highlight: false },
         { text: "Minimum 50% marks in English at 10th, 12th, or Degree level.", highlight: true },
-        { text: "Must qualify in the IMU-CET exam and obtain Sponsorship from a DGS-approved shipping line.", highlight: true }
+        { text: "Must qualify in the IMU-CET exam and meet all academic/medical requirements.", highlight: true }
       ],
       age: [
         { text: "Maximum Age: 25 Years at the time of course commencement.", highlight: true },
@@ -212,7 +212,6 @@ export const courses = [
       ]
     },
     admissionProcess: [
-      "Apply and get selected for Sponsorship by a DGS-approved shipping company.",
       "Appear and qualify in the IMU-CET written test.",
       "Complete registration on the PKIMSE application portal.",
       "Clear medical fitness test by an authorized DGS doctor."
@@ -222,23 +221,23 @@ export const courses = [
       tuition: "₹2,95,000",
       caution: "₹10,000 (Refundable)",
       total: "₹3,05,000",
-      note: "Fee covers Tuition, Lodging, Boarding, Uniforms, and pre-sea course materials. 18-month sea-service training is sponsored/stipend-paying.",
+      note: "Fee covers Tuition, Lodging, Boarding, Uniforms, and pre-sea course materials. Onboard training duration is subject to shipping guidelines.",
       discount: "₹25,000 Female candidate discount"
     },
     withdrawalPolicy: {
       schedule: [
-        { period: "Before sponsorship agreement signing", refund: "100% fee refund minus ₹10,000 processing fee" },
-        { period: "Post agreement, before batch start", refund: "80% fee refund, shipping company replacement rule applies" },
-        { period: "After course start", refund: "Refunds subject to shipping company sponsorship terms. Caution deposit refunded." }
+        { period: "Before admission confirmation", refund: "100% fee refund minus ₹10,000 processing fee" },
+        { period: "Post confirmation, before batch start", refund: "80% fee refund" },
+        { period: "After course start", refund: "Caution deposit refunded only. No tuition refund." }
       ],
       notes: [
-        "DNS is a highly regulated sponsorship program. Withdrawal rules are coordinated directly with the sponsoring shipping line."
+        "DNS is a highly regulated pre-sea program. Withdrawal rules comply with DGS guidelines."
       ]
     },
     careerPath: "1-Year Pre-Sea training -> 18 Months Sea Training (Cadet) -> Pass Second Mate exam -> Third Officer -> Second Officer -> Chief Officer -> Captain.",
     careerProgression: [
       { title: "Pre-Sea Cadet", desc: "1-Year Pre-Sea academic and practical training on campus" },
-      { title: "Sponsor Cadet", desc: "18 Months paid onboard training on sponsor's commercial vessels. Stipend: $400 - $800/month" },
+      { title: "Deck Cadet", desc: "18 Months paid onboard training on commercial merchant vessels." },
       { title: "Third Officer", desc: "Pass Second Mate CoC exams. Sail as deck watchkeeper. Earn ₹2L - ₹3.5L/month" },
       { title: "Chief Officer", desc: "Progressive ranks with sea-time and class exams. Earn ₹5L - ₹7.5L/month" },
       { title: "Captain", desc: "Command container, tanker, or cruise ships globally. Earn ₹9L+/month" }
@@ -252,8 +251,8 @@ export const courses = [
       "Marine Communications & Safety Drills"
     ],
     image: "/images/courses/dns.png",
-    seoKeywords: ["diploma in nautical science dns", "merchant navy course with placement", "dns sponsorship admission"],
-    supporters: ["Maersk Line", "MSC Shipping", "NYK Line", "Synergy Group", "Anglo-Eastern", "Fleet Management", "MOL Maritime", "Bernhard Schulte"],
+    seoKeywords: ["diploma in nautical science dns", "merchant navy course with placement", "dns admission"],
+    supporters: ["Container Fleet", "Bulk Carriers", "Oil Tankers", "Chemical Tankers", "LPG/LNG Carriers", "Offshore Support", "General Cargo", "Ro-Ro Vessels"],
     facilities: [
       { title: "Simulated Cargo Console", desc: "Detailed cargo pumping and loading computer simulators for tankers and bulk carriers." },
       { title: "Seamanship Mast & Rigging Area", desc: "Full scale outdoor mast and rigging mockup for rope climbs and working at heights." },
@@ -336,7 +335,7 @@ export const courses = [
     ],
     image: "/images/courses/marine-engineering.png",
     seoKeywords: ["graduate marine engineering gme", "marine engineering after mechanical", "gme admission 2026"],
-    supporters: ["Maersk Line", "V-Ships", "Anglo-Eastern", "Fleet Management", "Synergy Group", "MOL Maritime", "Chevron", "Executive Ship Management"],
+    supporters: ["Container Fleet", "Bulk Carriers", "Oil Tankers", "Chemical Tankers", "LPG/LNG Carriers", "Offshore Support", "General Cargo", "Ro-Ro Vessels"],
     facilities: [
       { title: "Diesel Propulsion Workshop", desc: "Large engine overhauling workspace featuring structural diesel blocks and marine auxiliary gear." },
       { title: "Marine Auxiliary Lab", desc: "Operational boilers, oil-water separators, pumps, and water purifiers for hands-on drills." },
@@ -426,7 +425,7 @@ export const courses = [
     ],
     image: "/images/courses/gp-rating.png",
     seoKeywords: ["gp rating course", "general purpose rating admission", "merchant navy courses after 10th", "gp rating eligibility and fees"],
-    supporters: ["Maersk Line", "MSC Ship Management", "V-Ships", "Anglo-Eastern", "Fleet Management", "Synergy Group", "MOL Maritime", "Chevron Shipping"],
+    supporters: ["Container Fleet", "Bulk Carriers", "Oil Tankers", "Chemical Tankers", "LPG/LNG Carriers", "Offshore Support", "General Cargo", "Ro-Ro Vessels"],
     facilities: [
       { title: "Seamanship & Rigging Lab", desc: "Hands-on ropework, knotting, rigging, canvas sewing, and mechanical advantage rigging." },
       { title: "Engine Fitting Workshop", desc: "Practical overhauling of pumps, valves, piping systems, and dismantling auxiliary diesel engines." },
@@ -509,7 +508,7 @@ export const courses = [
     ],
     image: "/images/courses/marine-engineering.png",
     seoKeywords: ["electro technical officer course", "eto admission 2026", "ship electrical engineer jobs"],
-    supporters: ["Maersk Line", "V-Ships", "Anglo-Eastern", "Fleet Management", "Synergy Group", "MOL Maritime", "Chevron", "Executive Ship Management"],
+    supporters: ["Container Fleet", "Bulk Carriers", "Oil Tankers", "Chemical Tankers", "LPG/LNG Carriers", "Offshore Support", "General Cargo", "Ro-Ro Vessels"],
     facilities: [
       { title: "High Voltage Training Panel", desc: "DGS approved 6.6 KV high-voltage switchboard and simulation panel for breaker safety training." },
       { title: "PLC & Microcontroller Lab", desc: "Automated controls testing lab with programmable logic controllers and sensors simulation." },
@@ -608,7 +607,7 @@ export const courses = [
     ],
     image: "/images/courses/basic-stcw.png",
     seoKeywords: ["basic stcw safety training", "bst course details", "stcw courses for indian cdc", "mandatory maritime courses"],
-    supporters: ["Maersk Line", "MSC Ship Management", "V-Ships", "Anglo-Eastern", "Fleet Management", "Synergy Group", "MOL Maritime", "Chevron Shipping"],
+    supporters: ["Container Fleet", "Bulk Carriers", "Oil Tankers", "Chemical Tankers", "LPG/LNG Carriers", "Offshore Support", "General Cargo", "Ro-Ro Vessels"],
     facilities: [
       { title: "Fire Training Ground", desc: "Dedicated ground with fire smoke chambers, fuel pans, and pressurized hoses for live firefighting exercises." },
       { title: "Wet Survival Pool", desc: "Large deep pool equipped with marine life rafts, thermal suits, life buoys, and diving platforms." },

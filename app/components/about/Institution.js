@@ -34,7 +34,7 @@ export default function Institution() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/hero-bg.png"
+            src="/images/hero/img1.jpg"
             alt="PKIMSE College Campus Background"
             fill
             priority
@@ -42,8 +42,8 @@ export default function Institution() {
             className="object-cover object-center"
           />
           {/* Deep Navy/Black Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-950/80 to-blue-950/95 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-transparent to-white" />
+          <div className="absolute inset-0 bg-linear-to-r from-blue-950/95 via-blue-950/80 to-blue-950/95 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-transparent to-white" />
         </div>
 
         {/* Content */}
@@ -74,7 +74,7 @@ export default function Institution() {
 
             <motion.p
               variants={fadeInUp}
-              className="text-slate-200 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed drop-shadow-xs"
+              className="text-blue-100/90 text-md sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed drop-shadow-xs"
             >
               PKIMSE is a premier maritime training academy under the
               prestigious KSA Group of Institutions, dedicated to forging
@@ -119,7 +119,7 @@ export default function Institution() {
                   practice. Today, we are recognized as a premier destination
                   for students pursuing careers in the merchant navy.
                 </p>
-                <p className="text-slate-655 text-sm sm:text-base leading-relaxed">
+                <p className="text-blue-950 text-sm sm:text-base leading-relaxed">
                   Our residential campus mimics shipboard environments,
                   preparing cadet officers to cope with long voyages,
                   emergencies, cargo operations, and engineering watchkeeping.
@@ -139,26 +139,26 @@ export default function Institution() {
                   </div>
                   <div>
                     <h4 className="font-black text-sm text-blue-950 uppercase tracking-wide">
-                      Structured Cadet Life
+                      Structured Student Life
                     </h4>
                     <p className="text-xs text-slate-550 mt-0.5">
-                      Rigorous, disciplined regime that builds character and
-                      seafarer leadership.
+                      Disciplined regime that builds character and seafarer
+                      leadership.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-3.5">
                   <div className="w-11 h-11 rounded-xl bg-orange-50 border border-orange-100/75 flex items-center justify-center text-orange-600 shrink-0">
-                    <Ship className="w-5.5 h-5.5" />
+                    <ShieldCheck className="w-5.5 h-5.5" />
                   </div>
                   <div>
                     <h4 className="font-black text-sm text-blue-950 uppercase tracking-wide">
-                      Global Sailing Pathways
+                      DGS Approved Training
                     </h4>
                     <p className="text-xs text-slate-550 mt-0.5">
-                      Direct onboarding access with elite global merchant
-                      shipping lines.
+                      Standard-compliant training modules aligned with
+                      international seafaring regulations.
                     </p>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ export default function Institution() {
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                   {/* Gradient Overlay for Text Readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/85 to-blue-950/30" />
+                  <div className="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/85 to-blue-950/30" />
                 </div>
 
                 {/* Floating approval Badge */}
@@ -205,8 +205,7 @@ export default function Institution() {
                       All degree, diploma, and rating programs are fully
                       approved by the Directorate General of Shipping, Ministry
                       of Ports, Shipping and Waterways, Government of India. Our
-                      training procedures conform to ISO 9001:2015 standards,
-                      verified by DNV GL.
+                      training procedures.
                     </p>
                   </div>
 

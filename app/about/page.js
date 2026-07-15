@@ -30,8 +30,6 @@ export default function AboutPage() {
         <Amenities />
         {/* Placement Records */}
         <Placements />
-        {/* Companies Tie-up and Collaboration */}
-        <Collaborations />
       </div>
     </GSAPProvider>
   );

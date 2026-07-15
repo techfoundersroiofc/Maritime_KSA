@@ -7,28 +7,36 @@ const FACILITIES_DATA = [
   {
     title: "Bridge Simulators",
     icon: Compass,
-    description: "Equipped with state-of-the-art DGS-approved bridge maneuvering simulators, preparing cadets to steer large container ships and cargo vessels under severe weather and high traffic scenarios."
+    description:
+      "Equipped with state-of-the-art DGS-approved bridge maneuvering simulators, preparing cadets to steer large container ships and cargo vessels under severe weather and high traffic scenarios.",
   },
   {
     title: "Auxiliary Workshop",
     icon: Wrench,
-    description: "Includes actual marine diesel engines, pumps, electrical circuits, and machining systems. Cadets learn overhaul, valve grinding, electrical wiring, and machine diagnostics."
+    description:
+      "Includes actual marine diesel engines, pumps, electrical circuits, and machining systems. Cadets learn overhaul, valve grinding, electrical wiring, and machine diagnostics.",
   },
   {
     title: "Cadet Hostel & Mess",
     icon: Utensils,
-    description: "A fully residential, neat boarding facility. Serves nutritious vegetarian and non-vegetarian meals matching required caloric charts. Discipline is maintained via regular bunk inspections."
+    description:
+      "A fully residential, neat boarding facility. Serves nutritious vegetarian and non-vegetarian meals matching required caloric charts. Discipline is maintained via regular bunk inspections.",
   },
   {
     title: "Fitness Center & Sports",
     icon: Dumbbell,
-    description: "Features a modern gym, football ground, volleyball court, and swimming pool. Swim training is compulsory for cadet emergency survival certificates."
-  }
+    description:
+      "Features a modern gym, football ground, volleyball court, and swimming pool. Swim training is compulsory for cadet emergency survival certificates.",
+  },
 ];
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.215, 0.61, 0.355, 1] } }
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.215, 0.61, 0.355, 1] },
+  },
 };
 
 const staggerContainer = {
@@ -37,8 +45,8 @@ const staggerContainer = {
     opacity: 1,
     transition: {
       staggerChildren: 0.08,
-    }
-  }
+    },
+  },
 };
 
 export default function CampusFacilities() {
@@ -56,7 +64,7 @@ export default function CampusFacilities() {
           <motion.div
             key={fac.title}
             variants={fadeInUp}
-            className="bg-white border border-slate-200/80 p-8 rounded-3xl flex items-start space-x-6 hover:border-orange-500/35 hover:shadow-2xl hover:shadow-orange-500/4 transition-all duration-500 group cursor-default relative overflow-hidden"
+            className="bg-orange-600 border border-slate-200/80 p-8 rounded-3xl flex items-start space-x-6 hover:border-orange-500/35 hover:shadow-2xl hover:shadow-orange-500/4 transition-all duration-500 group cursor-default relative overflow-hidden"
             whileHover={{ y: -6 }}
           >
             {/* 1. Reflective Diagonal Flash Shine Sweep */}
@@ -70,18 +78,18 @@ export default function CampusFacilities() {
             {/* 3. Icon Container with Multi-Layer Rings */}
             <div className="relative shrink-0 z-10">
               {/* Outer pulse ring */}
-              <span className="absolute inset-0 rounded-2xl bg-orange-100/50 scale-100 group-hover:scale-125 group-hover:opacity-0 transition-all duration-500" />
-              <div className="relative w-14 h-14 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-655 group-hover:bg-orange-600 group-hover:text-white transition-all duration-500 shadow-xs group-hover:shadow-md group-hover:rotate-6">
+              <span className="absolute inset-0 rounded-2xl bg-orange-500/20 scale-100 group-hover:scale-125 group-hover:opacity-0 transition-all duration-500" />
+              <div className="relative w-14 h-14 rounded-2xl bg-orange-600 flex items-center justify-center text-white group-hover:bg-orange-500 transition-all duration-500 shadow-md shadow-orange-600/15 group-hover:shadow-lg group-hover:shadow-orange-500/25 group-hover:rotate-6">
                 <Icon className="w-6 h-6 stroke-2" />
               </div>
             </div>
 
             {/* 4. Text Content */}
             <div className="space-y-2.5 relative z-10 flex-1">
-              <h3 className="text-blue-950 font-black text-lg tracking-tight group-hover:text-orange-655 transition-colors duration-300">
+              <h3 className="text-blue-950 font-black text-lg tracking-tight group-hover:text-orange-600 transition-colors duration-300">
                 {fac.title}
               </h3>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
+              <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-medium">
                 {fac.description}
               </p>
             </div>
