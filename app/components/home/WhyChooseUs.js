@@ -246,7 +246,7 @@ export default function WhyChooseUs() {
                   initial={{ x: "-100%" }}
                   animate={{ x: "200%" }}
                   transition={{ duration: 0.9, ease: "easeInOut" }}
-                  className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-[25deg] pointer-events-none z-20"
+                  className="absolute inset-y-0 w-1/2 bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-[-25deg] pointer-events-none z-20"
                 />
 
                 <div className="space-y-6 relative z-10 w-full">
@@ -278,7 +278,7 @@ export default function WhyChooseUs() {
                           className="flex items-start space-x-3 text-blue-950"
                         >
                           <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
-                            <Check className="w-3 h-3 text-orange-600 stroke-[3]" />
+                            <Check className="w-3 h-3 text-orange-600 stroke-3" />
                           </span>
                           <span className="text-xs sm:text-sm leading-relaxed font-medium">
                             {feat}

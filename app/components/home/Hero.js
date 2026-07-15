@@ -185,7 +185,7 @@ export default function Hero() {
         </AnimatePresence>
 
         {/* High-contrast responsive overlays to ensure text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/98 via-white/95 to-white/98 lg:bg-linear-to-r lg:from-white lg:via-white/97 lg:to-transparent/20 z-10" />
+        <div className="absolute inset-0 bg-linear-to-b from-white/98 via-white/95 to-white/98 lg:bg-linear-to-r lg:from-white lg:via-white/97 lg:to-transparent/20 z-10" />
 
         {/* Glowing backdrop design elements shifting colors based on active slide */}
         <div
@@ -263,7 +263,7 @@ export default function Hero() {
                   className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-tight text-blue-950 leading-[1.1] lg:leading-[1.05]"
                 >
                   {slides[currentSlide].title} <br />
-                  <span className="bg-gradient-to-r from-orange-600 via-amber-500 to-orange-500 bg-clip-text text-transparent drop-shadow-xs">
+                  <span className="bg-linear-to-r from-orange-600 via-amber-500 to-orange-500 bg-clip-text text-transparent drop-shadow-xs">
                     {slides[currentSlide].highlight}
                   </span>
                 </motion.h1>

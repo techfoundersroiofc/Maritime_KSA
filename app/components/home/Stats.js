@@ -105,7 +105,7 @@ function StatCard({ stat }) {
       {/* Sequential Shine/Flash Overlay */}
       <motion.div
         variants={flashVariants}
-        className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/15 to-transparent -skew-x-[25deg] pointer-events-none z-20"
+        className="absolute inset-y-0 w-1/2 bg-linear-to-r from-transparent via-white/15 to-transparent skew-x-[-25deg] pointer-events-none z-20"
       />
 
       <div>
