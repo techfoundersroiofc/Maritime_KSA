@@ -72,13 +72,13 @@ export default function Placements() {
     {
       value: "500+",
       label: "Alumni Sailing Globally",
-      desc: "Our cadet officers sail worldwide on cargo, bulk, and tanker fleets.",
+      desc: "Our student officers sail worldwide on cargo, bulk, and tanker fleets.",
       icon: Globe,
     },
     {
       value: "12+",
-      label: "Global Shipping Partners",
-      desc: "Direct sponsorship exams and recruitment drives by top ship managers.",
+      label: "Global Shipping Sectors",
+      desc: "Comprehensive preparation for recruitment drives across top international ship management lines.",
       icon: Anchor,
     },
     {
@@ -93,13 +93,13 @@ export default function Placements() {
     {
       step: "01",
       title: "Pre-Sea Training & Academics",
-      desc: "Cadets complete comprehensive simulator, workshop, and safety instruction to comply with IMO STCW standards.",
+      desc: "students complete comprehensive simulator, workshop, and safety instruction to comply with IMO STCW standards.",
       icon: GraduationCap,
     },
     {
       step: "02",
-      title: "Sponsorship & Company Exams",
-      desc: "Recruiters conduct pre-recruitment tests, interviews, and psychometric screening directly on campus.",
+      title: "Placement Preparation & Screening",
+      desc: "students undergo mock interviews, technical screening, and psychometric preparation to clear company selection drives.",
       icon: Briefcase,
     },
     {
@@ -111,7 +111,7 @@ export default function Placements() {
     {
       step: "04",
       title: "Vessel Sign-On & Sea Voyage",
-      desc: "Cadets join their assigned container, bulk, or crude carriers at international hub ports to start sailing.",
+      desc: "students join their assigned container, bulk, or crude carriers at international hub ports to start sailing.",
       icon: Ship,
     },
   ];
@@ -138,10 +138,10 @@ export default function Placements() {
           <h2 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight leading-tight">
             Our Historic Placement Records & Stats
           </h2>
-          <p className="text-slate-655 text-sm max-w-xl mx-auto leading-relaxed">
+          <p className="text-blue-950 font-semibold text-md max-w-xl mx-auto leading-relaxed">
             We bridge academic training with global industrial sea voyages,
-            ensuring our cadets transition directly from classrooms to merchant
-            navy officers.
+            ensuring our students transition directly from classrooms to
+            merchant navy officers.
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export default function Placements() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24 w-full"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-24 w-full"
         >
           {stats.map((stat, idx) => {
             const Icon = stat.icon;
@@ -159,7 +159,7 @@ export default function Placements() {
               <motion.div
                 key={idx}
                 variants={fadeInUp}
-                className="bg-slate-50/50 border border-slate-200/80 p-8 rounded-3xl flex flex-col justify-between shadow-2xs hover:shadow-xl hover:bg-white hover:border-orange-550/30 transition-all duration-300 relative group cursor-default min-h-[250px]"
+                className="bg-slate-50/50 border border-slate-200/80 p-8 rounded-3xl flex flex-col shadow-2xs hover:shadow-xl hover:bg-white hover:border-orange-550/30 transition-all duration-300 relative group cursor-default min-h-[250px] h-full"
               >
                 {/* Shine Sweep Flash */}
                 <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
@@ -169,7 +169,7 @@ export default function Placements() {
                 {/* Soft Bottom-Right Glow Spot */}
                 <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-orange-500/5 rounded-full blur-xl group-hover:bg-orange-500/10 group-hover:scale-150 transition-all duration-500 pointer-events-none" />
 
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col h-full">
                   {/* Icon Block */}
                   <div className="w-12 h-12 rounded-2xl bg-orange-50 border border-orange-100/50 text-orange-600 flex items-center justify-center mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
                     <Icon className="w-5.5 h-5.5" />
@@ -184,12 +184,12 @@ export default function Placements() {
                   <h4 className="text-xs sm:text-sm font-black text-blue-950 uppercase tracking-wider mb-2">
                     {stat.label}
                   </h4>
-                </div>
 
-                {/* Stat Description */}
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-2 relative z-10 font-medium">
-                  {stat.desc}
-                </p>
+                  {/* Stat Description */}
+                  <p className="text-slate-655 text-xs sm:text-sm leading-relaxed mt-2 font-medium">
+                    {stat.desc}
+                  </p>
+                </div>
               </motion.div>
             );
           })}
@@ -202,11 +202,11 @@ export default function Placements() {
 
           <div className="max-w-2xl mb-16 relative z-10">
             <h3 className="text-blue-950 font-black text-2xl tracking-tight mb-3">
-              The Cadet Placement Pipeline
+              The student Placement Pipeline
             </h3>
-            <p className="text-slate-650 text-xs sm:text-sm leading-relaxed font-medium">
-              We guide and groom each cadet step-by-step to secure sponsorship,
-              CDC documentation, and sign-on clearance.
+            <p className="text-slate-655 text-xs sm:text-sm leading-relaxed font-medium">
+              We guide and groom each student step-by-step to secure
+              eligibility clearances, CDC documentation, and sign-on clearance.
             </p>
           </div>
 

@@ -44,10 +44,10 @@ function TopBar({ scrolled }) {
           <div className="animate-ticker flex space-x-10 text-[11px] font-semibold text-orange-400 tracking-wider uppercase select-none">
             <span>• Admissions Open 2026</span>
             <span>• Apply Online Today </span>
-            <span>• Direct Sponsorships Available</span>
+            <span>• DG Shipping Approved</span>
             <span>• Admissions Open 2026</span>
             <span>• Apply Online Today </span>
-            <span>• Direct Sponsorships Available</span>
+            <span>• DG Shipping Approved</span>
           </div>
         </div>
 

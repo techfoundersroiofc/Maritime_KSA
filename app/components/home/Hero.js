@@ -39,7 +39,7 @@ const slides = [
   {
     id: 2,
     image: "/images/hero/slide2.png",
-    tagline: "⚓ Job Assurance",
+    tagline: "⚓ Approved Pre-Sea Training",
     title: "DG Shipping Approved Pre-Sea",
     highlight: "Merchant Navy Courses",
     subtitle:
@@ -56,11 +56,11 @@ const slides = [
   {
     id: 3,
     image: "/images/hero/slide3.png",
-    tagline: "💼 100% Placement Support",
-    title: "Guaranteed Placement Opportunities with",
+    tagline: "💼 Dedicated Placement Support",
+    title: "Excellent Placement Support with",
     highlight: "Elite Shipping Lines",
     subtitle:
-      "We partner with leading international shipping lines and logistics companies to secure placement assurance for all qualified cadets.",
+      "We partner with leading international shipping lines and logistics companies to facilitate placement support for our qualified cadets.",
     trustPoints: [
       "Dedicated placement cell with track record",
       "Career assistance until you join the vessel",
@@ -104,9 +104,9 @@ const quickLinks = [
   },
   {
     id: 2,
-    title: "100% Placements",
-    subtitle: "Sponsorship Records",
-    badge: "Direct Tie-ups",
+    title: "Placement Support",
+    subtitle: "Career Pathways",
+    badge: "Placement Cell",
     href: "/admissions#placements",
     icon: Award,
     borderColor: "group-hover:border-emerald-500/40",

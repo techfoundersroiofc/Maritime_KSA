@@ -85,30 +85,30 @@ export default function VisionMission() {
     {
       title: "Safety First",
       description:
-        "Absolute focus on maritime safety, environmental protection (MARPOL compliance), and proactive risk management.",
+        "Absolute focus on maritime safety, environmental protection (MARPOL compliance), and proactive campus security protocols.",
       icon: Shield,
       color: "blue",
     },
     {
       title: "Discipline & Integrity",
       description:
-        "Instilling professional seafarer discipline, semi-military obedience, and strong ethical leadership principles.",
+        "Cultivating strong moral values, punctuality, and strict adherence to maritime traditions and institutional rules.",
       icon: Award,
+      color: "orange",
+    },
+    {
+      title: "Women's Safety",
+      description:
+        "Actively promoting gender diversity in the merchant navy by offering a highly secure, supportive, and empowering environment for female cadets.",
+      icon: Users,
       color: "orange",
     },
     {
       title: "Professional Competence",
       description:
-        "Fostering hands-on technical excellence, problem-solving capabilities, and a commitment to lifelong learning.",
+        "Fostering hands-on technical excellence, simulator-based competence, and strict alignment with international IMO STCW standards.",
       icon: Target,
       color: "blue",
-    },
-    {
-      title: "Global Standards",
-      description:
-        "Aligning all educational training with international IMO STCW conventions and the requirements of global ship owners.",
-      icon: Globe,
-      color: "orange",
     },
   ];
 
@@ -201,7 +201,7 @@ export default function VisionMission() {
               <h3 className="text-xl sm:text-2xl font-black text-blue-950 tracking-tight group-hover:text-blue-950 transition-colors">
                 Our Mission
               </h3>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
+              <p className="text-blue-950 text-sm sm:text-base leading-relaxed font-medium">
                 To provide state-of-the-art simulator and workshop-based
                 instruction, ensuring cadets comply with IMO STCW conventions.
                 We strive to instill high standards of maritime discipline, team
@@ -226,7 +226,7 @@ export default function VisionMission() {
             <h3 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight">
               Core Institutional Values
             </h3>
-            <p className="text-slate-600 text-sm max-w-xl mx-auto leading-relaxed">
+            <p className="text-blue-950 text-md max-w-xl mx-auto leading-relaxed">
               These guiding principles form the bedrock of our cadet training
               regime, driving absolute professionalism and excellence.
             </p>
@@ -246,30 +246,24 @@ export default function VisionMission() {
                   key={val.title}
                   variants={fadeInUp}
                   whileHover={{ y: -8, scale: 1.02 }}
-                  className="bg-slate-50/70 border border-slate-200 p-7 rounded-2xl flex flex-col justify-between hover:border-orange-550/30 hover:bg-white hover:shadow-xl transition-all duration-300 group relative overflow-hidden cursor-default shadow-2xs"
+                  className="bg-slate-50/70 border border-slate-200 p-7 rounded-2xl flex flex-col hover:border-orange-550/30 hover:bg-white hover:shadow-xl transition-all duration-300 group relative overflow-hidden cursor-default shadow-2xs h-full"
                 >
                   {/* Sweep Shine Effect */}
                   <div className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-[25deg] pointer-events-none -translate-x-full group-hover:translate-x-[250%] transition-transform duration-1000" />
 
-                  <div className="relative z-10">
-                    <div
-                      className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 ${
-                        val.color === "orange"
-                          ? "bg-orange-50 text-orange-600 border border-orange-100 group-hover:bg-orange-600 group-hover:text-white"
-                          : "bg-blue-50 text-blue-950 border border-blue-100 group-hover:bg-blue-950 group-hover:text-white"
-                      }`}
-                    >
+                  <div className="relative z-10 flex flex-col h-full">
+                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6 bg-orange-600 text-white transition-all duration-300 group-hover:bg-orange-500">
                       <Icon className="w-6 h-6" />
                     </div>
 
                     <h4 className="text-blue-950 font-black text-base tracking-tight mb-3 group-hover:text-orange-655 transition-colors">
                       {val.title}
                     </h4>
-                  </div>
 
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1 relative z-10 font-medium">
-                    {val.description}
-                  </p>
+                    <p className="text-blue-950 text-xs sm:text-sm leading-relaxed mt-1 font-medium">
+                      {val.description}
+                    </p>
+                  </div>
                 </motion.div>
               );
             })}
@@ -314,7 +308,7 @@ export default function VisionMission() {
                 >
                   <div className="absolute top-0 right-0 w-24 h-24 bg-slate-100 rounded-full translate-x-8 -translate-y-8 group-hover:bg-orange-50 transition-colors duration-300" />
 
-                  <div className="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-500 mb-6 relative z-10 group-hover:bg-orange-50 group-hover:text-orange-600 group-hover:border-orange-200/50 transition-all duration-300">
+                  <div className="w-11 h-11 rounded-xl bg-orange-600 flex items-center justify-center text-white mb-6 relative z-10 transition-all duration-300 group-hover:bg-orange-500">
                     <Icon className="w-5.5 h-5.5" />
                   </div>
 

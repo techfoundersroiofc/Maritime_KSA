@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FileText, Briefcase } from "lucide-react";
 import { cn } from "@/app/lib/utils";
+import Image from "next/image";
 import AdmissionsTabContent from "@/app/components/admissions/AdmissionsTabContent";
 import PlacementsTabContent from "@/app/components/placements/PlacementsTabContent";
 
@@ -35,10 +36,22 @@ export default function AdmissionsPlacementsTabs() {
   return (
     <div className="bg-slate-50 min-h-screen text-slate-700 pb-24 font-jakarta overflow-x-hidden">
       {/* 1. Dynamic Integrated Academic Banner */}
-      <section className="relative py-24 sm:py-32 bg-linear-to-b from-blue-950 via-blue-950 to-blue-900 text-white overflow-hidden border-b border-slate-800">
+      <section className="relative py-24 sm:py-32 bg-blue-950 text-white overflow-hidden border-b border-slate-800">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero/slide1.png"
+            alt="Maritime Admissions and Placements"
+            fill
+            priority
+            className="object-cover opacity-20 object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
+        </div>
+
         {/* Soft grid/glow details */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-20%,rgba(249,115,22,0.18),transparent)] pointer-events-none" />
-        <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-20%,rgba(249,115,22,0.15),transparent)] pointer-events-none z-10" />
+        <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none z-10" />
 
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 text-center space-y-6">
           <motion.div
@@ -55,7 +68,7 @@ export default function AdmissionsPlacementsTabs() {
           </motion.div>
 
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-none max-w-4xl mx-auto"
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-orange-600 tracking-tight leading-none max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -99,14 +112,22 @@ export default function AdmissionsPlacementsTabs() {
                 />
               )}
               <span className="relative z-10 flex items-center justify-center space-x-2">
-                <FileText className={cn(
-                  "w-4 h-4 shrink-0 transition-colors duration-300",
-                  activeTab === "admissions" ? "text-white" : "text-slate-400 group-hover:text-blue-950"
-                )} />
-                <span className={cn(
-                  "transition-colors duration-300 font-extrabold",
-                  activeTab === "admissions" ? "text-white" : "text-slate-650 group-hover:text-blue-950"
-                )}>
+                <FileText
+                  className={cn(
+                    "w-4 h-4 shrink-0 transition-colors duration-300",
+                    activeTab === "admissions"
+                      ? "text-white"
+                      : "text-slate-400 group-hover:text-blue-950",
+                  )}
+                />
+                <span
+                  className={cn(
+                    "transition-colors duration-300 font-extrabold",
+                    activeTab === "admissions"
+                      ? "text-white"
+                      : "text-slate-650 group-hover:text-blue-950",
+                  )}
+                >
                   Admissions
                 </span>
               </span>
@@ -127,14 +148,22 @@ export default function AdmissionsPlacementsTabs() {
                 />
               )}
               <span className="relative z-10 flex items-center justify-center space-x-2">
-                <Briefcase className={cn(
-                  "w-4 h-4 shrink-0 transition-colors duration-300",
-                  activeTab === "placements" ? "text-white" : "text-slate-400 group-hover:text-blue-950"
-                )} />
-                <span className={cn(
-                  "transition-colors duration-300 font-extrabold",
-                  activeTab === "placements" ? "text-white" : "text-slate-650 group-hover:text-blue-950"
-                )}>
+                <Briefcase
+                  className={cn(
+                    "w-4 h-4 shrink-0 transition-colors duration-300",
+                    activeTab === "placements"
+                      ? "text-white"
+                      : "text-slate-400 group-hover:text-blue-950",
+                  )}
+                />
+                <span
+                  className={cn(
+                    "transition-colors duration-300 font-extrabold",
+                    activeTab === "placements"
+                      ? "text-white"
+                      : "text-slate-650 group-hover:text-blue-950",
+                  )}
+                >
                   Placements
                 </span>
               </span>

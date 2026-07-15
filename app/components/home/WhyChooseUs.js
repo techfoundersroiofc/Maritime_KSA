@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
       headline: "Real Vessel Bridge & Cargo Handling Simulation",
       tagline: "NAVIGATIONAL PREPARATION",
       description:
-        "Our state-of-the-art simulators replicate modern merchant vessel operations. Cadets gain practical navigation, radar plotting, ship maneuvering, and liquid cargo handling skills before their first onboard contract.",
+        "Our state-of-the-art simulators replicate modern merchant vessel operations. students gain practical navigation, radar plotting, ship maneuvering, and liquid cargo handling skills before their first onboard contract.",
       features: [
         "Full Mission Ship Bridge Simulator with 360° visual view",
         "Liquid Cargo Handling Simulator for tanker operation training",
@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
       headline: "Hands-On Deck & Engine Workshop Training",
       tagline: "PRACTICAL SEAMANSHIP SKILLS",
       description:
-        "The college operates heavy-duty maritime workshops featuring actual marine auxiliary diesel engines, pumps, air compressors, and purifiers. Cadets dismantle, inspect, and rebuild shipboard machinery.",
+        "The college operates heavy-duty maritime workshops featuring actual marine auxiliary diesel engines, pumps, air compressors, and purifiers. students dismantle, inspect, and rebuild shipboard machinery.",
       features: [
         "Fully equipped welding, gas-cutting, and machining labs",
         "Operational marine auxiliary diesel generator test unit",
