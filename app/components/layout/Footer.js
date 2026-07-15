@@ -19,7 +19,7 @@ export default function Footer() {
           {/* Brand Column (Span 4) */}
           <div className="sm:col-span-2 lg:col-span-4 flex flex-col space-y-6">
             <Link href="/" className="flex items-center space-x-3 group w-fit">
-              <div className="relative w-14 h-14 overflow-hidden rounded-lg bg-white p-1.5 border border-slate-800 transition-all duration-500 group-hover:rotate-[360deg] shadow-lg">
+              <div className="relative w-14 h-14 overflow-hidden rounded-lg bg-white p-1.5 border border-slate-800 transition-all duration-500 group-hover:rotate-360 shadow-lg">
                 <Image
                   src="/images/logo/PKIMSE.PNG"
                   alt="PKIMSE Logo"

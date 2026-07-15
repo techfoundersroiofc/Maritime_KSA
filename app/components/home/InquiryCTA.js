@@ -100,7 +100,7 @@ export default function InquiryCTA() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-950">
                 Start Your Journey in the Merchant Navy
               </h2>
-              <p className="text-blue-950 text-sm leading-relaxed font-normal">
+              <p className="text-blue-950 text-md leading-relaxed font-normal">
                 Have questions about sponsorships, eligibility, IMU-CET, or
                 cadet life? Submit an enquiry and our admissions counselor will
                 guide you through the process.
