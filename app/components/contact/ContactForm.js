@@ -81,7 +81,7 @@ export default function ContactForm() {
       <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-orange-500/5 rounded-full blur-2xl group-hover:bg-orange-500/10 transition-all duration-500 pointer-events-none" />
 
       <h2 className="text-xl sm:text-2xl font-black text-blue-950 mb-6 tracking-tight text-left">
-        Submit Admission Enquiry
+        Submit Admission Enquiry (Min 40% Marks Required)
       </h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 text-left">

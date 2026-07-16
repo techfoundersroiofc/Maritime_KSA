@@ -70,7 +70,7 @@ function Logo({ scrolled }) {
       <div
         className={cn(
           "relative overflow-hidden rounded bg-white p-1 border border-slate-200 transition-all duration-300 group-hover:scale-105",
-          scrolled ? "w-12 h-12 md:w-14 md:h-14" : "w-16 h-16 md:w-20 md:h-20",
+          "w-12 h-12 md:w-14 md:h-14",
         )}
       >
         <Image
@@ -299,9 +299,7 @@ export default function Navbar() {
       <nav
         className={cn(
           "px-4 md:px-8 transition-all duration-300",
-          scrolled
-            ? "bg-blue-950/95 backdrop-blur-md py-3 shadow-lg border-b border-blue-900/40"
-            : "bg-blue-950 py-4 border-b border-transparent",
+          "bg-blue-950/95 backdrop-blur-md py-5 shadow-lg border-b border-blue-900/40",
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">

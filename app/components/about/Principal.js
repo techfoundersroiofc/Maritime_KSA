@@ -54,7 +54,7 @@ export default function Principal() {
           <h2 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight leading-tight">
             Meet Our Principal
           </h2>
-          <p className="text-slate-655 text-sm max-w-xl mx-auto leading-relaxed">
+          <p className="text-blue-950 text-sm font-semibold max-w-xl mx-auto leading-relaxed">
             Led by a veteran Chief Engineer and Marine Superintendent with
             extensive shipboard and administrative expertise.
           </p>
@@ -126,30 +126,19 @@ export default function Principal() {
                 <Award className="w-6 h-6 text-orange-655 mr-2 shrink-0 animate-pulse" />
                 Distinguished Maritime Career
               </h3>
-              <p className="text-slate-650 text-xs sm:text-sm leading-relaxed font-medium">
-                <strong>Abdul Rasheed</strong> serves as the Engineer
-                Superintendent cum Principal of{" "}
-                <strong>
-                  Perunthalaivar Kamarajar Institute of Maritime Science and
-                  Engineering (PKIMSE)
-                </strong>
-                . He holds a{" "}
-                <strong>
-                  Marine Engineer Officer Class 1 Certificate of Competency
-                </strong>
-                , issued by the Directorate General of Shipping, Ministry of
+              <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
+                Abdul Rasheed serves as the Engineer Superintendent cum Principal of
+                Perunthalaivar Kamarajar Institute of Maritime Science and
+                Engineering (PKIMSE). He holds a Marine Engineer Officer Class 1 Certificate
+                of Competency, issued by the Directorate General of Shipping, Ministry of
                 Ports, Shipping and Waterways, Government of India.
               </p>
-              <p className="text-slate-655 text-xs sm:text-sm leading-relaxed">
-                With over{" "}
-                <strong>
-                  15 years of rigorous shipboard sailing experience
-                </strong>
-                , he has sailed in the capacity of Chief Engineer Officer on
-                merchant fleet vessels flying both Indian and international
-                flags. His practical sailing experience includes operations on
-                heavy Bulk Carriers, Containers, and Wood Chip Carrier
-                Self-Unloader type vessels.
+              <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
+                With over 15 years of rigorous shipboard sailing experience, he has sailed
+                in the capacity of Chief Engineer Officer on merchant fleet vessels flying
+                both Indian and international flags. His practical sailing experience includes
+                operations on heavy Bulk Carriers, Containers, and Wood Chip Carrier Self-Unloader
+                type vessels.
               </p>
             </div>
 
@@ -210,9 +199,8 @@ export default function Principal() {
                   <h5 className="text-[12px] font-black text-blue-950 uppercase tracking-normal">
                     Mandatory Certifications
                   </h5>
-                  <p className="text-sm font-medium text-slate-650">
-                    Holds active <strong>VICT</strong> and <strong>AECS</strong>{" "}
-                    certifications approved by DGS
+                  <p className="text-sm font-semibold text-blue-950">
+                    Holds active VICT and AECS certifications approved by DGS
                   </p>
                 </div>
               </div>

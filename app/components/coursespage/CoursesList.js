@@ -117,7 +117,7 @@ export default function CoursesList() {
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-blue-950 tracking-tight leading-tight">
               Pre-Sea & Mandatory Modular Safety Courses
             </h2>
-            <p className="text-slate-650 text-sm sm:text-base leading-relaxed font-medium">
+            <p className="text-blue-950 text-sm sm:text-base leading-relaxed font-semibold">
               We offer two industry-standard courses that satisfy all
               requirements of the Directorate General of Shipping (DGS), India,
               and prepare you for onboarding.
@@ -203,7 +203,7 @@ export default function CoursesList() {
                       {course.title}
                     </h3>
 
-                    <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-6 font-medium">
+                    <p className="text-sm sm:text-[15px] text-blue-950 leading-relaxed mb-6 font-semibold">
                       {course.overview}
                     </p>
 
@@ -232,7 +232,7 @@ export default function CoursesList() {
                         {meta.eligibilityPoints.map((point, idx) => (
                           <li
                             key={idx}
-                            className="flex items-start space-x-3 text-xs sm:text-sm leading-relaxed text-slate-650 font-medium"
+                            className="flex items-start space-x-3 text-xs sm:text-sm leading-relaxed text-blue-950 font-semibold"
                           >
                             <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
                               <Check className="w-3 h-3 text-orange-600 stroke-3" />

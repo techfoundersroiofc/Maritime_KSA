@@ -64,14 +64,14 @@ export default function CampusFacilities() {
           <motion.div
             key={fac.title}
             variants={fadeInUp}
-            className="bg-orange-600 border border-slate-200/80 p-8 rounded-3xl flex items-start space-x-6 hover:border-orange-500/35 hover:shadow-2xl hover:shadow-orange-500/4 transition-all duration-500 group cursor-default relative overflow-hidden"
+            className="bg-slate-50/50 border border-slate-200/80 p-8 rounded-3xl flex items-start space-x-6 hover:border-orange-500/35 hover:shadow-2xl hover:shadow-orange-500/4 transition-all duration-500 group cursor-default relative overflow-hidden"
             whileHover={{ y: -6 }}
           >
             {/* 1. Reflective Diagonal Flash Shine Sweep */}
             <span className="absolute inset-0 w-[200%] h-full bg-linear-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out z-20 pointer-events-none" />
 
             {/* 2. Massive Floating Background Icon (Bottom Right) */}
-            <div className="absolute -bottom-6 -right-6 text-slate-100/50 group-hover:text-orange-500/8 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700 pointer-events-none z-0">
+            <div className="absolute -bottom-6 -right-6 text-slate-100/80 group-hover:text-orange-500/8 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700 pointer-events-none z-0">
               <Icon className="w-28 h-28 stroke-[1.2]" />
             </div>
 
@@ -79,7 +79,7 @@ export default function CampusFacilities() {
             <div className="relative shrink-0 z-10">
               {/* Outer pulse ring */}
               <span className="absolute inset-0 rounded-2xl bg-orange-500/20 scale-100 group-hover:scale-125 group-hover:opacity-0 transition-all duration-500" />
-              <div className="relative w-14 h-14 rounded-2xl bg-orange-600 flex items-center justify-center text-white group-hover:bg-orange-500 transition-all duration-500 shadow-md shadow-orange-600/15 group-hover:shadow-lg group-hover:shadow-orange-500/25 group-hover:rotate-6">
+              <div className="relative w-14 h-14 rounded-2xl bg-orange-50 border border-orange-100/50 text-orange-600 flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-all duration-500 shadow-md shadow-orange-600/5 group-hover:shadow-lg group-hover:shadow-orange-500/25 group-hover:rotate-6">
                 <Icon className="w-6 h-6 stroke-2" />
               </div>
             </div>

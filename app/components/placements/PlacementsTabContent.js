@@ -59,14 +59,14 @@ export default function PlacementsTabContent() {
           <h2 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight leading-tight">
             Dedicated Placement Cell
           </h2>
-          <p className="text-sm sm:text-base text-slate-650 leading-relaxed font-medium">
+          <p className="text-sm sm:text-base text-blue-950 leading-relaxed font-semibold">
             Our active Placement & Corporate Relations Cell works in close
             coordination with leading global ship management corporations. We
             streamline placement preparation (particularly for DNS), coordinate
             campus placement drives, and guide students through visa and CDC
             applications.
           </p>
-          <p className="text-sm sm:text-base text-slate-650 leading-relaxed font-medium">
+          <p className="text-sm sm:text-base text-blue-950 leading-relaxed font-semibold">
             students undergo technical training seminars, mock interviews, and
             simulated tests guided by retired captains and seasoned chief
             engineers, guaranteeing an excellent placement record for our
@@ -90,7 +90,7 @@ export default function PlacementsTabContent() {
             <h4 className="text-xs font-black text-orange-600 uppercase tracking-widest mb-2.5">
               DNS Approved
             </h4>
-            <p className="text-xs text-slate-500 font-medium leading-relaxed">
+            <p className="text-xs text-blue-950 font-semibold leading-relaxed">
               Our Diploma in Nautical Science (DNS) program is fully approved
               and complies with DGS academic standards.
             </p>
@@ -107,7 +107,7 @@ export default function PlacementsTabContent() {
             <h4 className="text-xs font-black text-orange-600 uppercase tracking-widest mb-2.5">
               Recruitment Lines
             </h4>
-            <p className="text-xs text-slate-500 font-medium leading-relaxed">
+            <p className="text-xs text-blue-950 font-semibold leading-relaxed">
               Our extensive networking allows students to sail with top-tier
               international bulk, container, and tanker operators.
             </p>
@@ -124,7 +124,7 @@ export default function PlacementsTabContent() {
           <h3 className="text-2xl sm:text-3xl font-black text-blue-950 tracking-tight">
             Students Sailing Globally
           </h3>
-          <p className="text-slate-500 text-xs sm:text-sm font-medium">
+          <p className="text-blue-950 text-xs sm:text-sm font-semibold">
             Hear firsthand reviews from PKIMSE alumni who are currently navigating international shipping lines.
           </p>
         </div>
@@ -176,7 +176,7 @@ export default function PlacementsTabContent() {
                       </p>
                     </div>
 
-                    <p className="text-slate-655 text-sm sm:text-base leading-relaxed italic font-medium">
+                    <p className="text-blue-950 text-sm sm:text-base leading-relaxed italic font-semibold">
                       &quot;{testimonials[currentIndex].quote}&quot;
                     </p>
                   </div>

@@ -82,10 +82,10 @@ export default function Placements() {
       icon: Anchor,
     },
     {
-      value: "A1 Grade",
-      label: "Outstanding Rating",
-      desc: "Verified by the Directorate General of Shipping and DNV GL audit.",
-      icon: ShieldCheck,
+      value: "25+",
+      label: "Global Recruiters",
+      desc: "Top international shipping companies participating in recruitment.",
+      icon: Ship,
     },
   ];
 
@@ -186,7 +186,7 @@ export default function Placements() {
                   </h4>
 
                   {/* Stat Description */}
-                  <p className="text-slate-655 text-xs sm:text-sm leading-relaxed mt-2 font-medium">
+                  <p className="text-blue-950 text-xs sm:text-sm leading-relaxed mt-2 font-semibold">
                     {stat.desc}
                   </p>
                 </div>
@@ -204,7 +204,7 @@ export default function Placements() {
             <h3 className="text-blue-950 font-black text-2xl tracking-tight mb-3">
               The student Placement Pipeline
             </h3>
-            <p className="text-slate-655 text-xs sm:text-sm leading-relaxed font-medium">
+            <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
               We guide and groom each student step-by-step to secure
               eligibility clearances, CDC documentation, and sign-on clearance.
             </p>
@@ -240,7 +240,7 @@ export default function Placements() {
                       <h4 className="text-blue-950 font-black text-base tracking-tight group-hover:text-orange-655 transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-slate-650 text-xs sm:text-sm leading-relaxed font-medium">
+                      <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
                         {item.desc}
                       </p>
                     </div>

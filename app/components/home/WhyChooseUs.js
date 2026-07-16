@@ -177,7 +177,7 @@ export default function WhyChooseUs() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-blue-950 tracking-tight leading-tight">
-            Industry-Approved Infrastructure & Cadres
+            Industry-Approved Infrastructure & Students
           </h2>
           <p className="text-blue-950 text-sm sm:text-base leading-relaxed max-w-2xl">
             From modern simulators to dedicated marine machinery workshops, we
@@ -200,7 +200,7 @@ export default function WhyChooseUs() {
                   className={`flex items-center space-x-4.5 p-5 rounded-2xl text-left shrink-0 transition-all duration-300 border snap-center group select-none ${
                     isActive
                       ? "bg-blue-950 border-blue-950 text-white shadow-lg shadow-blue-950/15"
-                      : "bg-slate-50/70 border-slate-200/80 text-slate-650 hover:text-blue-950 hover:bg-slate-100/50 hover:border-slate-350/70"
+                      : "bg-slate-50/70 border-slate-200/80 text-blue-950 hover:text-blue-950 hover:bg-slate-100/50 hover:border-slate-350/70"
                   }`}
                 >
                   <div

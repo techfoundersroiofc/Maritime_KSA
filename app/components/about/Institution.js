@@ -30,8 +30,8 @@ export default function Institution() {
   return (
     <div className="w-full">
       {/* 1. Premium Hero Header with Background Image */}
-      <section className="relative h-[380px] md:h-[450px] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+      <section className="relative py-28 sm:py-36 overflow-hidden border-b border-slate-800 bg-blue-950">
+        {/* Background Image with elegant overlay */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero/img1.jpg"
@@ -39,15 +39,16 @@ export default function Institution() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-center opacity-60"
           />
-          {/* Deep Navy/Black Gradient Overlay */}
-          <div className="absolute inset-0 bg-linear-to-r from-blue-950/95 via-blue-950/80 to-blue-950/95 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-transparent to-white" />
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
         </div>
 
+        {/* Soft light radial gradient details */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-20%,rgba(249,115,22,0.12),transparent)] pointer-events-none z-10" />
+
         {/* Content */}
-        <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 text-center text-white space-y-5 pt-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 text-center space-y-6">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -56,29 +57,29 @@ export default function Institution() {
           >
             <motion.div
               variants={fadeInUp}
-              className="flex items-center justify-center space-x-2.5"
+              className="flex items-center justify-center space-x-2"
             >
-              <span className="h-0.5 w-8 bg-orange-500 rounded-full" />
-              <span className="text-orange-400 font-extrabold uppercase tracking-widest text-xs sm:text-sm">
+              <span className="h-px w-8 bg-orange-500" />
+              <span className="text-white font-extrabold uppercase tracking-widest text-xs">
                 KSA Maritime College
               </span>
-              <span className="h-0.5 w-8 bg-orange-500 rounded-full" />
+              <span className="h-px w-8 bg-orange-500" />
             </motion.div>
 
             <motion.h1
               variants={fadeInUp}
-              className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white drop-shadow-sm"
+              className="text-4xl sm:text-5xl md:text-6xl font-black text-orange-500 tracking-tight leading-none max-w-4xl mx-auto"
             >
               About Our Institution
             </motion.h1>
 
             <motion.p
               variants={fadeInUp}
-              className="text-blue-100/90 text-md sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed drop-shadow-xs"
+              className="text-slate-200 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-medium"
             >
               PKIMSE is a premier maritime training academy under the
               prestigious KSA Group of Institutions, dedicated to forging
-              competent navigation officers and marine engineers.
+              competent maritime professionals.
             </motion.p>
           </motion.div>
         </div>
@@ -110,20 +111,20 @@ export default function Institution() {
                 <h2 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight leading-tight">
                   A Legacy of Maritime Educational Excellence
                 </h2>
-                <p className="text-slate-650 text-sm sm:text-base leading-relaxed">
+                <p className="text-blue-950 text-sm sm:text-base leading-relaxed">
                   Perunthalaivar Kamarajar Institute of Maritime Science and
-                  Engineering (PKIMSE) was established under the prestigious{" "}
-                  <strong>KSA Group of Institutions</strong> with a clear
-                  vision: to establish a top-tier training ecosystem that
-                  bridges academic learning with heavy industrial shipboard
-                  practice. Today, we are recognized as a premier destination
-                  for students pursuing careers in the merchant navy.
+                  Engineering (PKIMSE) was established under the prestigious KSA
+                  Group of Institutions with a clear vision: to establish a
+                  top-tier training ecosystem that bridges academic learning
+                  with heavy industrial shipboard practice. Today, we are
+                  recognized as a premier destination for students pursuing
+                  careers in the merchant navy.
                 </p>
                 <p className="text-blue-950 text-sm sm:text-base leading-relaxed">
                   Our residential campus mimics shipboard environments,
-                  preparing cadet officers to cope with long voyages,
+                  preparing student officers to cope with long voyages,
                   emergencies, cargo operations, and engineering watchkeeping.
-                  Our cadets sail on some of the largest crude tankers,
+                  Our students sail on some of the largest crude tankers,
                   container vessels, and bulk carriers worldwide.
                 </p>
               </motion.div>
@@ -141,7 +142,7 @@ export default function Institution() {
                     <h4 className="font-black text-sm text-blue-950 uppercase tracking-wide">
                       Structured Student Life
                     </h4>
-                    <p className="text-xs text-slate-550 mt-0.5">
+                    <p className="text-xs text-blue-950 mt-0.5 font-medium">
                       Disciplined regime that builds character and seafarer
                       leadership.
                     </p>
@@ -156,7 +157,7 @@ export default function Institution() {
                     <h4 className="font-black text-sm text-blue-950 uppercase tracking-wide">
                       DGS Approved Training
                     </h4>
-                    <p className="text-xs text-slate-550 mt-0.5">
+                    <p className="text-xs text-blue-950 mt-0.5 font-medium">
                       Standard-compliant training modules aligned with
                       international seafaring regulations.
                     </p>

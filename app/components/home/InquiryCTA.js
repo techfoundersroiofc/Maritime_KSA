@@ -148,10 +148,10 @@ export default function InquiryCTA() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-[9px] text-slate-900 uppercase tracking-widest font-bold">
+                  <h4 className="text-[9px] text-blue-950 uppercase tracking-widest font-bold">
                     College Location
                   </h4>
-                  <span className="text-xs text-slate-700 leading-snug font-semibold">
+                  <span className="text-sm font-semibold text-blue-950 leading-snug">
                     1089 , keerapalayam, Tamil Nadu 608602
                   </span>
                 </div>
@@ -181,7 +181,7 @@ export default function InquiryCTA() {
           {/* Right Column: enquiry Form Card */}
           <div className="lg:col-span-7 bg-slate-50/50 border border-slate-200 rounded-lg p-8 shadow-sm hover:shadow-md flex flex-col justify-center backdrop-blur-sm hover:border-orange-500/25 transition-all duration-300 gsap-slide-up">
             <h3 className="text-xl font-bold text-blue-950 mb-6 tracking-wide">
-              Admission Enquiry Form 2026
+              Admission Enquiry Form 2026 (Min 40% Marks Required)
             </h3>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
