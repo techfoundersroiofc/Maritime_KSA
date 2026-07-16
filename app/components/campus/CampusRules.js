@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShieldAlert, UserCheck, Clock, Ban, Smartphone } from "lucide-react";
+import { ShieldAlert, UserCheck, Clock, Ban } from "lucide-react";
 
 const RULES_DATA = [
   {
@@ -27,14 +27,6 @@ const RULES_DATA = [
     icon: Ban,
     color: "text-rose-600 bg-rose-50 border-rose-100/80",
     hoverBorder: "hover:border-rose-500/25 hover:shadow-rose-500/[0.02]",
-  },
-  {
-    title: "Device Regulation",
-    detail:
-      "Smartphone usage and Wi-Fi access restricted to designated recreational hours only.",
-    icon: Smartphone,
-    color: "text-purple-600 bg-purple-50 border-purple-100/80",
-    hoverBorder: "hover:border-purple-500/25 hover:shadow-purple-500/[0.02]",
   },
 ];
 
@@ -104,7 +96,7 @@ export default function CampusRules() {
       {/* Right Column: Grid of rules */}
       <motion.div
         variants={fadeInUp}
-        className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6"
+        className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6"
       >
         {RULES_DATA.map((rule) => {
           const Icon = rule.icon;
@@ -124,7 +116,7 @@ export default function CampusRules() {
                   <h4 className="text-blue-950 font-black text-sm sm:text-base tracking-tight group-hover:text-orange-655 transition-colors">
                     {rule.title}
                   </h4>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
+                  <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
                     {rule.detail}
                   </p>
                 </div>

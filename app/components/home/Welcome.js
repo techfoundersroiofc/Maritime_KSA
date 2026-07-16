@@ -65,55 +65,38 @@ export default function Welcome() {
 
             <motion.p
               variants={fadeInUp}
-              className="text-blue-950 text-md leading-relaxed"
+              className="text-blue-950 text-md font-semibold leading-relaxed"
             >
-              PKIMSE (KSA Maritime College) is recognized as one of the
-              <strong className="text-blue-950 font-bold ml-1 ">
-                best marine academies in India
-              </strong>{" "}
-              and the premier{" "}
-              <strong className="text-blue-950 font-bold">
-                merchant navy college in Tamil Nadu
-              </strong>
-              . As a cornerstone of the esteemed KSA Group of Institutions, we
-              offer elite maritime training that equips cadets with the skills
+              PKIMSE (KSA Maritime College) is recognized as one of the best
+              marine academies in India and the premier merchant navy college in
+              Tamil Nadu. As a cornerstone of the esteemed KSA Group of
+              Institutions, we offer elite maritime training with 100% job
+              placement support guaranteed, equipping students with the skills
               and discipline needed to excel in the global shipping industry.
             </motion.p>
 
             <motion.p
               variants={fadeInUp}
-              className="text-blue-950 text-md leading-relaxed"
+              className="text-blue-950 text-md font-semibold leading-relaxed"
             >
-              Our residential campus in Chidambaram is engineered to mimic
-              actual shipboard environments, instilling standard maritime
-              discipline, physical fitness, and hands-on professional expertise.
-              We offer specialized guidance for{" "}
-              <strong className="text-blue-950 font-bold">
-                nautical science admission
-              </strong>{" "}
-              and{" "}
-              <strong className="text-blue-950 font-bold">
-                marine engineering admission
-              </strong>
-              , making PKIMSE the preferred choice for students seeking
-              high-quality{" "}
-              <strong className="text-blue-950 font-bold">
-                maritime courses after 10th and 12th
-              </strong>
-              .
+              Our eco-green residential campus in Chidambaram features fully
+              air-conditioned hostels and is engineered to mimic actual
+              shipboard environments, instilling standard maritime discipline,
+              physical fitness, and hands-on professional expertise. We offer
+              specialized guidance for nautical science admission and marine
+              engineering admission, making PKIMSE the preferred choice for
+              students seeking high-quality maritime courses after 10th and
+              12th.
             </motion.p>
 
             <motion.p
               variants={fadeInUp}
-              className="text-blue-950 text-md leading-relaxed"
+              className="text-blue-950 text-md font-semibold leading-relaxed"
             >
               Mentored by veteran Master Mariners and Chief Engineers, our
-              practical training curriculum prepares cadets to secure
-              high-paying{" "}
-              <strong className="text-blue-950 font-bold">
-                merchant navy jobs
-              </strong>{" "}
-              globally.
+              practical training curriculum prepares students to secure
+              high-paying merchant navy jobs globally with guaranteed career
+              support.
             </motion.p>
 
             {/* Trust Badges */}

@@ -80,7 +80,7 @@ export default function GalleryGrid() {
                   <h4 className="text-blue-950 font-black text-base tracking-tight leading-snug group-hover:text-orange-655 transition-colors">
                     {item.title}
                   </h4>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
+                  <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
                     {item.description}
                   </p>
                 </div>

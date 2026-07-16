@@ -48,8 +48,8 @@ export default function Collaborations() {
           <h2 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight leading-tight">
             Companies Tie-up & Recruiting Partners
           </h2>
-          <p className="text-slate-650 text-sm max-w-xl mx-auto leading-relaxed">
-            PKIMSE partners with global shipowners and top-tier ship management companies to host regular placement exams and secure sponsorships for our cadet officers.
+          <p className="text-blue-950 text-sm font-semibold max-w-xl mx-auto leading-relaxed">
+            PKIMSE partners with global shipowners and top-tier ship management companies to host regular placement exams and secure sponsorships for our student officers.
           </p>
         </div>
 
@@ -66,8 +66,8 @@ export default function Collaborations() {
               <Handshake className="w-5.5 h-5.5 text-orange-600 mr-2 shrink-0" />
               Sponsorship & Shipboard Placements
             </h3>
-            <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
-              We coordinate placement activities with leading shipping conglomerates. Our cadets undergo rigorous mock test preps and psychometric grooming sessions to meet high standards set by the industry.
+            <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
+              We coordinate placement activities with leading shipping conglomerates. Our students undergo rigorous mock test preps and psychometric grooming sessions to meet high standards set by the industry.
             </p>
           </div>
           
@@ -95,7 +95,7 @@ export default function Collaborations() {
               whileHover={{ scale: 1.03, y: -2 }}
               className="bg-slate-50 border border-slate-200 hover:border-orange-500/35 hover:bg-white p-6 rounded-2xl text-center w-full min-h-[90px] flex items-center justify-center transition-all duration-300 group shadow-2xs hover:shadow-md cursor-default select-none"
             >
-              <span className="text-xs sm:text-sm font-black text-slate-650 group-hover:text-orange-655 transition-colors tracking-wide leading-tight px-1 text-center">
+              <span className="text-xs sm:text-sm font-black text-blue-950 group-hover:text-orange-655 transition-colors tracking-wide leading-tight px-1 text-center">
                 {rec.name}
               </span>
             </motion.div>

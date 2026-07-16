@@ -47,4 +47,14 @@ export const keyHighlights = [
     description:
       "Featuring high-fidelity Full Mission Ship Bridge and Engine Room Simulators matching latest ocean vessel configurations.",
   },
+  {
+    title: "Always Eco-Green Campus & AC Hostels",
+    description:
+      "Safe, secure, and fully air-conditioned residential hostels set in an environmentally friendly eco-green campus.",
+  },
+  {
+    title: "100% Placement Support",
+    description:
+      "Dedicated placement cell offering 100% job support guaranteed with top global shipping companies and recruiters.",
+  },
 ];

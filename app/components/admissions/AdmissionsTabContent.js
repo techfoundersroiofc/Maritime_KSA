@@ -155,7 +155,7 @@ export default function AdmissionsTabContent() {
                       {step.badge}
                     </span>
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                  <p className="text-xs sm:text-sm text-blue-950 leading-relaxed font-semibold">
                     {step.id === 1 ? (
                       <>
                         Ensure that your age, physical standards, and academic
@@ -192,7 +192,7 @@ export default function AdmissionsTabContent() {
               Physical & Medical Fitness Norms
             </h3>
           </div>
-          <p className="text-xs sm:text-sm text-slate-650 leading-relaxed font-medium">
+          <p className="text-xs sm:text-sm text-blue-950 leading-relaxed font-semibold">
             Working at sea demands high physical endurance and split-second
             responsiveness. Candidates must possess robust health, clean medical
             history, and be completely free from chronic ailments, skin
@@ -232,7 +232,7 @@ export default function AdmissionsTabContent() {
               Important Intake Schedule
             </h3>
           </div>
-          <ul className="space-y-4 text-xs sm:text-sm font-medium text-slate-650">
+          <ul className="space-y-4 text-xs sm:text-sm font-semibold text-blue-950">
             {INTAKE_SCHEDULE.map((item, index) => (
               <li
                 key={index}

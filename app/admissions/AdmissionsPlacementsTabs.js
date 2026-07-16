@@ -36,7 +36,7 @@ export default function AdmissionsPlacementsTabs() {
   return (
     <div className="bg-slate-50 min-h-screen text-slate-700 pb-24 font-jakarta overflow-x-hidden">
       {/* 1. Dynamic Integrated Academic Banner */}
-      <section className="relative py-24 sm:py-32 bg-blue-950 text-white overflow-hidden border-b border-slate-800">
+      <section className="relative py-28 sm:py-36 bg-blue-950 text-white overflow-hidden border-b border-slate-800">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -44,14 +44,13 @@ export default function AdmissionsPlacementsTabs() {
             alt="Maritime Admissions and Placements"
             fill
             priority
-            className="object-cover opacity-20 object-center"
+            className="object-cover opacity-60 object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
         </div>
 
         {/* Soft grid/glow details */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-20%,rgba(249,115,22,0.15),transparent)] pointer-events-none z-10" />
-        <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-20%,rgba(249,115,22,0.12),transparent)] pointer-events-none z-10" />
 
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 text-center space-y-6">
           <motion.div
@@ -61,14 +60,14 @@ export default function AdmissionsPlacementsTabs() {
             transition={{ duration: 0.5 }}
           >
             <span className="h-px w-8 bg-orange-500" />
-            <span className="text-orange-500 font-extrabold uppercase tracking-widest text-[10px] sm:text-xs">
+            <span className="text-white font-extrabold uppercase tracking-widest text-[10px] sm:text-xs">
               PKIMSE Career Gateway
             </span>
             <span className="h-px w-8 bg-orange-500" />
           </motion.div>
 
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl font-black text-orange-600 tracking-tight leading-none max-w-4xl mx-auto"
+            className="text-4xl sm:text-5xl md:text-6xl font-black text-orange-500 tracking-tight leading-none max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}

@@ -173,10 +173,10 @@ export default function VisionMission() {
               <h3 className="text-xl sm:text-2xl font-black text-blue-950 tracking-tight group-hover:text-orange-655 transition-colors">
                 Our Vision
               </h3>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
+              <p className="text-blue-950 text-sm sm:text-base leading-relaxed font-medium">
                 To be globally acknowledged as a premier center of maritime
                 education, supplying global shipping lines with highly
-                disciplined, technically competent, and ethical Marine Officers
+                disciplined, technically competent, and ethical maritime professionals
                 who excel in the international seafaring arena.
               </p>
             </div>
@@ -285,7 +285,7 @@ export default function VisionMission() {
             <h3 className="text-3xl sm:text-4xl font-black text-blue-950 tracking-tight">
               Moral Policies & Code of Ethics
             </h3>
-            <p className="text-slate-600 text-sm max-w-xl mx-auto leading-relaxed">
+            <p className="text-blue-950 text-sm max-w-xl mx-auto leading-relaxed font-medium">
               We enforce strict compliance policies to cultivate a highly
               disciplined, safe, and professional environment.
             </p>
@@ -315,7 +315,7 @@ export default function VisionMission() {
                   <h4 className="text-blue-950 font-black text-sm tracking-tight mb-3 relative z-10 group-hover:text-orange-655 transition-colors">
                     {policy.title}
                   </h4>
-                  <p className="text-slate-655 text-xs sm:text-sm leading-relaxed relative z-10 font-medium">
+                  <p className="text-blue-950 text-xs sm:text-sm leading-relaxed relative z-10 font-medium">
                     {policy.description}
                   </p>
                 </motion.div>
