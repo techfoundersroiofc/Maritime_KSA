@@ -11,7 +11,7 @@ export default function ContactHero() {
         style={{ backgroundImage: "url('/images/campus/hostel_1.webp')" }}
       />
       {/* Navy/black overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
+      <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
 
       {/* Glowing Highlights */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-20%,rgba(249,115,22,0.12),transparent)] pointer-events-none" />

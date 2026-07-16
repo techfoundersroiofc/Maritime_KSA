@@ -123,7 +123,7 @@ export default function Placements() {
     >
       {/* GSAP Animated Background Blobs */}
       <div className="absolute top-1/3 left-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none gsap-placements-blob-1" />
-      <div className="absolute bottom-1/3 right-10 w-112 h-112 bg-orange-500/5 rounded-full blur-3xl pointer-events-none gsap-placements-blob-2" />
+      <div className="absolute bottom-1/3 right-10 w-md h-md bg-orange-500/5 rounded-full blur-3xl pointer-events-none gsap-placements-blob-2" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
         {/* Section Header */}
@@ -163,7 +163,7 @@ export default function Placements() {
               >
                 {/* Shine Sweep Flash */}
                 <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
-                  <div className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-[25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-1000 ease-out" />
+                  <div className="absolute inset-y-0 w-1/2 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-[-25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-1000 ease-out" />
                 </div>
 
                 {/* Soft Bottom-Right Glow Spot */}

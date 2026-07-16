@@ -41,7 +41,7 @@ export default function Institution() {
             sizes="100vw"
             className="object-cover object-center opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
+          <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
         </div>
 
         {/* Soft light radial gradient details */}

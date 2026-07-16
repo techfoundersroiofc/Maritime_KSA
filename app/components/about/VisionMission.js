@@ -140,7 +140,7 @@ export default function VisionMission() {
     >
       {/* GSAP Animated Orange Circles and Rings */}
       <div className="absolute top-1/4 left-10 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl pointer-events-none gsap-orange-circle-1" />
-      <div className="absolute bottom-1/4 right-10 w-112 h-112 bg-orange-500/5 rounded-full blur-3xl pointer-events-none gsap-orange-circle-2" />
+      <div className="absolute bottom-1/4 right-10 w-md h-md bg-orange-500/5 rounded-full blur-3xl pointer-events-none gsap-orange-circle-2" />
 
       {/* Decorative Rotating Ring */}
       <div className="absolute top-10 right-1/4 w-[350px] h-[350px] rounded-full border border-dashed border-orange-500/10 pointer-events-none gsap-orange-ring-rotate" />
@@ -163,7 +163,7 @@ export default function VisionMission() {
             className="bg-slate-50/70 border border-slate-200/80 p-8 rounded-3xl relative overflow-hidden group hover:border-orange-550/30 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-6"
           >
             {/* Sweep Shine Effect */}
-            <div className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-[25deg] pointer-events-none -translate-x-full group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
+            <div className="absolute inset-y-0 w-1/2 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-[-25deg] pointer-events-none -translate-x-full group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
 
             <div className="w-14 h-14 rounded-2xl bg-orange-50 border border-orange-100/50 flex items-center justify-center text-orange-600 shrink-0 group-hover:bg-orange-600 group-hover:text-white transition-all duration-350">
               <Compass className="w-7 h-7" />
@@ -191,7 +191,7 @@ export default function VisionMission() {
             className="bg-slate-50/70 border border-slate-200/80 p-8 rounded-3xl relative overflow-hidden group hover:border-blue-900/20 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-6"
           >
             {/* Sweep Shine Effect */}
-            <div className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-[25deg] pointer-events-none -translate-x-full group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
+            <div className="absolute inset-y-0 w-1/2 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-[-25deg] pointer-events-none -translate-x-full group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
 
             <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-950 shrink-0 group-hover:bg-blue-950 group-hover:text-white transition-all duration-350">
               <Target className="w-7 h-7" />
@@ -249,7 +249,7 @@ export default function VisionMission() {
                   className="bg-slate-50/70 border border-slate-200 p-7 rounded-2xl flex flex-col hover:border-orange-550/30 hover:bg-white hover:shadow-xl transition-all duration-300 group relative overflow-hidden cursor-default shadow-2xs h-full"
                 >
                   {/* Sweep Shine Effect */}
-                  <div className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-[25deg] pointer-events-none -translate-x-full group-hover:translate-x-[250%] transition-transform duration-1000" />
+                  <div className="absolute inset-y-0 w-1/2 bg-linear-to-r from-transparent via-white/30 to-transparent skew-x-[-25deg] pointer-events-none -translate-x-full group-hover:translate-x-[250%] transition-transform duration-1000" />
 
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6 bg-orange-600 text-white transition-all duration-300 group-hover:bg-orange-500">

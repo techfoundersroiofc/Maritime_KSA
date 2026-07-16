@@ -46,7 +46,7 @@ export default function AdmissionsPlacementsTabs() {
             priority
             className="object-cover opacity-60 object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
+          <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
         </div>
 
         {/* Soft grid/glow details */}
