@@ -85,7 +85,7 @@ export default function Principal() {
 
               {/* Brilliant Skewed Shine Sweep Flash */}
               <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden">
-                <div className="absolute inset-y-0 w-2/3 bg-gradient-to-r from-transparent via-white/50 to-transparent -skew-x-[25deg] -translate-x-[150%] group-hover:translate-x-[200%] transition-transform duration-700 ease-out" />
+                <div className="absolute inset-y-0 w-2/3 bg-linear-to-r from-transparent via-white/50 to-transparent skew-x-[-25deg] translate-x-[-150%] group-hover:translate-x-[200%] transition-transform duration-700 ease-out" />
               </div>
 
               {/* Badge Overlay */}
@@ -97,7 +97,7 @@ export default function Principal() {
               </div>
 
               {/* Gradient Bottom Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/20 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-8 z-10" />
+              <div className="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/20 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-8 z-10" />
 
               {/* Overlay Details */}
               <div className="absolute bottom-0 left-0 right-0 p-8 z-10">

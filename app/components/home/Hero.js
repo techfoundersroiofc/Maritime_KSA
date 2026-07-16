@@ -101,7 +101,7 @@ export default function Hero() {
         </AnimatePresence>
 
         {/* Soft, premium gradient overlay to ensure card readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/20 to-blue-950/50 z-10" />
+        <div className="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/20 to-blue-950/50 z-10" />
       </div>
 
       {/* Floating indicators / slide progress indicators */}

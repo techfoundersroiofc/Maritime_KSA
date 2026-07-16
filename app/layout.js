@@ -30,6 +30,7 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: SEO_METADATA.home.title,
     description: SEO_METADATA.home.description,
@@ -65,10 +66,30 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
+  // Modern, high-performance icon array referencing your static public folder assets
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "192x192",
+        url: "/web-app-manifest-192x192.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "512x512",
+        url: "/web-app-manifest-512x512.png",
+      },
+    ],
   },
 };
 

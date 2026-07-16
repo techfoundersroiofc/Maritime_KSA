@@ -151,7 +151,7 @@ export default function PlacementsTabContent() {
                     sizes="(max-width: 768px) 100vw, 40vw"
                     className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/70 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-linear-to-t from-blue-950/70 via-transparent to-transparent pointer-events-none" />
                   
                   {/* Floating role badge */}
                   <div className="absolute bottom-6 left-6 right-6">
