@@ -61,7 +61,7 @@ export default function CourseList() {
             placeholder="Search courses..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-slate-950 border border-slate-900 focus:border-orange-500/50 rounded-lg pl-10 pr-4 py-2.5 text-xs text-slate-100 placeholder-slate-600 focus:outline-none transition-colors"
+            className="search-input-premium"
           />
           <Search className="w-4 h-4 text-slate-600 absolute left-3.5 top-3" />
         </div>

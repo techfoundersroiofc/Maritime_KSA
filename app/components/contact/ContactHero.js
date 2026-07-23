@@ -6,7 +6,7 @@ export default function ContactHero() {
   return (
     <section className="relative py-28 sm:py-36 overflow-hidden border-b border-slate-800 bg-blue-950">
       {/* Background Image of Campus Hostel */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{ backgroundImage: "url('/images/campus/hostel_1.webp')" }}
       />
@@ -45,7 +45,8 @@ export default function ContactHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Get in touch with our admissions coordinators in Chidambaram, Tamil Nadu, for professional counseling and enrollment details.
+          Get in touch with our admissions coordinators in Chidambaram, Tamil
+          Nadu, for professional counseling and enrollment details.
         </motion.p>
       </div>
     </section>

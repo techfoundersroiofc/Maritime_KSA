@@ -13,7 +13,7 @@ export default function GalleryPage() {
       {/* 1. Glassmorphic Hero Banner */}
       <section className="relative py-28 sm:py-36 overflow-hidden border-b border-slate-800 bg-blue-950">
         {/* Background Image of Sea Survival Drills */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
           style={{ backgroundImage: "url('/images/campus/saftey.webp')" }}
         />
@@ -35,7 +35,8 @@ export default function GalleryPage() {
             PKIMSE Campus Media
           </h1>
           <p className="text-slate-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-            Take a look inside our simulation labs, heavy marine workshop, residential hostel block, and student training activities.
+            Take a look inside our simulation labs, heavy marine workshop,
+            residential hostel block, and student training activities.
           </p>
         </div>
       </section>

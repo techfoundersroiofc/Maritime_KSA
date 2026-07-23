@@ -15,7 +15,7 @@ import {
 const images = [
   { src: "/images/hero/slide1.png", alt: "PKIMSE Student Training" },
   { src: "/images/hero/slide2.png", alt: "Marine Engine Workshop" },
-  { src: "/images/hero/slide3.png", alt: "Elite Placement Drives" },
+  { src: "/images/hero/img1.jpg", alt: "Elite Placement Drives" },
   { src: "/images/hero/slide4.png", alt: "Premium Campus Hostels" },
 ];
 
@@ -23,7 +23,7 @@ const quickLinks = [
   {
     id: 1,
     title: "Admissions 2026",
-    subtitle: "Apply Online Today",
+    subtitle: "Apply Today",
     badge: "Govt. Approved",
     href: "/admissions#admissions",
     icon: GraduationCap,
@@ -33,8 +33,8 @@ const quickLinks = [
   },
   {
     id: 2,
-    title: "100% Placement Support",
-    subtitle: "100% Job support guaranteed",
+    title: "Placement",
+    subtitle: "100% assistance",
     badge: "Placement Cell",
     href: "/admissions#placements",
     icon: Award,
@@ -44,8 +44,8 @@ const quickLinks = [
   },
   {
     id: 3,
-    title: "Merchant Navy Courses",
-    subtitle: "GP Rating & DNS Info",
+    title: "Courses",
+    subtitle: "GP Rating",
     badge: "10th & 12th science",
     href: "/courses",
     icon: Anchor,
@@ -55,8 +55,8 @@ const quickLinks = [
   },
   {
     id: 4,
-    title: "Greenish campus & Ac hostels",
-    subtitle: "Always Eco-Green campus & AC Hostels",
+    title: "Eco campus",
+    subtitle: "Ac Hostels",
     badge: "Safe Residential",
     href: "/campus",
     icon: Compass,
@@ -77,7 +77,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full h-[70vh] sm:h-[80vh] md:h-[85vh] lg:h-[90vh] flex flex-col justify-end overflow-hidden bg-blue-950">
+    <section className="relative w-full h-[50vh] flex flex-col justify-end overflow-hidden bg-blue-950">
       {/* Full-bleed background image carousel */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
@@ -104,24 +104,22 @@ export default function Hero() {
         <div className="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/20 to-blue-950/50 z-10" />
       </div>
 
-      {/* Floating indicators / slide progress indicators */}
-      <div className="absolute top-36 right-8 md:right-12 z-20 flex flex-col space-y-2">
-        {images.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setIndex(idx)}
-            className={`w-2 h-8 rounded-full transition-all duration-500 ${
-              idx === index
-                ? "bg-orange-500 h-12 shadow-lg shadow-orange-500/50"
-                : "bg-white/30 hover:bg-white/50"
-            }`}
-            aria-label={`Go to slide ${idx + 1}`}
-          />
+      {/* Quick Links as simple text links overlay */}
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 md:px-8 pb-10 flex flex-wrap justify-center items-center gap-4">
+        {quickLinks.map((link) => (
+          <Link
+            key={link.id}
+            href={link.href}
+            className="group bg-orange-600 text-white font-semibold text-sm md:text-base px-4 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 border border-orange-500/10 hover:border-transparent hover:-translate-y-0.5"
+          >
+            <span>{link.title}</span>
+            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
         ))}
       </div>
 
       {/* Hero Content Area: Quick Links Grid */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 md:px-8 pb-12 sm:pb-16 flex flex-col items-center">
+      {/* <div className="relative z-20 w-full max-w-7xl mx-auto px-4 md:px-8 pb-12 sm:pb-16 flex flex-col items-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
           {quickLinks.map((link) => {
             const Icon = link.icon;
@@ -129,42 +127,34 @@ export default function Hero() {
               <Link
                 key={link.id}
                 href={link.href}
-                className={`relative overflow-hidden p-6 rounded-2xl border bg-white/90 hover:bg-white border-white/25 transition-all duration-300 backdrop-blur-md shadow-lg hover:shadow-2xl hover:-translate-y-2.5 group flex flex-col justify-between min-h-[140px] ${link.borderColor} ${link.glowColor}`}
+                className={`relative overflow-hidden p-3 sm:p-4 rounded-xl border bg-white/90 hover:bg-white border-white/25 transition-all duration-300 backdrop-blur-md shadow-lg hover:shadow-2xl hover:-translate-y-1.5 group flex items-center justify-between gap-4 min-h-[90px] ${link.borderColor} ${link.glowColor}`}
               >
-                {/* Top Row: Icon and Small Badge */}
-                <div className="flex items-start justify-between w-full">
+                <div className="flex items-center gap-3 mt-1.5">
                   <div
-                    className={`p-3 rounded-xl transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3 ${link.iconBg}`}
+                    className={`p-2 rounded-lg transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3 shrink-0 ${link.iconBg}`}
                   >
-                    <Icon className="w-6 h-6" />
+                    <Icon className="w-5 h-5" />
                   </div>
-                  <span className="inline-flex items-center text-[10px] font-black uppercase tracking-wider bg-slate-100/90 text-blue-950 border border-slate-200/50 px-2.5 py-0.5 rounded-md">
-                    {link.badge}
-                  </span>
-                </div>
-
-                {/* Bottom Row: Text, Subtext, and Arrow */}
-                <div className="mt-6 flex items-end justify-between">
-                  <div className="pr-4 text-left">
-                    <h3 className="text-[16px] font-extrabold text-blue-950 group-hover:text-orange-500 transition-colors leading-snug">
+                  <div className="text-left">
+                    <h3 className="text-[14px] font-extrabold text-blue-950 group-hover:text-orange-500 transition-colors leading-snug">
                       {link.title}
                     </h3>
-                    <p className="text-[12px] text-slate-500 font-semibold mt-1 group-hover:text-slate-700 leading-tight">
+                    <p className="text-[11px] text-slate-500 font-semibold mt-0.5 group-hover:text-slate-700 leading-tight">
                       {link.subtitle}
                     </p>
                   </div>
-                  <div className="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-orange-500 text-blue-950 group-hover:text-white flex items-center justify-center transition-all duration-300 shrink-0 shadow-xs">
-                    <ArrowRight className="w-4.5 h-4.5 transition-transform duration-300 group-hover:translate-x-0.5" />
-                  </div>
                 </div>
 
-                {/* Bottom Accent Border */}
-                <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-slate-100 group-hover:bg-linear-to-r group-hover:from-orange-500 group-hover:to-amber-500 transition-all duration-300" />
+                <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-orange-500 text-blue-950 group-hover:text-white flex items-center justify-center transition-all duration-300 shrink-0 shadow-xs mt-1.5">
+                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+                </div>
+
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-slate-100 group-hover:bg-linear-to-r group-hover:from-orange-500 group-hover:to-amber-500 transition-all duration-300" />
               </Link>
             );
           })}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -48,7 +48,7 @@ export const keyHighlights = [
       "Featuring high-fidelity Full Mission Ship Bridge and Engine Room Simulators matching latest ocean vessel configurations.",
   },
   {
-    title: "Always Eco-Green Campus & AC Hostels",
+    title: "Eco-Green Campus & AC Hostels",
     description:
       "Safe, secure, and fully air-conditioned residential hostels set in an environmentally friendly eco-green campus.",
   },

@@ -119,7 +119,7 @@ export default function Amenities() {
                       />
                     ) : (
                       // Stylized Placeholder fallback
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-950 to-blue-900 flex flex-col items-center justify-center p-6 text-center select-none">
+                      <div className="absolute inset-0 bg-linear-to-br from-blue-950 to-blue-900 flex flex-col items-center justify-center p-6 text-center select-none">
                         <div className="w-12 h-12 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center text-orange-400 mb-3">
                           <ItemIcon className="w-6 h-6" />
                         </div>
@@ -131,7 +131,7 @@ export default function Amenities() {
 
                     {/* Brilliant Skewed Shine Sweep Flash */}
                     <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden">
-                      <div className="absolute inset-y-0 w-2/3 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-[25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-700 ease-out" />
+                      <div className="absolute inset-y-0 w-2/3 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-[-25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-700 ease-out" />
                     </div>
 
                     {/* Hover Overlay Badge */}
@@ -141,7 +141,7 @@ export default function Amenities() {
                   </div>
 
                   {/* Info Section */}
-                  <div className="p-6 flex-grow flex flex-col justify-between space-y-4 relative z-10">
+                  <div className="p-6 grow flex flex-col justify-between space-y-4 relative z-10">
                     <div>
                       <h4 className="text-blue-950 font-black text-base tracking-tight leading-snug group-hover:text-orange-655 transition-colors">
                         {item.title}
