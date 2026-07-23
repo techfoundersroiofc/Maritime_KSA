@@ -59,7 +59,7 @@ export default function Footer() {
 
           {/* Quick Links (Span 2) */}
           <div className="sm:col-span-1 lg:col-span-2">
-            <h3 className="text-white font-serif text-lg tracking-wider pb-3 mb-6 relative after:absolute after:bottom-0 after:left-0 after:w-8 after:h-[2px] after:bg-orange-500">
+            <h3 className="text-white font-serif text-lg tracking-wider pb-3 mb-6 relative after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-orange-500">
               Quick Links
             </h3>
             <ul className="space-y-4">
@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* Institution (Span 2) */}
           <div className="sm:col-span-1 lg:col-span-2">
-            <h3 className="text-white font-serif text-lg tracking-wider pb-3 mb-6 relative after:absolute after:bottom-0 after:left-0 after:w-8 after:h-[2px] after:bg-orange-500">
+            <h3 className="text-white font-serif text-lg tracking-wider pb-3 mb-6 relative after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-orange-500">
               Institution
             </h3>
             <ul className="space-y-4">
@@ -97,7 +97,7 @@ export default function Footer() {
 
           {/* Contact & Support (Span 4) */}
           <div className="sm:col-span-2 lg:col-span-4 flex flex-col space-y-6">
-            <h3 className="text-white font-serif text-lg tracking-wider pb-3 mb-6 relative after:absolute after:bottom-0 after:left-0 after:w-8 after:h-[2px] after:bg-orange-500">
+            <h3 className="text-white font-serif text-lg tracking-wider pb-3 mb-6 relative after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-orange-500">
               Admissions Office
             </h3>
             <ul className="space-y-4.5 text-sm sm:text-[15px] font-sans">
