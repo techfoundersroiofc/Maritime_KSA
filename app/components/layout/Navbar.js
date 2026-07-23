@@ -299,14 +299,14 @@ export default function Navbar() {
       <nav
         className={cn(
           "px-4 md:px-8 transition-all duration-300",
-          "bg-blue-950/95 backdrop-blur-md py-5 shadow-lg border-b border-blue-900/40",
+          "bg-blue-950/95 backdrop-blur-md py-5 md:py-7 shadow-lg border-b border-blue-900/40",
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Logo scrolled={scrolled} />
 
           {/* Desktop Section */}
-          <div className="hidden xl:flex items-center space-x-4 xl:space-x-8">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
             <DesktopLinks pathname={pathname} />
             <ApplyButton />
           </div>
@@ -314,7 +314,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(true)}
-            className="xl:hidden text-slate-200 hover:text-white p-2.5 rounded-lg border border-blue-900/50 hover:bg-blue-900/40 focus:outline-none transition-all"
+            className="lg:hidden text-slate-200 hover:text-white p-2.5 rounded-lg border border-blue-900/50 hover:bg-blue-900/40 focus:outline-none transition-all"
             aria-label="Open Menu"
           >
             <Menu className="w-5 h-5" />

@@ -205,8 +205,8 @@ export default function Placements() {
               The student Placement Pipeline
             </h3>
             <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
-              We guide and groom each student step-by-step to secure
-              eligibility clearances, CDC documentation, and sign-on clearance.
+              We guide and groom each student step-by-step to secure eligibility
+              clearances, CDC documentation, and sign-on clearance.
             </p>
           </div>
 
@@ -247,6 +247,46 @@ export default function Placements() {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </div>
+
+        {/* MoU / Job Assistance Banner */}
+        <div className="mt-12 bg-linear-to-r from-blue-950 to-blue-900 border border-blue-950 text-white rounded-3xl p-8 sm:p-10 relative overflow-hidden shadow-lg">
+          {/* Subtle decorative background elements */}
+          <div className="absolute right-0 bottom-0 w-80 h-80 bg-orange-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute left-10 top-0 w-40 h-40 bg-blue-500/10 rounded-full blur-2xl pointer-events-none" />
+
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+            <div className="space-y-3 max-w-3xl text-center md:text-left">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-orange-500/20 text-orange-400 border border-orange-500/30">
+                <ShieldCheck className="w-3.5 h-3.5" />
+                Direct Career Support
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
+                MOU signed with leading shipping companies
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
+                We work closely with leading global shipping companies to offer
+                you job assistance and practical sea-work programs. We help you
+                transition smoothly from our campus directly onto merchant navy
+                ships!
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center md:justify-end items-center gap-3 shrink-0">
+              <div className="bg-white/5 backdrop-blur-xs border border-white/10 px-4 py-2.5 rounded-2xl flex items-center gap-2">
+                <Anchor className="w-4 h-4 text-orange-400" />
+                <span className="text-xs font-bold tracking-wider text-slate-100 uppercase">
+                  Company Tie-Ups
+                </span>
+              </div>
+              <div className="bg-white/5 backdrop-blur-xs border border-white/10 px-4 py-2.5 rounded-2xl flex items-center gap-2">
+                <Briefcase className="w-4 h-4 text-orange-400" />
+                <span className="text-xs font-bold tracking-wider text-slate-100 uppercase">
+                  Sea-Work Programs
+                </span>
+              </div>
             </div>
           </div>
         </div>

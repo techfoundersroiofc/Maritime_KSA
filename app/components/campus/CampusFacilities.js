@@ -11,7 +11,7 @@ const FACILITIES_DATA = [
       "Equipped with state-of-the-art DGS-approved bridge maneuvering simulators, preparing cadets to steer large container ships and cargo vessels under severe weather and high traffic scenarios.",
   },
   {
-    title: "Auxiliary Workshop",
+    title: "Deck & Engine Workshop",
     icon: Wrench,
     description:
       "Includes actual marine diesel engines, pumps, electrical circuits, and machining systems. Cadets learn overhaul, valve grinding, electrical wiring, and machine diagnostics.",
@@ -23,7 +23,7 @@ const FACILITIES_DATA = [
       "A fully residential, neat boarding facility. Serves nutritious vegetarian and non-vegetarian meals matching required caloric charts. Discipline is maintained via regular bunk inspections.",
   },
   {
-    title: "Fitness Center & Sports",
+    title: "Recreation & Sports",
     icon: Dumbbell,
     description:
       "Features a modern gym, football ground, volleyball court, and swimming pool. Swim training is compulsory for cadet emergency survival certificates.",

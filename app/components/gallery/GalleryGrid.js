@@ -8,9 +8,10 @@ import { galleryCategories, galleryItems } from "@/app/data/gallery";
 export default function GalleryGrid() {
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredItems = activeCategory === "All"
-    ? galleryItems
-    : galleryItems.filter((item) => item.category === activeCategory);
+  const filteredItems =
+    activeCategory === "All"
+      ? galleryItems
+      : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
     <div className="space-y-12">
@@ -25,7 +26,7 @@ export default function GalleryGrid() {
               className={`flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold tracking-wide transition-all duration-300 border cursor-pointer select-none ${
                 isActive
                   ? "bg-blue-950 border-blue-950 text-white shadow-md shadow-blue-950/15"
-                  : "bg-white border-slate-200 text-slate-655 hover:bg-slate-50 hover:text-blue-950"
+                  : "bg-white border-slate-200 text-blue-950 hover:bg-slate-50 hover:text-blue-950"
               }`}
             >
               <span>{cat === "All" ? "All Media" : cat}</span>

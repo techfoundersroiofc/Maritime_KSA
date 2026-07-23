@@ -177,7 +177,7 @@ export default function WhyChooseUs() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-blue-950 tracking-tight leading-tight">
-            Industry-Approved Infrastructure & Students
+            Industry-Approved Infrastructure
           </h2>
           <p className="text-blue-950 text-sm sm:text-base leading-relaxed max-w-2xl">
             From modern simulators to dedicated marine machinery workshops, we

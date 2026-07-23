@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { toast } from "sonner";
 import {
@@ -194,10 +195,22 @@ export default function CourseDetailClient({ course }) {
       </div>
 
       {/* 2. Premium Academic Banner */}
-      <section className="relative py-20 sm:py-24 bg-linear-to-b from-blue-950 via-blue-950 to-blue-900 text-white overflow-hidden border-b border-slate-800">
-        {/* Decorative Grid overlays */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-20%,rgba(249,115,22,0.18),transparent)] pointer-events-none" />
-        <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none" />
+      <section className="relative py-28 sm:py-36 overflow-hidden border-b border-slate-800 bg-blue-950 text-white">
+        {/* Background Image with elegant overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={course.image || "/images/hero/img1.jpg"}
+            alt={`${course.title} Background`}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center opacity-60"
+          />
+          <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
+        </div>
+
+        {/* Soft light radial gradient details */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_-20%,rgba(249,115,22,0.12),transparent)] pointer-events-none z-10" />
 
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-10">
@@ -1127,7 +1140,7 @@ export default function CourseDetailClient({ course }) {
                   placeholder="e.g. John Doe"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full bg-slate-50 border border-slate-250 focus:border-orange-500 focus:bg-white rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none transition-colors"
+                  className="input-premium"
                 />
               </div>
 
@@ -1143,7 +1156,7 @@ export default function CourseDetailClient({ course }) {
                     placeholder="e.g. john@email.com"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full bg-slate-50 border border-slate-250 focus:border-orange-500 focus:bg-white rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none transition-colors"
+                    className="input-premium"
                   />
                 </div>
                 <div className="space-y-1.5">
@@ -1157,7 +1170,7 @@ export default function CourseDetailClient({ course }) {
                     placeholder="e.g. +91 98765 43210"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full bg-slate-50 border border-slate-250 focus:border-orange-500 focus:bg-white rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none transition-colors"
+                    className="input-premium"
                   />
                 </div>
               </div>
@@ -1170,7 +1183,7 @@ export default function CourseDetailClient({ course }) {
                   name="qualification"
                   value={formData.qualification}
                   onChange={handleInputChange}
-                  className="w-full bg-slate-50 border border-slate-250 focus:border-orange-500 focus:bg-white rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-800 focus:outline-none transition-colors"
+                  className="input-premium"
                 >
                   <option value="">Select your qualification</option>
                   <option value="10th">10th Standard Pass</option>
@@ -1191,7 +1204,7 @@ export default function CourseDetailClient({ course }) {
                   placeholder="Ask about batch seats, hostel availability, sponsorships, etc..."
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full bg-slate-50 border border-slate-250 focus:border-orange-500 focus:bg-white rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none transition-colors resize-none"
+                  className="input-premium resize-none"
                 />
               </div>
 
