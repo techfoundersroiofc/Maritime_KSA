@@ -152,7 +152,7 @@ export default function InquiryCTA() {
                     College Location
                   </h4>
                   <span className="text-sm font-semibold text-blue-950 leading-snug">
-                    1089 , keerapalayam, Tamil Nadu 608602
+                    1089 , keerapalayam, Chidambaram, Tamil Nadu 608602
                   </span>
                 </div>
               </div>
