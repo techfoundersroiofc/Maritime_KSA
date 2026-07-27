@@ -135,8 +135,8 @@ export default function Stats() {
   return (
     <section className="relative bg-linear-to-br from-blue-950 via-slate-900 to-blue-950 py-20 border-y border-blue-900/40 overflow-hidden">
       {/* Decorative orange/blue glows */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[350px] h-[350px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[350px] h-[350px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-87.5 h-87.5 bg-orange-600/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-87.5 h-87.5 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Section Intro */}

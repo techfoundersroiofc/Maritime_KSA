@@ -4,10 +4,8 @@ export const COLLEGE_CONFIG = {
   tagline: "Excellence at Sea, Leadership for Tomorrow",
   groupName: "KSA Group of Institutions",
   address: "1089 , keerapalayam, Chidambaram Tamil Nadu 608602",
-  phone: "+91 93453 36311",
-  altPhone: "+91 93453 36312",
+  phone: "+91 94876 08775",
   email: "admissions@pkimse.edu.in",
-  altEmail: "foundersroi.in@gmail.com",
   socials: {
     facebook: "https://facebook.com/pkimse",
     instagram: "https://instagram.com/pkimse",

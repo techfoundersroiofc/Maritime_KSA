@@ -10,14 +10,14 @@ export default function CoursesHero() {
       {/* Background Image with elegant overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/courses/dns.png"
+          src="/images/gallery/0M5A8367.JPG"
           alt="PKIMSE College Campus Background"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center opacity-60"
+          className="object-cover object-center opacity-100"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
+        <div className="absolute inset-0 bg-linear-to-b from-blue-950/20 via-blue-950/65 to-blue-950" />
       </div>
 
       {/* Soft light radial gradient details */}

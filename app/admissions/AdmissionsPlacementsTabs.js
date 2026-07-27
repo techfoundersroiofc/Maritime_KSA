@@ -40,13 +40,13 @@ export default function AdmissionsPlacementsTabs() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/slide1.png"
+            src="/images/hero/6.webp"
             alt="Maritime Admissions and Placements"
             fill
             priority
             className="object-cover opacity-60 object-center"
           />
-          <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
+          <div className="absolute inset-0 bg-linear-to-b from-blue-950/20 via-blue-950/65 to-blue-950" />
         </div>
 
         {/* Soft grid/glow details */}
@@ -91,7 +91,7 @@ export default function AdmissionsPlacementsTabs() {
       {/* 2. Floating Tabs Selector Bar */}
       <div
         id="tabs-container"
-        className="max-w-7xl mx-auto px-4 md:px-8 mt-[-32px] relative z-20 mb-20"
+        className="max-w-7xl mx-auto px-4 md:px-8 -mt-8 relative z-20 mb-20"
       >
         <div className="flex justify-center">
           <div className="bg-white/90 backdrop-blur-md border border-slate-200/80 p-1.5 rounded-full flex space-x-1.5 w-full max-w-md shadow-2xl relative">

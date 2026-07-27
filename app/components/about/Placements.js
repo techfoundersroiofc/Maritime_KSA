@@ -159,7 +159,7 @@ export default function Placements() {
               <motion.div
                 key={idx}
                 variants={fadeInUp}
-                className="bg-slate-50/50 border border-slate-200/80 p-8 rounded-3xl flex flex-col shadow-2xs hover:shadow-xl hover:bg-white hover:border-orange-550/30 transition-all duration-300 relative group cursor-default min-h-[250px] h-full"
+                className="bg-slate-50/50 border border-slate-200/80 p-8 rounded-3xl flex flex-col shadow-2xs hover:shadow-xl hover:bg-white hover:border-orange-550/30 transition-all duration-300 relative group cursor-default min-h-62.5 h-full"
               >
                 {/* Shine Sweep Flash */}
                 <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
@@ -213,7 +213,7 @@ export default function Placements() {
           {/* Interactive Connected Pathway */}
           <div className="relative">
             {/* Horizontal Timeline Connector Line for Desktop */}
-            <div className="hidden md:block absolute top-[28px] left-[7%] right-[7%] h-0.5 bg-slate-200/80 pointer-events-none z-0" />
+            <div className="hidden md:block absolute top-7 left-[7%] right-[7%] h-0.5 bg-slate-200/80 pointer-events-none z-0" />
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 relative z-10 w-full">
               {steps.map((item, idx) => {
@@ -236,7 +236,7 @@ export default function Placements() {
                     </div>
 
                     {/* Step Content */}
-                    <div className="space-y-2 mt-6 max-w-[280px]">
+                    <div className="space-y-2 mt-6 max-w-70">
                       <h4 className="text-blue-950 font-black text-base tracking-tight group-hover:text-orange-655 transition-colors">
                         {item.title}
                       </h4>

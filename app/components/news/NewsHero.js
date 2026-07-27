@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 
 export default function NewsHero() {
   return (
-    <section className="relative py-28 sm:py-36 overflow-hidden border-b border-slate-800 bg-blue-950 text-white">
+    <section className="relative py-28 sm:py-36 lg:py-40 overflow-hidden border-b border-slate-800 bg-blue-950 text-white">
       {/* Background Image of Simulator workstation */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero/img3.png"
+          src="/images/hero/1.jpg"
           alt="PKIMSE Simulator Workstation"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center opacity-60"
+          className="object-cover object-center opacity-80"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />
+        <div className="absolute inset-0 bg-linear-to-b from-blue-950/20 via-blue-950/55 to-blue-950" />
       </div>
 
       {/* Radial gradient details */}

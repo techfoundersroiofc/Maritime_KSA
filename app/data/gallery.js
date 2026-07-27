@@ -27,7 +27,7 @@ export const galleryItems = [
     id: 3,
     category: "Marine Workshop",
     title: "Marine Diesel Engine Assembly Unit",
-    image: "/images/campus/lab.webp",
+    image: "/images/campus/0M5A8253.JPG",
     description:
       "Hands-on assembly and maintenance of ship-size auxiliary generators.",
   },
@@ -58,8 +58,8 @@ export const galleryItems = [
   {
     id: 7,
     category: "Campus Infrastructure",
-    title: "Academic Block and Common Hall",
-    image: "/images/campus/hostel_1.webp",
+    title: "Academic Block",
+    image: "/images/campus/0M5A8397.JPG",
     description:
       "Modern classrooms equipped with digital smart boards and high-speed Wi-Fi.",
   },
@@ -73,24 +73,42 @@ export const galleryItems = [
   },
   {
     id: 9,
-    category: "Students Life",
-    title: "Survival at Sea (PST) Drills",
-    image: "/images/campus/saftey.webp",
+    category: "Sports & Fitness",
+    title: "Swimming Pool",
+    image: "/images/campus/swimmingpool.webp",
     description:
-      "Emergency drill preparation, lifejacket use, and survival craft boarding procedures.",
+      "Fully equipped swimming pool to maintain high physical fitness levels.",
   },
   {
     id: 10,
-    category: "Sports & Fitness",
-    title: "State-of-Art Gymnasium & Sports",
-    image: "/images/campus/swimmingpool.webp",
-    description: "Fully equipped gym to maintain high physical fitness levels.",
+    category: "Students Life",
+    title: "Campus Life & Student Activities",
+    image: "/images/hero/5.jpg",
+    description:
+      "Vibrant Student community life, fostering teamwork, leadership, and camaraderie outside the classroom.",
   },
   {
     id: 11,
-    category: "Sports & Fitness",
-    title: "Swimming pool",
-    image: "/images/campus/swimingpool_2.webp",
-    description: "Deep water survival drills and endurance swimming sessions.",
+    category: "Marine Workshop",
+    title: "Fire Fighting Equipment & System Lab",
+    image: "/images/campus/0M5A8270.JPG",
+    description:
+      "Hands-on training with marine fire-fighting apparatus and emergency suppression systems.",
+  },
+  {
+    id: 12,
+    category: "Students Life",
+    title: "Student Parade & Assembly",
+    image: "/images/gallery/0M5A7940.JPG",
+    description:
+      "Instilling military-grade discipline, alignment, and professional conduct through regular parade drills.",
+  },
+  {
+    id: 13,
+    category: "Marine Workshop",
+    title: "Simulator Lab",
+    image: "/images/hero/4.jpg",
+    description:
+      "Residential facility with fully-equipped mess hall and neat dormitories.",
   },
 ];
