@@ -19,6 +19,7 @@ const categoryIcons = {
   "Marine Workshop": Anchor,
   "Campus Infrastructure": Ship,
   "Cadet Life": Users,
+  "Students Life": Users,
   "Sports & Fitness": Trophy,
   All: ImageIcon,
 };
@@ -39,8 +40,8 @@ export default function Amenities() {
   return (
     <section className="bg-white py-24 relative overflow-hidden">
       {/* Background radial glows */}
-      <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-orange-500/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 right-0 w-100 h-100 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-75 h-75 bg-orange-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
         {/* Section Header */}

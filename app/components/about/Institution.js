@@ -34,7 +34,7 @@ export default function Institution() {
         {/* Background Image with elegant overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/img1.jpg"
+            src="/images/hero/1.jpg"
             alt="PKIMSE College Campus Background"
             fill
             priority
@@ -88,8 +88,8 @@ export default function Institution() {
       {/* 2. Main Narrative & Accreditation Section */}
       <section className="bg-white pb-24 pt-8 relative overflow-hidden">
         {/* Decorative background glows */}
-        <div className="absolute top-0 left-0 w-[350px] h-[350px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-orange-500/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-0 left-0 w-87.5 h-87.5 bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-100 h-100 bg-orange-500/5 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -175,7 +175,7 @@ export default function Institution() {
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               {/* Main Decorative Card with Background Campus Image */}
-              <div className="relative rounded-3xl overflow-hidden border border-slate-200/80 shadow-md group min-h-[440px] flex flex-col justify-end p-8">
+              <div className="relative rounded-3xl overflow-hidden border border-slate-200/80 shadow-md group min-h-110 flex flex-col justify-end p-8">
                 {/* Background Image of Campus */}
                 <div className="absolute inset-0 z-0">
                   <Image

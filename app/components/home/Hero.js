@@ -13,10 +13,14 @@ import {
 } from "lucide-react";
 
 const images = [
-  { src: "/images/hero/slide1.png", alt: "PKIMSE Student Training" },
-  { src: "/images/hero/slide2.png", alt: "Marine Engine Workshop" },
-  { src: "/images/hero/img1.jpg", alt: "Elite Placement Drives" },
-  { src: "/images/hero/slide4.png", alt: "Premium Campus Hostels" },
+  { src: "/images/hero/1.jpg", alt: "PKIMSE Students" },
+  { src: "/images/hero/2.jpg", alt: "Marine Engine Workshop" },
+  { src: "/images/hero/3.jpg", alt: "Campus Training" },
+  { src: "/images/hero/4.jpg", alt: "Virtual Drive" },
+  { src: "/images/hero/5.jpg", alt: "Premium Campus Hostels" },
+  { src: "/images/hero/6.webp", alt: "Students Higlight" },
+  { src: "/images/hero/7.jpg", alt: "Marine life" },
+  { src: "/images/hero/8.png", alt: "shipping" },
 ];
 
 const quickLinks = [
@@ -77,7 +81,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full h-[50vh] flex flex-col justify-end overflow-hidden bg-blue-950">
+    <section className="relative w-full h-[50vh] xl:h-[90vh] flex flex-col justify-end overflow-hidden bg-blue-950">
       {/* Full-bleed background image carousel */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
