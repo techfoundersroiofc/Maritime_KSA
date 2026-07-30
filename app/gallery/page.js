@@ -15,7 +15,7 @@ export default function GalleryPage() {
         {/* Background Image of Sea Survival Drills */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
-          style={{ backgroundImage: "url('/images/campus/saftey.webp')" }}
+          style={{ backgroundImage: "url('/images/hero/0M5A8199.JPG')" }}
         />
         {/* Navy/black overlay */}
         <div className="absolute inset-0 bg-linear-to-b from-blue-950/40 via-blue-950/85 to-blue-950" />

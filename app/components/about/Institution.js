@@ -34,7 +34,7 @@ export default function Institution() {
         {/* Background Image with elegant overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/1.jpg"
+            src="/images/hero/DJI_0493.JPG"
             alt="PKIMSE College Campus Background"
             fill
             priority

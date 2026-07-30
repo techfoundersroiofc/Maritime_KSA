@@ -9,7 +9,7 @@ export default function NewsHero() {
       {/* Background Image of Simulator workstation */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero/1.jpg"
+          src="/images/hero/DJI_0527.JPG"
           alt="PKIMSE Simulator Workstation"
           fill
           priority

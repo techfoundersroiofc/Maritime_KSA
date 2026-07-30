@@ -14,10 +14,11 @@ import {
 
 const images = [
   { src: "/images/hero/1.jpg", alt: "PKIMSE Students" },
-  { src: "/images/hero/2.jpg", alt: "Marine Engine Workshop" },
+  { src: "/images/hero/DJI_0527.JPG", alt: "Marine Engine Workshop" },
   { src: "/images/hero/3.jpg", alt: "Campus Training" },
   { src: "/images/hero/4.jpg", alt: "Virtual Drive" },
   { src: "/images/hero/5.jpg", alt: "Premium Campus Hostels" },
+  { src: "/images/hero/DJI_0536.JPG", alt: "Marine Engine Workshop" },
   { src: "/images/hero/6.webp", alt: "Students Higlight" },
   { src: "/images/hero/7.jpg", alt: "Marine life" },
   { src: "/images/hero/8.png", alt: "shipping" },
