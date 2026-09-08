@@ -1,3 +1,43 @@
+export const galleryImages = [
+  // New Photos
+  "/images/new/1.JPG",
+  "/images/new/3.JPG",
+  "/images/new/4.JPG",
+  "/images/new/5.JPG",
+  "/images/new/6.JPG",
+  "/images/new/7.JPG",
+  "/images/new/8.JPG",
+  "/images/new/9.JPG",
+  "/images/new/10.JPG",
+  "/images/new/11.JPG",
+  "/images/new/12.JPG",
+  "/images/new/13.JPG",
+  "/images/new/14.JPG",
+  "/images/new/15.JPG",
+  "/images/new/16.JPG",
+  "/images/new/17.JPG",
+  "/images/new/18.JPG",
+  "/images/new/19.JPG",
+  // Existing Campus & Facility Photos
+  "/images/campus/workstation.webp",
+  "/images/campus/Workstation_2.webp",
+  "/images/campus/0M5A8253.JPG",
+  "/images/campus/lab_2.webp",
+  "/images/campus/lab_3.webp",
+  "/images/campus/lab_4.webp",
+  "/images/campus/0M5A8397.JPG",
+  "/images/campus/hostel_2.webp",
+  "/images/campus/swimmingpool.webp",
+  "/images/campus/0M5A8270.JPG",
+  "/images/hero/5.jpg",
+  "/images/hero/4.jpg",
+  // Gallery Folder Photos
+
+  "/images/gallery/0M5A8356.JPG",
+  "/images/gallery/0M5A8367.JPG",
+  "/images/gallery/0M5A8403.JPG",
+];
+
 export const galleryCategories = [
   "All",
   "Campus Infrastructure",

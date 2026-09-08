@@ -1,95 +1,145 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { galleryCategories, galleryItems } from "@/app/data/gallery";
+import { galleryImages } from "@/app/data/gallery";
+import { X, ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 
 export default function GalleryGrid() {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
-  const filteredItems =
-    activeCategory === "All"
-      ? galleryItems
-      : galleryItems.filter((item) => item.category === activeCategory);
+  const handleNext = useCallback(() => {
+    if (selectedIndex === null) return;
+    setSelectedIndex((prev) => (prev + 1) % galleryImages.length);
+  }, [selectedIndex]);
+
+  const handlePrev = useCallback(() => {
+    if (selectedIndex === null) return;
+    setSelectedIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+  }, [selectedIndex]);
+
+  const handleKeyDown = useCallback(
+    (e) => {
+      if (selectedIndex === null) return;
+      if (e.key === "Escape") setSelectedIndex(null);
+      if (e.key === "ArrowRight") handleNext();
+      if (e.key === "ArrowLeft") handlePrev();
+    },
+    [selectedIndex, handleNext, handlePrev]
+  );
+
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      window.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedIndex, handleKeyDown]);
 
   return (
-    <div className="space-y-12">
-      {/* 1. Category Filter Navigation (Rounded segment pills) */}
-      <div className="flex flex-wrap items-center justify-center gap-3 border-b border-slate-100 pb-10">
-        {galleryCategories.map((cat) => {
-          const isActive = activeCategory === cat;
-          return (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-bold tracking-wide transition-all duration-300 border cursor-pointer select-none ${
-                isActive
-                  ? "bg-blue-950 border-blue-950 text-white shadow-md shadow-blue-950/15"
-                  : "bg-white border-slate-200 text-blue-950 hover:bg-slate-50 hover:text-blue-950"
-              }`}
-            >
-              <span>{cat === "All" ? "All Media" : cat}</span>
-            </button>
-          );
-        })}
+    <div className="w-full">
+      {/* Photo Grid - Clean display without text or filter pills */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full">
+        {galleryImages.map((src, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.03 }}
+            onClick={() => setSelectedIndex(index)}
+            className="group relative aspect-4/3 w-full rounded-2xl md:rounded-3xl overflow-hidden bg-slate-900 shadow-md hover:shadow-2xl hover:shadow-orange-500/10 cursor-pointer border border-slate-200/80 transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <Image
+              src={src}
+              alt={`Gallery Image ${index + 1}`}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            {/* Hover overlay with zoom icon */}
+            <div className="absolute inset-0 bg-blue-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-xs flex items-center justify-center text-blue-950 shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                <Maximize2 className="w-5 h-5" />
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
 
-      {/* 2. Photo Gallery Grid */}
-      <motion.div
-        layout
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full text-left"
-      >
-        <AnimatePresence mode="popLayout">
-          {filteredItems.map((item) => (
-            <motion.div
-              layout
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.4 }}
-              key={item.id}
-              className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden flex flex-col group hover:border-orange-550/30 hover:shadow-2xl hover:shadow-orange-500/4 transition-all duration-300 relative shadow-2xs"
+      {/* Lightbox Modal for Full View */}
+      <AnimatePresence>
+        {selectedIndex !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedIndex(null)}
+            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedIndex(null)}
+              className="absolute top-6 right-6 z-50 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors cursor-pointer"
+              aria-label="Close image preview"
             >
-              {/* Corner Gradient Glow Spot */}
-              <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-orange-500/5 rounded-full blur-xl group-hover:bg-orange-500/10 group-hover:scale-150 transition-all duration-500 pointer-events-none" />
+              <X className="w-6 h-6" />
+            </button>
 
-              {/* Media image container with shine flash sweep */}
-              <div className="relative aspect-video w-full bg-linear-to-br from-blue-950/5 to-slate-200 overflow-hidden flex items-center justify-center">
+            {/* Previous Button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePrev();
+              }}
+              className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-50 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors cursor-pointer"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
+            </button>
+
+            {/* Main Lightbox Image Container */}
+            <div
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-5xl h-[80vh] flex items-center justify-center"
+            >
+              <motion.div
+                key={selectedIndex}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.2 }}
+                className="relative w-full h-full"
+              >
                 <Image
-                  src={item.image}
-                  alt={item.title}
+                  src={galleryImages[selectedIndex]}
+                  alt={`Gallery Image ${selectedIndex + 1}`}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 380px"
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  className="object-contain"
+                  priority
                 />
+              </motion.div>
+            </div>
 
-                {/* Skewed Shine Sweep Flash */}
-                <div className="absolute inset-0 z-20 pointer-events-none overflow-hidden">
-                  <div className="absolute inset-y-0 w-2/3 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-[-25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-800 ease-out" />
-                </div>
-
-                {/* Category Badge overlay */}
-                <div className="absolute top-4 left-4 bg-blue-950/90 text-white text-[10px] font-black px-3 py-1.5 rounded-lg border border-white/10 tracking-widest uppercase backdrop-blur-xs select-none z-10">
-                  {item.category}
-                </div>
-              </div>
-
-              {/* Info Details Section */}
-              <div className="p-6 grow flex flex-col justify-between space-y-4 relative z-10">
-                <div className="space-y-1.5">
-                  <h4 className="text-blue-950 font-black text-base tracking-tight leading-snug group-hover:text-orange-655 transition-colors">
-                    {item.title}
-                  </h4>
-                  <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </motion.div>
+            {/* Next Button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNext();
+              }}
+              className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-50 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors cursor-pointer"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
