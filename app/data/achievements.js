@@ -31,5 +31,4 @@ export const achievements = [
 
 export const approvals = [
   "Directorate General of Shipping (DGS), Government of India",
-  "Indian Maritime University (IMU) Affiliation",
 ];

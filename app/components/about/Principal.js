@@ -38,8 +38,8 @@ export default function Principal() {
   return (
     <section className="bg-white py-24 relative overflow-hidden">
       {/* Decorative gradient background elements */}
-      <div className="absolute top-1/4 right-0 w-[350px] h-[350px] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-1/4 left-0 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-87.5 h-87.5 bg-orange-600/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-1/4 left-0 w-100 h-100 bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
         {/* Section Header */}
@@ -55,7 +55,7 @@ export default function Principal() {
             Meet Our Principal
           </h2>
           <p className="text-blue-950 text-sm font-semibold max-w-xl mx-auto leading-relaxed">
-            Led by a veteran Chief Engineer and Marine Superintendent with
+            Led by a veteran Chief Engineer and Engineer Superintendent with
             extensive shipboard and administrative expertise.
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function Principal() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col h-full min-h-[500px]"
+            className="flex flex-col h-full min-h-125"
           >
             <div className="relative flex-1 w-full rounded-3xl overflow-hidden border border-slate-200/80 shadow-md group cursor-default">
               <Image
@@ -127,18 +127,20 @@ export default function Principal() {
                 Distinguished Maritime Career
               </h3>
               <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
-                Abdul Rasheed serves as the Engineer Superintendent cum Principal of
-                Perunthalaivar Kamarajar Institute of Maritime Science and
-                Engineering (PKIMSE). He holds a Marine Engineer Officer Class 1 Certificate
-                of Competency, issued by the Directorate General of Shipping, Ministry of
-                Ports, Shipping and Waterways, Government of India.
+                Abdul Rasheed serves as the Engineer Superintendent cum
+                Principal of Perunthalaivar Kamarajar Institute of Maritime
+                Science and Engineering (PKIMSE). He holds a Marine Engineer
+                Officer Class 1 Certificate of Competency, issued by the
+                Directorate General of Shipping, Ministry of Ports, Shipping and
+                Waterways, Government of India.
               </p>
               <p className="text-blue-950 text-xs sm:text-sm leading-relaxed font-semibold">
-                With over 15 years of rigorous shipboard sailing experience, he has sailed
-                in the capacity of Chief Engineer Officer on merchant fleet vessels flying
-                both Indian and international flags. His practical sailing experience includes
-                operations on heavy Bulk Carriers, Containers, and Wood Chip Carrier Self-Unloader
-                type vessels.
+                With over 15 years of rigorous shipboard sailing experience, he
+                has sailed in the capacity of Chief Engineer Officer on merchant
+                fleet vessels flying both Indian and international flags. His
+                practical sailing experience includes operations on heavy Bulk
+                Carriers, Containers, and Wood Chip Carrier Self-Unloader type
+                vessels.
               </p>
             </div>
 

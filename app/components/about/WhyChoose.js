@@ -30,28 +30,28 @@ export default function WhyChoose() {
     {
       title: "DG Shipping Approved",
       description:
-        "Fully approved by the Ministry of Ports, Shipping and Waterways, Government of India, conforming to ISO 9001:2015 standards audited by DNV GL.",
+        "Fully approved by the Ministry of Ports, Shipping and Waterways, Government of India",
       icon: ShieldCheck,
       color: "blue",
     },
     {
       title: "Faculty Mentorship",
       description:
-        "Mentorship by seasoned Master Mariners and Chief Engineers with decades of global sailing and academic teaching experience.",
+        "Mentorship by Engineer officers and Deck Officers with decades of sailing and teaching experience.",
       icon: Users,
       color: "orange",
     },
     {
       title: "Simulated Shipboard Environment",
       description:
-        "A structured, semi-military residential campus with daily parades, drills, and physical training designed to prepare cadets for sea life.",
+        "A structured, Naval residential campus with daily parades, drills, and physical training designed to prepare cadets for sea life.",
       icon: Ship,
       color: "blue",
     },
     {
       title: "Advanced Simulators",
       description:
-        "Hands-on navigation, radar plotting, and liquid cargo handling drills on Class-A DGS approved simulators.",
+        "For GP rating course simulator with hands on navigation, various state of sea, maneuvering, open sea , port entry , traffic area , TSS…",
       icon: Cpu,
       color: "orange",
     },
@@ -74,8 +74,8 @@ export default function WhyChoose() {
   return (
     <section className="bg-white py-24 border-b border-slate-200/60 relative overflow-hidden">
       {/* Decorative background glows */}
-      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-0 w-[350px] h-[350px] bg-orange-500/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-100 h-100 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-87.5 h-87.5 bg-orange-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
         {/* Section Header */}
@@ -112,7 +112,7 @@ export default function WhyChoose() {
                 key={reason.title}
                 variants={fadeInUp}
                 whileHover={{ y: -8, scale: 1.01 }}
-                className="bg-slate-50/50 border border-slate-200/80 p-8 rounded-3xl flex flex-col justify-between shadow-2xs hover:shadow-xl hover:bg-white hover:border-orange-550/30 transition-all duration-300 group cursor-default relative overflow-hidden min-h-[300px]"
+                className="bg-slate-50/50 border border-slate-200/80 p-8 rounded-3xl flex flex-col justify-between shadow-2xs hover:shadow-xl hover:bg-white hover:border-orange-550/30 transition-all duration-300 group cursor-default relative overflow-hidden min-h-75"
               >
                 {/* 1. Corner Gradient Glow Spot */}
                 <div className="absolute -bottom-10 -right-10 w-28 h-28 bg-orange-500/5 rounded-full blur-xl group-hover:bg-orange-500/10 group-hover:scale-150 transition-all duration-500 pointer-events-none" />
@@ -140,7 +140,7 @@ export default function WhyChoose() {
 
                 {/* 3. Shine Sweep Flash */}
                 <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
-                  <div className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-[25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-1000 ease-out" />
+                  <div className="absolute inset-y-0 w-1/2 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-[-25deg] -translate-x-full group-hover:translate-x-[200%] transition-transform duration-1000 ease-out" />
                 </div>
 
                 <div className="relative z-10 space-y-4">

@@ -143,13 +143,13 @@ export default function VisionMission() {
       <div className="absolute bottom-1/4 right-10 w-md h-md bg-orange-500/5 rounded-full blur-3xl pointer-events-none gsap-orange-circle-2" />
 
       {/* Decorative Rotating Ring */}
-      <div className="absolute top-10 right-1/4 w-[350px] h-[350px] rounded-full border border-dashed border-orange-500/10 pointer-events-none gsap-orange-ring-rotate" />
+      <div className="absolute top-10 right-1/4 w-87.5 h-87.5 rounded-full border border-dashed border-orange-500/10 pointer-events-none gsap-orange-ring-rotate" />
 
       {/* Pulsing Solid Dot */}
       <div className="absolute bottom-20 left-1/4 w-8 h-8 rounded-full bg-orange-500/10 pointer-events-none gsap-orange-dot-pulse" />
 
       {/* Decorative blue glows */}
-      <div className="absolute top-1/2 left-1/3 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 w-100 h-100 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Mission & Vision Row */}

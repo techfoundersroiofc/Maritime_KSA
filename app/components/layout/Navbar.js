@@ -81,10 +81,10 @@ function TopBar() {
           <div className="absolute inset-y-0 right-0 w-8 bg-linear-to-l from-blue-950 to-transparent z-10 pointer-events-none" />
 
           <div className="animate-ticker flex space-x-10 text-[11px] font-semibold text-orange-400 tracking-wider uppercase select-none">
-            <span>• Admissions Open 2026</span>
+            <span>• Admissions Open Jan 2027</span>
             <span>• Apply Online Today</span>
             <span>• DG Shipping Approved</span>
-            <span>• Admissions Open 2026</span>
+            <span>• Admissions Open Jan 2027</span>
             <span>• Apply Online Today</span>
             <span>• DG Shipping Approved</span>
           </div>
@@ -403,6 +403,7 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsOpen(false);
   }, [pathname]);
 

@@ -51,7 +51,7 @@ export const galleryItems = [
   {
     id: 1,
     category: "Simulators",
-    title: "Full Mission Ship's Bridge Simulator",
+    title: "GSK LAB",
     image: "/images/campus/workstation.webp",
     description:
       "Students undergoing advanced navigation and ship handling simulation drills.",
@@ -61,15 +61,16 @@ export const galleryItems = [
     category: "Simulators",
     title: "Liquid Cargo Handling Simulator",
     image: "/images/campus/Workstation_2.webp",
-    description: "Simulating tanker cargo loading and discharging operations.",
+    description:
+      "Simulation Lab with Trainees to get hands on wheel experience for navigating a ship in different state of sea, port , open sea, traffic areas…",
   },
   {
     id: 3,
-    category: "Marine Workshop",
+    category: "WORKSHOP",
     title: "Marine Diesel Engine Assembly Unit",
     image: "/images/campus/0M5A8253.JPG",
     description:
-      "Hands-on assembly and maintenance of ship-size auxiliary generators.",
+      "MEK workshop Equipped with Lathe machine, Drilling machine, Bench Grinders , Gas and Arc Welding…",
   },
   {
     id: 4,
@@ -129,7 +130,7 @@ export const galleryItems = [
   },
   {
     id: 11,
-    category: "Marine Workshop",
+    category: "FPFF lab",
     title: "Fire Fighting Equipment & System Lab",
     image: "/images/campus/0M5A8270.JPG",
     description:
@@ -146,7 +147,7 @@ export const galleryItems = [
   {
     id: 13,
     category: "Marine Workshop",
-    title: "Simulator Lab",
+    title: "Shipping Company Visit to MTI",
     image: "/images/hero/4.jpg",
     description:
       "Residential facility with fully-equipped mess hall and neat dormitories.",

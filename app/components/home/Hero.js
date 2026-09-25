@@ -27,7 +27,7 @@ const images = [
 const quickLinks = [
   {
     id: 1,
-    title: "Admissions 2026",
+    title: "Admissions Jan 2027",
     subtitle: "Apply Today",
     badge: "Govt. Approved",
     href: "/admissions#admissions",
@@ -122,44 +122,6 @@ export default function Hero() {
           </Link>
         ))}
       </div>
-
-      {/* Hero Content Area: Quick Links Grid */}
-      {/* <div className="relative z-20 w-full max-w-7xl mx-auto px-4 md:px-8 pb-12 sm:pb-16 flex flex-col items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-          {quickLinks.map((link) => {
-            const Icon = link.icon;
-            return (
-              <Link
-                key={link.id}
-                href={link.href}
-                className={`relative overflow-hidden p-3 sm:p-4 rounded-xl border bg-white/90 hover:bg-white border-white/25 transition-all duration-300 backdrop-blur-md shadow-lg hover:shadow-2xl hover:-translate-y-1.5 group flex items-center justify-between gap-4 min-h-[90px] ${link.borderColor} ${link.glowColor}`}
-              >
-                <div className="flex items-center gap-3 mt-1.5">
-                  <div
-                    className={`p-2 rounded-lg transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3 shrink-0 ${link.iconBg}`}
-                  >
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <div className="text-left">
-                    <h3 className="text-[14px] font-extrabold text-blue-950 group-hover:text-orange-500 transition-colors leading-snug">
-                      {link.title}
-                    </h3>
-                    <p className="text-[11px] text-slate-500 font-semibold mt-0.5 group-hover:text-slate-700 leading-tight">
-                      {link.subtitle}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-orange-500 text-blue-950 group-hover:text-white flex items-center justify-center transition-all duration-300 shrink-0 shadow-xs mt-1.5">
-                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
-                </div>
-
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-slate-100 group-hover:bg-linear-to-r group-hover:from-orange-500 group-hover:to-amber-500 transition-all duration-300" />
-              </Link>
-            );
-          })}
-        </div>
-      </div> */}
     </section>
   );
 }

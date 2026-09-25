@@ -51,7 +51,8 @@ export default function Footer() {
                   DG Shipping Approved
                 </span>
                 <span className="text-[10px] sm:text-[11px] text-slate-400 leading-normal">
-                  Ministry of Ports & Shipping, Govt. of India (No: MT-209-X)
+                  Ministry of Ports & Shipping, Govt. of India (No: MTI NO
+                  460661)
                 </span>
               </div>
             </div>
