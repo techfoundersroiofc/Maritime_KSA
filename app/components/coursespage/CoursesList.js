@@ -22,10 +22,11 @@ const staggerContainer = {
 };
 
 export default function CoursesList() {
-  // Select only GP Rating and BST courses as requested
+  // Select GP Rating, BST, and STSDSD courses as requested
   const featuredCoursesList = [
     courses.find((c) => c.id === "general-purpose-rating"),
     courses.find((c) => c.id === "basic-stcw-safety-training"),
+    courses.find((c) => c.id === "stsdsd-security-training"),
   ].filter(Boolean);
 
   // High fidelity course-specific metadata matching the homepage
@@ -90,6 +91,34 @@ export default function CoursesList() {
         },
       ],
     },
+    "stsdsd-security-training": {
+      badges: ["ISPS Mandatory"],
+      statusBadge: { text: "Weekly Batches", live: true },
+      specs: [
+        { label: "Accreditation", value: "D.G. Shipping & IMU Approved" },
+        { label: "Duration", value: "2 Days (Modular)" },
+        { label: "Requirements", value: "INDoS & Passport Mandatory" },
+        { label: "Package Offer", value: "BST + STSDSD at ₹22,000" },
+      ],
+      eligibilityPoints: [
+        {
+          text: "Minimum 10th standard pass from recognized board",
+          highlight: false,
+        },
+        {
+          text: "INDoS Number & Passport strictly mandatory to register",
+          highlight: true,
+        },
+        {
+          text: "Medical fitness certificate from DGS approved doctor",
+          highlight: true,
+        },
+        {
+          text: "Theory & case-based ISPS ship security threat training",
+          highlight: false,
+        },
+      ],
+    },
   };
 
   return (
@@ -118,16 +147,16 @@ export default function CoursesList() {
               Pre-Sea & Mandatory Modular Safety Courses
             </h2>
             <p className="text-blue-950 text-sm sm:text-base leading-relaxed font-semibold">
-              We offer two industry-standard courses that satisfy all
-              requirements of the Directorate General of Shipping (DGS), India,
-              and prepare you for onboarding.
+              We offer industry-standard courses that satisfy all requirements
+              of the Directorate General of Shipping (DGS), India, and prepare
+              you for onboarding.
             </p>
           </div>
         </motion.div>
 
-        {/* Responsive Grid: 1 Column on Mobile, 2 Columns on Tablet and Desktop */}
+        {/* Responsive Grid: 1 Column on Mobile, 2 Columns on Tablet, 3 Columns on Desktop */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto w-full"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}

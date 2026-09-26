@@ -17,7 +17,7 @@ export const footerLinks = {
     { name: "Achievements", href: "/about#achievements" },
   ],
   quickLinks: [
-    { name: "Admissions 2026", href: "/admissions" },
+    { name: "Admissions Jan 2027", href: "/admissions" },
     { name: "Courses", href: "/courses" },
     { name: "Placement Record", href: "/admissions#placements" },
     { name: "Campus Gallery", href: "/gallery" },
@@ -30,3 +30,4 @@ export const footerLinks = {
     { name: "Terms & Conditions", href: "/terms-and-conditions" },
   ],
 };
+``;

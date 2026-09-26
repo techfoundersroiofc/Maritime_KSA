@@ -64,12 +64,6 @@ export default function Placements() {
 
   const stats = [
     {
-      value: "100%",
-      label: "DNS Placement Rate",
-      desc: "Perfect placement record for our Diploma in Nautical Science batches.",
-      icon: Award,
-    },
-    {
       value: "500+",
       label: "Alumni Sailing Globally",
       desc: "Our student officers sail worldwide on cargo, bulk, and tanker fleets.",
@@ -151,7 +145,7 @@ export default function Placements() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-24 w-full"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-24 w-full"
         >
           {stats.map((stat, idx) => {
             const Icon = stat.icon;

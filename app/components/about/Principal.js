@@ -160,7 +160,7 @@ export default function Principal() {
                       <span className="text-xs font-black uppercase tracking-wider text-slate-450 block">
                         {item.label}
                       </span>
-                      <p className="text-xs sm:text-[13px] font-bold text-blue-950 leading-snug">
+                      <p className="text-xs sm:text-[11px] font-bold text-blue-950 leading-snug">
                         {item.value}
                       </p>
                     </div>

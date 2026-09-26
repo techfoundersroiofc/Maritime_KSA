@@ -97,7 +97,7 @@ export default function CampusHero() {
                 Simulated Training
               </h4>
               <p className="text-xs text-blue-950 font-medium mt-0.5">
-                Advanced bridge & engineering labs.
+                Bridge Navigation
               </p>
             </div>
           </div>

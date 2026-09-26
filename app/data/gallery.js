@@ -36,6 +36,8 @@ export const galleryImages = [
   "/images/gallery/0M5A8356.JPG",
   "/images/gallery/0M5A8367.JPG",
   "/images/gallery/0M5A8403.JPG",
+  "/images/KSLR7349.JPG.jpeg",
+  "/images/KSLR7426.JPG.jpeg",
 ];
 
 export const galleryCategories = [
@@ -44,7 +46,7 @@ export const galleryCategories = [
   "Simulators",
   "Marine Workshop",
   "Students Life",
-  "Sports & Fitness",
+  "PST LAB",
 ];
 
 export const galleryItems = [
@@ -59,7 +61,7 @@ export const galleryItems = [
   {
     id: 2,
     category: "Simulators",
-    title: "Liquid Cargo Handling Simulator",
+    title: "Ship Navigating Simulator",
     image: "/images/campus/Workstation_2.webp",
     description:
       "Simulation Lab with Trainees to get hands on wheel experience for navigating a ship in different state of sea, port , open sea, traffic areas…",
@@ -114,11 +116,11 @@ export const galleryItems = [
   },
   {
     id: 9,
-    category: "Sports & Fitness",
+    category: "PST LAB ",
     title: "Swimming Pool",
     image: "/images/campus/swimmingpool.webp",
     description:
-      "Fully equipped swimming pool to maintain high physical fitness levels.",
+      "Swimming Pool Built as per DG Norms, includes Life Raft and Rescue Boat Launching Davit.",
   },
   {
     id: 10,

@@ -14,7 +14,8 @@ export default function CourseList() {
   const categories = [
     { name: "All", label: "All Programs" },
     { name: "Officer", label: "Officer Training (B.Sc, B.Tech, DNS)" },
-    { name: "Specialist", label: "Graduate & Rating (GME, ETO, GP Rating)" }
+    { name: "Specialist", label: "Graduate & Rating (GME, ETO, GP Rating)" },
+    { name: "Modular", label: "Modular & Safety (BST, STSDSD)" }
   ];
 
   const filteredCourses = courses.filter((course) => {
@@ -24,6 +25,8 @@ export default function CourseList() {
       matchesCategory = ["bsc-nautical-science", "btech-marine-engineering", "diploma-nautical-science"].includes(course.id);
     } else if (filter === "Specialist") {
       matchesCategory = ["graduate-marine-engineering", "general-purpose-rating", "electro-technical-officer"].includes(course.id);
+    } else if (filter === "Modular") {
+      matchesCategory = ["basic-stcw-safety-training", "stsdsd-security-training"].includes(course.id);
     }
 
     // Search query match

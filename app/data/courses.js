@@ -613,5 +613,102 @@ export const courses = [
       { title: "Wet Survival Pool", desc: "Large deep pool equipped with marine life rafts, thermal suits, life buoys, and diving platforms." },
       { title: "Medical First Aid Room", desc: "Equipped with standard oxygen resuscitators, first aid kits, bandages, splints, and CPR manikins." }
     ]
+  },
+  {
+    id: "stsdsd-security-training",
+    slug: "stsdsd-security-training",
+    title: "Security Training for Seafarers With Designated Security Duties (STSDSD)",
+    duration: "2 Days",
+    type: "Mandatory Modular Program",
+    overview: "The STSDSD course is mandatory for seafarers who are assigned specific security responsibilities onboard ships. It trains participants on understanding maritime security threats, applying security procedures, recognizing risks, and working under a Ship Security Plan. The course complies with the STCW Code and the ISPS Code requirements and includes both theoretical and case-based training.",
+    accreditation: "Approved by the Directorate General of Shipping (DGS), Ministry of Shipping, Government of India & Affiliated with Indian Maritime University (IMU)",
+    department: "Ship Security & STCW",
+    entranceTest: "INDoS Number & Passport Mandatory",
+    commencement: [
+      { batch: "Weekly Intake", status: "Batches start every week. Registration open.", active: true }
+    ],
+    eligibility: {
+      academic: "Minimum 10th standard pass from a recognized board. INDoS Number and Passport are strictly mandatory.",
+      age: "Minimum 17.5 years at the time of course commencement.",
+      medical: "Must be certified medically fit by a DGS-approved medical practitioner."
+    },
+    eligibilityTabs: {
+      academic: [
+        { text: "Minimum 10th standard pass from a recognized board.", highlight: false },
+        { text: "INDoS Number is strictly mandatory to register.", highlight: true },
+        { text: "Valid Indian Passport is mandatory for registration.", highlight: true },
+        { text: "Must complete DGS e-learning modules & pass initial assessments.", highlight: false }
+      ],
+      age: [
+        { text: "Minimum Age: 17.5 Years at course commencement.", highlight: false },
+        { text: "No upper age limit, provided candidate is medically fit.", highlight: false }
+      ],
+      medical: [
+        { text: "Must clear medical fitness conducted by a DGS-approved medical practitioner.", highlight: true },
+        { text: "Good general physical health for practical security drills.", highlight: false }
+      ]
+    },
+    admissionProcess: [
+      "Obtain INDoS Number and ensure valid Passport availability.",
+      "Register online for the 2-day STSDSD training batch.",
+      "Complete DGS e-learning modules & assessments for STSDSD.",
+      "Attend the 2-day physical classroom instruction & ISPS case study training.",
+      "Pass institute exit examination and obtain DGS STSDSD Certificate."
+    ],
+    fees: {
+      application: "INDoS Fee Extra",
+      tuition: "₹5,750",
+      caution: "N/A",
+      total: "₹5,750",
+      note: "Fee of ₹5,750 includes study materials, classroom instructions, ISPS Code case studies, and institute exit exam fee. BST + STSDSD Combined Package is available at ₹22,000.",
+      discount: "BST + STSDSD Package: Combined training package available for ₹22,000"
+    },
+    withdrawalPolicy: {
+      schedule: [
+        { period: "Up to 3 days before course start", refund: "100% Refund or Free Batch Reschedule" },
+        { period: "Less than 3 days before course start", refund: "50% Fees Forfeited or ₹1,000 Reschedule Fee" },
+        { period: "After batch commencement", refund: "No Refund / Fees Forfeited" }
+      ],
+      notes: [
+        "INDoS registration fee once processed is non-refundable.",
+        "Rescheduling requests must be sent to modular@pkimse.edu.in at least 48 hours prior."
+      ]
+    },
+    careerPath: "Mandatory pre-requisite under STCW / ISPS Code for seafarers assigned designated security duties onboard vessels globally.",
+    careerProgression: [
+      { title: "INDoS & Passport Registration", desc: "Obtain INDoS number and passport validation for maritime security database" },
+      { title: "STSDSD 2-Day Training", desc: "Complete 2-day theory & ISPS Code case-based security training program" },
+      { title: "Institute Exit Assessment", desc: "Clear exit exam to earn DGS-approved STSDSD Certificate" },
+      { title: "Designated Security Duties Onboard", desc: "Legally qualified for designated security responsibilities on merchant vessels worldwide" }
+    ],
+    batchSchedule: [
+      { dates: "Every Monday & Tuesday", location: "KILPAUK, CHENNAI - Physical Class", timing: "08:30 - 16:30", price: "₹5,750", status: "Open" },
+      { dates: "Every Thursday & Friday", location: "VIZAG - Physical Class", timing: "08:30 - 16:30", price: "₹5,750", status: "Open" },
+      { dates: "BST + STSDSD Package", location: "CHENNAI / VIZAG - Combined", timing: "13-Day Total Package", price: "₹22,000", status: "Open" }
+    ],
+    modularSpecs: {
+      courseId: "STSDSD (ISPS Code)",
+      exitExam: "Yes - Institute Level Exit Exam",
+      elearning: "Yes - DGS E-Learning Mandatory",
+      elearningHours: "STSDSD: 6 Hrs E-Learning",
+      passMark: "50% in assessment",
+      validity: "Lifetime / As per DGS Guidelines"
+    },
+    subjects: [
+      "ISPS Code Awareness & Maritime Threats",
+      "Ship Security Plan (SSP) Implementation",
+      "Security Risk Assessment & Vulnerability Checks",
+      "Shipboard Security Equipment & Search Procedures",
+      "Anti-Piracy Procedures & Citadel Operations",
+      "Security Drills, Exercises & Incident Reporting"
+    ],
+    image: "/images/courses/stsdsd.png",
+    seoKeywords: ["stsdsd course", "security training for seafarers with designated security duties", "isps code course India", "stsdsd fees and eligibility"],
+    supporters: ["Container Fleet", "Bulk Carriers", "Oil Tankers", "Chemical Tankers", "LPG/LNG Carriers", "Offshore Support", "General Cargo", "Ro-Ro Vessels"],
+    facilities: [
+      { title: "Security Equipment Lab", desc: "Hands-on training with access control devices, metal detectors, security inspection tools, and communications." },
+      { title: "ISPS Case Study Room", desc: "Interactive multimedia setup for security threat analysis, scenario simulation, and Ship Security Plan implementation." },
+      { title: "Anti-Piracy & Deck Mockup", desc: "Simulated ship deck area for hardening drills, citadel lockdown procedures, and emergency security protocols." }
+    ]
   }
 ];

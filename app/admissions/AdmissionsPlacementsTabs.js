@@ -39,13 +39,6 @@ export default function AdmissionsPlacementsTabs() {
       <section className="relative py-28 sm:py-36 bg-blue-950 text-white overflow-hidden border-b border-slate-800">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero/6.webp"
-            alt="Maritime Admissions and Placements"
-            fill
-            priority
-            className="object-cover opacity-60 object-center"
-          />
           <div className="absolute inset-0 bg-linear-to-b from-blue-950/20 via-blue-950/65 to-blue-950" />
         </div>
 

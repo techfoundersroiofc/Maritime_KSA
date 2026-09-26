@@ -41,23 +41,17 @@ export default function WhyChooseUs() {
 
   const tabs = [
     {
-      title: "Advanced Simulators",
+      title: "Simulators",
       icon: Compass,
       headline: "Real Vessel Bridge & Cargo Handling Simulation",
       tagline: "NAVIGATIONAL PREPARATION",
       description:
         "Our state-of-the-art simulators replicate modern merchant vessel operations. students gain practical navigation, radar plotting, ship maneuvering, and liquid cargo handling skills before their first onboard contract.",
-      features: [
-        "Full Mission Ship Bridge Simulator with 360° visual view",
-        "Liquid Cargo Handling Simulator for tanker operation training",
-        "GMDSS simulator suite for international communications",
-        "Engine room simulator mimicking real ship plant controls",
-      ],
+      features: ["Full Mission Ship Bridge Simulator with 360° visual view"],
       factsheet: {
         title: "Technical Sim Specifications",
         items: [
-          { label: "Software System", value: "Transas Navi-Sailor 4000" },
-          { label: "Approval Status", value: "D.G. Shipping Class-A Approved" },
+          { label: "Approval Status", value: "D.G. Shipping Approved" },
           { label: "Visual Projection", value: "Real-Time 360-Degree Fields" },
           { label: "Vessel Models", value: "VLCCs, Bulk Carriers, Containers" },
         ],
@@ -113,13 +107,13 @@ export default function WhyChooseUs() {
         items: [
           {
             label: "Survival Pool Depth",
-            value: "2.5 Meters / Outdoor Drills",
+            value: "As per DG Norms",
           },
           {
             label: "Lifeboat Capacity",
             value: "24-Person Enclosed Davit Type",
           },
-          { label: "Instructors", value: "Master Mariners & Chief Engineers" },
+          { label: "Faculty", value: "Master Mariners & Chief Engineers" },
           { label: "DGS Standard", value: "STCW 2010 Manila Amendments" },
         ],
       },

@@ -203,10 +203,9 @@ export default function Institution() {
                       DG Shipping Approved
                     </h3>
                     <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                      All degree, diploma, and rating programs are fully
-                      approved by the Directorate General of Shipping, Ministry
-                      of Ports, Shipping and Waterways, Government of India. Our
-                      training procedures.
+                      All rating programs are fully approved by the Directorate
+                      General of Shipping, Ministry of Ports, Shipping and
+                      Waterways, Government of India. Our training procedures.
                     </p>
                   </div>
 

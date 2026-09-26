@@ -22,10 +22,11 @@ const staggerContainer = {
 };
 
 export default function FeaturedCourses() {
-  // Select only GP Rating and BST courses
+  // Select GP Rating, BST, and STSDSD courses
   const featured = [
     courses.find((c) => c.id === "general-purpose-rating"),
     courses.find((c) => c.id === "basic-stcw-safety-training"),
+    courses.find((c) => c.id === "stsdsd-security-training"),
   ].filter(Boolean);
 
   // Custom metadata for each course to make them feel highly specific and premium
@@ -90,6 +91,34 @@ export default function FeaturedCourses() {
         },
       ],
     },
+    "stsdsd-security-training": {
+      badges: ["ISPS Mandatory"],
+      statusBadge: { text: "Weekly Batches", live: true },
+      specs: [
+        { label: "Accreditation", value: "D.G. Shipping & IMU Approved" },
+        { label: "Duration", value: "2 Days (Modular)" },
+        { label: "Requirements", value: "INDoS & Passport Mandatory" },
+        { label: "Package Offer", value: "BST + STSDSD at ₹22,000" },
+      ],
+      eligibilityPoints: [
+        {
+          text: "Minimum 10th standard pass from recognized board",
+          highlight: false,
+        },
+        {
+          text: "INDoS Number & Passport strictly mandatory to register",
+          highlight: true,
+        },
+        {
+          text: "Medical fitness certificate from DGS approved doctor",
+          highlight: true,
+        },
+        {
+          text: "Theory & case-based ISPS ship security threat training",
+          highlight: false,
+        },
+      ],
+    },
   };
 
   return (
@@ -131,9 +160,9 @@ export default function FeaturedCourses() {
           </Link>
         </motion.div>
 
-        {/* Responsive Grid: 1 Column on Mobile, 2 Columns on Tablet (md) and Desktop (lg) */}
+        {/* Responsive Grid: 1 Column on Mobile, 2 Columns on Tablet (md), 3 Columns on Desktop (lg) */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6 max-w-7xl mx-auto w-full"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
