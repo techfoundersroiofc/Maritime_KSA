@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
     {
       title: "Simulators",
       icon: Compass,
-      headline: "Real Vessel Bridge & Cargo Handling Simulation",
+      headline: "Real Vessel Bridge",
       tagline: "NAVIGATIONAL PREPARATION",
       description:
         "Our state-of-the-art simulators replicate modern merchant vessel operations. students gain practical navigation, radar plotting, ship maneuvering, and liquid cargo handling skills before their first onboard contract.",

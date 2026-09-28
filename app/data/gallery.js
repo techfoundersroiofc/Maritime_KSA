@@ -56,7 +56,7 @@ export const galleryItems = [
     title: "GSK LAB",
     image: "/images/campus/workstation.webp",
     description:
-      "Students undergoing advanced navigation and ship handling simulation drills.",
+      "GSK LAB Students can gets hands on training with deck equipments",
   },
   {
     id: 2,
