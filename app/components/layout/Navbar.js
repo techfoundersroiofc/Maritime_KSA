@@ -81,10 +81,10 @@ function TopBar() {
           <div className="absolute inset-y-0 right-0 w-8 bg-linear-to-l from-blue-950 to-transparent z-10 pointer-events-none" />
 
           <div className="animate-ticker flex space-x-10 text-[11px] font-semibold text-orange-400 tracking-wider uppercase select-none">
-            <span>• Admissions Open Jan 2027</span>
+            <span>• GP Rating Admissions Open for Batch 2027</span>
             <span>• Apply Online Today</span>
             <span>• DG Shipping Approved</span>
-            <span>• Admissions Open Jan 2027</span>
+            <span>• GP Rating Admissions Open for Batch 2027</span>
             <span>• Apply Online Today</span>
             <span>• DG Shipping Approved</span>
           </div>
@@ -110,14 +110,14 @@ function Logo({ onClick, className }) {
       onClick={onClick}
       className={cn("flex items-center space-x-1 group shrink-0", className)}
     >
-      <div className="relative overflow-hidden rounded p-1 transition-all duration-300 group-hover:scale-105  flex items-center w-40 sm:w-44 lg:w-50 h-14 sm:h-16 lg:h-20">
+      <div className="relative overflow-hidden rounded p-0.5 transition-all duration-300 group-hover:scale-105  flex items-center w-50 sm:w-50 lg:w-80 h-20 sm:h-20 lg:h-32">
         <Image
-          src="/images/logo/logofinal1.png"
+          src="/images/logo/logofinal12.png"
           alt="PKIMSE Logo"
-          width={200}
-          height={200}
+          width={400}
+          height={400}
           priority
-          className="object-contain w-full h-full"
+          className="object-cover w-full h-full"
         />
       </div>
     </Link>
